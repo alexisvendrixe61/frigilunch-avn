@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Frigilunch — Explainability Report</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500&family=Geist+Mono&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Geist',sans-serif;font-size:14px;background:#f3f4f6;color:#111827}
+.sidebar{position:fixed;top:0;left:0;width:220px;height:100vh;overflow-y:auto;background:#fff;border-right:1px solid #e5e7eb;padding:16px 12px}
+.sidebar h3{font-size:11px;font-weight:500;color:#6b7280;text-transform:uppercase;letter-spacing:.05em;margin:16px 0 4px}
+.sidebar a{display:block;padding:4px 8px;font-size:12px;color:#374151;text-decoration:none;border-radius:4px}
+.sidebar a:hover{background:#f3f4f6}
+main{margin-left:240px;padding:32px 40px;max-width:1100px}
+header{margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid #e5e7eb}
+header h1{font-family:'Instrument Serif',serif;font-size:24px;color:#111827}
+header p{font-size:14px;color:#6b7280;margin-top:4px}
+.card{background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.08);padding:24px;margin-bottom:24px;border-left:4px solid #e5e7eb}
+.card.green{border-left-color:#166534}.card.amber{border-left-color:#854d0e}
+.card.blue{border-left-color:#1e40af}.card.grey{border-left-color:#9ca3af}.card.accent{border-left-color:#2563eb}
+.card h2{font-size:18px;font-weight:500;margin-bottom:16px}.card h3{font-size:14px;font-weight:500;margin:16px 0 8px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:12px 0}
+th{text-align:left;padding:8px 12px;background:#f9fafb;font-weight:500;border-bottom:1px solid #e5e7eb}
+td{padding:8px 12px;border-bottom:1px solid #f3f4f6;vertical-align:top}
+tr:nth-child(even) td{background:#f9fafb}
+code{font-family:'Geist Mono',monospace;font-size:12px;background:#f9fafb;border-radius:4px;padding:2px 6px}
+pre{font-family:'Geist Mono',monospace;font-size:12px;background:#f9fafb;border-radius:4px;padding:12px;overflow-x:auto;white-space:pre-wrap;margin:8px 0}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:500}
+.badge.green{background:#dcfce7;color:#166534}.badge.amber{background:#fef9c3;color:#854d0e}
+.badge.blue{background:#dbeafe;color:#1e40af}.badge.red{background:#fee2e2;color:#991b1b}.badge.orange{background:#ffedd5;color:#c2410c}
+.row2{display:flex;gap:16px}.row2>*{flex:1}
+figcaption{font-size:12px;color:#6b7280;margin-top:8px}
+ul{padding-left:20px;margin:8px 0}li{margin:4px 0}
+p{margin:8px 0;line-height:1.6}
+.impact-up{color:#166534;font-size:12px}.impact-dn{color:#854d0e;font-size:12px}
+@media print{.sidebar{display:none}main{margin:0;padding:16px}}
+</style>
+</head>
+<body>
+<nav class="sidebar">
+<div style="font-family:'Instrument Serif',serif;font-size:16px;color:#111827;padding:4px 8px 12px">Frigilunch</div>
+<h3>Overview</h3>
+<a href="#overview">System Overview</a>
+<h3>Pipeline</h3>
+<a href="#pipeline">Pipeline Overview</a>
+<a href="#rolling-lock">Rolling Commit</a>
+<h3>Stages</h3>
+<a href="#stage-1">1 · Data Ingestion</a>
+<a href="#stage-2">2 · Pre-flight Filter</a>
+<a href="#stage-3">3 · Plan Lock</a>
+<a href="#stage-4">4 · FILTER Constraints</a>
+<a href="#stage-5">5 · CP-SAT Optimizer</a>
+<a href="#stage-6">6 · Oracle Day Builder</a>
+<a href="#stage-7">7 · Day Sequencer</a>
+<a href="#stage-8">8 · Post-solve Regroup</a>
+<a href="#stage-9">9 · Plan Scoring</a>
+<h3>Reference</h3>
+<a href="#tunable">Tunable Parameters</a>
+<a href="#constraints">Constraint Reference</a>
+<a href="#constants">Numeric Constants</a>
+<a href="#not-enforced">Not Yet Enforced</a>
+</nav>
+<main>
+<header>
+<h1>Frigilunch Production Planner</h1>
+<p>Explainability Report &nbsp;·&nbsp; Generated 2026-10-26 &nbsp;·&nbsp; Based on source code read on 2026-10-26</p>
+</header>
+<section id="overview">
+<div class="card grey">
+<h2>System Overview</h2>
+<p>Frigilunch is an automated production planning system for a two-line ready-meal factory. Each weekly run reads open orders from an Excel workbook, assigns every order to a production day and line, builds a minute-by-minute shift schedule that respects real changeover times and allergen rules, and exports the result back to Excel. The planning horizon is rolling: the nearest four weeks are committed (locked) after every run, while everything further out is re-optimised from scratch the following week.</p>
+<p>Most algorithm behaviour can be changed at run time by setting <code>FRIGI_*</code> environment variables — no code change required. The <a href="#tunable">Tunable Parameters</a> section explains each one and its business impact.</p>
+</div>
+</section>
+<section id="pipeline">
+<div class="card grey">
+<h2>Pipeline Overview</h2>
+<svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:720px;font-family:sans-serif"><defs><marker id="a1" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#9ca3af"/></marker></defs><rect x="10" y="20" width="120" height="40" rx="4" fill="#dcfce7" stroke="#166534"/><text x="70" y="44" text-anchor="middle" font-size="10" fill="#166534">Data Ingestion</text><rect x="150" y="20" width="120" height="40" rx="4" fill="#fef9c3" stroke="#854d0e"/><text x="210" y="37" text-anchor="middle" font-size="10" fill="#854d0e">Pre-flight</text><text x="210" y="51" text-anchor="middle" font-size="10" fill="#854d0e">Filter</text><rect x="290" y="20" width="120" height="40" rx="4" fill="#fef9c3" stroke="#854d0e"/><text x="350" y="37" text-anchor="middle" font-size="10" fill="#854d0e">Plan Lock</text><text x="350" y="51" text-anchor="middle" font-size="10" fill="#854d0e">(4 weeks)</text><rect x="430" y="20" width="120" height="40" rx="4" fill="#fef9c3" stroke="#854d0e"/><text x="490" y="37" text-anchor="middle" font-size="10" fill="#854d0e">FILTER</text><text x="490" y="51" text-anchor="middle" font-size="10" fill="#854d0e">Constraints</text><rect x="570" y="20" width="120" height="40" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="630" y="37" text-anchor="middle" font-size="10" fill="#1e40af">CP-SAT</text><text x="630" y="51" text-anchor="middle" font-size="10" fill="#1e40af">Optimizer</text><line x1="130" y1="40" x2="148" y2="40" stroke="#9ca3af" marker-end="url(#a1)"/><line x1="270" y1="40" x2="288" y2="40" stroke="#9ca3af" marker-end="url(#a1)"/><line x1="410" y1="40" x2="428" y2="40" stroke="#9ca3af" marker-end="url(#a1)"/><line x1="550" y1="40" x2="568" y2="40" stroke="#9ca3af" marker-end="url(#a1)"/><polyline points="630,60 630,100 70,100 70,118" stroke="#9ca3af" fill="none" marker-end="url(#a1)"/><rect x="10" y="120" width="120" height="40" rx="4" fill="#dbeafe" stroke="#1e40af"/><text x="70" y="137" text-anchor="middle" font-size="10" fill="#1e40af">Oracle Day</text><text x="70" y="151" text-anchor="middle" font-size="10" fill="#1e40af">Builder</text><rect x="150" y="120" width="120" height="40" rx="4" fill="#dbeafe" stroke="#1e40af"/><text x="210" y="137" text-anchor="middle" font-size="10" fill="#1e40af">Day</text><text x="210" y="151" text-anchor="middle" font-size="10" fill="#1e40af">Sequencer</text><rect x="290" y="120" width="120" height="40" rx="4" fill="#dbeafe" stroke="#1e40af"/><text x="350" y="137" text-anchor="middle" font-size="10" fill="#1e40af">Post-solve</text><text x="350" y="151" text-anchor="middle" font-size="10" fill="#1e40af">Regroup</text><rect x="430" y="120" width="120" height="40" rx="4" fill="#f3f4f6" stroke="#9ca3af"/><text x="490" y="144" text-anchor="middle" font-size="10" fill="#374151">Plan Scoring</text><rect x="570" y="120" width="120" height="40" rx="4" fill="#f3f4f6" stroke="#9ca3af"/><text x="630" y="137" text-anchor="middle" font-size="10" fill="#374151">Commit &amp;</text><text x="630" y="151" text-anchor="middle" font-size="10" fill="#374151">Export</text><line x1="130" y1="140" x2="148" y2="140" stroke="#9ca3af" marker-end="url(#a1)"/><line x1="270" y1="140" x2="288" y2="140" stroke="#9ca3af" marker-end="url(#a1)"/><line x1="410" y1="140" x2="428" y2="140" stroke="#9ca3af" marker-end="url(#a1)"/><line x1="550" y1="140" x2="568" y2="140" stroke="#9ca3af" marker-end="url(#a1)"/></svg>
+<figcaption>Green = ingestion &nbsp;·&nbsp; Amber = filter / lock &nbsp;·&nbsp; Blue = solve &nbsp;·&nbsp; Grey = output. The vertical arc is the CP-SAT → Oracle feedback loop; the return path triggers a no-good cut and re-solve.</figcaption>
+</div>
+</section>
+<section id="rolling-lock">
+<div class="card blue">
+<h2>Rolling Commit Mechanic</h2>
+<p>Each run commits the nearest <code>COMMIT_WEEKS = 4</code> weeks. Committed days are frozen: the solver cannot move any order already placed there. Further-out weeks are re-optimised from scratch on every run.</p>
+<table style="width:auto;min-width:400px;margin:12px 0;font-size:12px;border:none"><tbody>
+<tr><td style="padding:4px 8px;color:#9ca3af;border:none">Previous weeks</td><td style="padding:4px 20px;background:#e5e7eb;border-radius:4px;color:#6b7280;border:none">Completed</td></tr>
+<tr><td style="padding:4px 8px;color:#1e40af;font-weight:500;border:none">wk N (now)</td><td style="padding:4px 20px;background:#1e40af;border-radius:4px;color:#fff;border:none">Committed — locked</td></tr>
+<tr><td style="padding:4px 8px;color:#1e40af;border:none">wk N+1</td><td style="padding:4px 20px;background:#1e40af;border-radius:4px;color:#fff;border:none">Committed — locked</td></tr>
+<tr><td style="padding:4px 8px;color:#1e40af;border:none">wk N+2</td><td style="padding:4px 20px;background:#1e40af;border-radius:4px;color:#fff;border:none">Committed — locked</td></tr>
+<tr><td style="padding:4px 8px;color:#1e40af;border:none">wk N+3</td><td style="padding:4px 20px;background:#1e40af;border-radius:4px;color:#fff;border:none">Committed — locked</td></tr>
+<tr><td style="padding:4px 8px;color:#374151;border:none">wk N+4</td><td style="padding:4px 20px;background:#dbeafe;border-radius:4px;color:#1e40af;border:none">Open — re-optimised each run</td></tr>
+<tr><td style="padding:4px 8px;color:#374151;border:none">wk N+5+</td><td style="padding:4px 20px;background:#dbeafe;border-radius:4px;color:#1e40af;border:none">Open — re-optimised each run</td></tr>
+</tbody></table>
+<p>Committed days are stored in <code>plan_state.json</code> and replayed byte-for-byte at the start of the next run. A cold start (no state file) begins with an empty frozen set and plans the entire horizon from scratch.</p>
+</div>
+</section>
+<section id="stage-1">
+<div class="card green">
+<h2>Stage 1 — Data Ingestion</h2>
+<p>The system reads open orders from <strong>Planning info.xlsx</strong> at run time. Each row is an order with article number, quantity, delivery date, and line preferences. Missing master data is cross-referenced against a product catalogue loaded from the same workbook.</p>
+<h3>FTE Complexity → Staff Multiplier</h3>
+<p>Each article has an <code>avg_complexity</code> score. The loader maps it to an FTE multiplier used for staffing capacity checks:</p>
+<table><thead><tr><th>avg_complexity</th><th>FTE assigned</th></tr></thead><tbody>
+<tr><td>≤ 1.2</td><td>0.5</td></tr>
+<tr><td>≤ 1.8</td><td>0.75</td></tr>
+<tr><td>≤ 2.2</td><td>1.0</td></tr>
+<tr><td>≤ 2.5</td><td>1.25</td></tr>
+<tr><td>≤ 2.8</td><td>1.5</td></tr>
+<tr><td>&gt; 2.8</td><td>2.0</td></tr>
+</tbody></table>
+<h3>Line Exclusion</h3>
+<p>Each product carries a <code>prio_lijn</code> block with per-line permission codes and an optional <code>spiraal</code> block for CFS (spiral-conveyor) products. The loader selects which block to use for line derivation:</p>
+<pre><code>line_source = p.get("spiraal", {}) if prio_lijn.get("cfs") == "voorkeur" else prio_lijn
+line_info = derive_line_info(line_source.get("lijn1"), line_source.get("lijn2"), schaal, merk)</code></pre>
+<p>When <code>prio_lijn.cfs == "voorkeur"</code> (14 products), the <code>spiraal</code> field is used instead of <code>prio_lijn</code>. All 14 CFS products have <code>spiraal = {lijn1: "kan_niet", lijn2: "kan"}</code>, which resolves to <code>l1_uitgesloten=True, alleen_l2=True</code> — they are hard-locked to Line 2.</p>
+<p><em>Why this matters:</em> <code>prio_lijn.lijn1</code> and <code>prio_lijn.lijn2</code> are both <code>"kan_niet"</code> for CFS products. The 0/0 pair triggers a fallback in <code>derive_line_info</code> that treats both-forbidden as no restriction. Without the <code>spiraal</code> switch, CFS products could be placed on either line. With it, the hard L2-only constraint is correctly enforced by the solver's slot filter.</p>
+</div>
+</section>
+<section id="stage-2">
+<div class="card amber">
+<h2>Stage 2 — Pre-flight Filtering</h2>
+<p>Three filters run before any optimisation. Orders that fail are rejected and reported in the action list — they never enter the solver.</p>
+<table><thead><tr><th>Filter</th><th>Rejection reason</th><th>Logic</th></tr></thead><tbody>
+<tr><td><code>filter_by_known_date</code></td><td><span class="badge amber">ARRIVED-AFTER-FREEZE</span></td><td>Drops orders whose order-number date is in the future — not yet arrived in the system as of the run date</td></tr>
+<tr><td><code>filter_by_delivery_range</code></td><td><span class="badge red">WINDOW-PASSED</span></td><td>Keeps only orders where <code>start ≤ lever_datum ≤ end</code>; drops everything outside the planning window</td></tr>
+<tr><td>Data-quality check</td><td><span class="badge red">UNKNOWN-PRODUCT</span></td><td>Drops orders with an article number absent from the product catalogue</td></tr>
+<tr><td>Data-quality check</td><td><span class="badge orange">MISSING-SPEED</span></td><td>Drops orders where speed is inferred (<code>constraint_provenance["speed"] == "inferred"</code>) — no reliable cycle time available</td></tr>
+</tbody></table>
+</div>
+</section>
+<section id="stage-3">
+<div class="card amber">
+<h2>Stage 3 — Plan Lock</h2>
+<p>The planning horizon is split into two tiers with separate solver budgets. Frozen days from the previous run are loaded from <code>plan_state.json</code> before the solver starts — the solver cannot touch those days.</p>
+<table><thead><tr><th>Horizon</th><th>Budget (s)</th><th>Max iterations</th></tr></thead><tbody>
+<tr><td>Committed (<code>COMMIT_WEEKS=4</code> nearest weeks)</td><td>240</td><td>15</td></tr>
+<tr><td>Open tail (beyond committed horizon)</td><td>90</td><td>5</td></tr>
+</tbody></table>
+<p>After the main solve, an incremental resolve pass (<code>FRIGI_INCREMENTAL_RESOLVE=1</code>) tries to backfill any order unplaced in Phase 1 or 2 by running a targeted re-solve with context from the already-placed orders.</p>
+</div>
+</section>
+<section id="stage-4">
+<div class="card amber">
+<h2>Stage 4 — FILTER Constraints</h2>
+<p>Before the solver assigns any order, a slot-legality check eliminates day/line combinations that cannot possibly be valid. An order with zero legal slots is rejected immediately with a reason code.</p>
+<table><thead><tr><th>ID</th><th>Constraint</th><th>Detail</th></tr></thead><tbody>
+<tr><td>C3</td><td>Production window</td><td>Earliest = run start date; latest = <code>lever_datum − min_days_before_delivery</code> (= 0 days)</td></tr>
+<tr><td>C4</td><td>Workdays only</td><td>Saturday and Sunday are never valid production days</td></tr>
+<tr><td>C5</td><td>Frozen days</td><td>Any day committed in <code>plan_state.json</code> is off-limits; idle capacity in a frozen week stays idle</td></tr>
+<tr><td>D1</td><td>Allowed weekdays</td><td>Product-level restriction (e.g. "not Wednesday") sourced from Planning info.xlsx</td></tr>
+<tr><td>L1</td><td>L1 permission</td><td>Orders with <code>l1_uitgesloten=True</code> cannot be placed on Line 1</td></tr>
+<tr><td>L2</td><td>L2 permission</td><td>Orders with <code>l2_uitgesloten=True</code> cannot be placed on Line 2</td></tr>
+<tr><td>S3</td><td>Day ends coverable</td><td>A non-empty line-day must contain ≥ 1 order that may open it and ≥ 1 that may close it</td></tr>
+</tbody></table>
+<p>Rejection reasons emitted when no legal slot exists: <span class="badge amber">ARRIVED-AFTER-FREEZE</span> <span class="badge red">WINDOW-PASSED</span> <span class="badge orange">LINE-DAY-RESTRICTION</span></p>
+</div>
+</section>
+<section id="stage-5">
+<div class="card accent">
+<h2>Stage 5 — CP-SAT Optimizer</h2>
+<p>The core solver uses Google OR-Tools CP-SAT (constraint programming with SAT). It assigns orders to (day, line) slots and minimises a weighted objective. The solver runs in a feedback loop with the Oracle Day Builder: each proposed assignment is checked by the Oracle, and any order the Oracle cannot fit triggers a no-good cut that prevents the same assignment from being proposed again.</p>
+<h3>Feedback Loop</h3>
+<svg viewBox="0 0 560 310" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:500px;font-family:sans-serif"><defs><marker id="b1" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6b7280"/></marker><marker id="b2" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto"><polygon points="8 0,0 3,8 6" fill="#6b7280"/></marker><marker id="b3" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto"><polygon points="8 0,0 3,8 6" fill="#2563eb"/></marker></defs><text x="110" y="22" text-anchor="middle" font-size="11" font-weight="500" fill="#111827">CP-SAT Model</text><text x="400" y="22" text-anchor="middle" font-size="11" font-weight="500" fill="#111827">Oracle</text><line x1="110" y1="28" x2="110" y2="295" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,3"/><line x1="400" y1="28" x2="400" y2="295" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,3"/><rect x="102" y="48" width="16" height="190" rx="2" fill="#dbeafe" stroke="#2563eb"/><text x="255" y="75" text-anchor="middle" font-size="10" fill="#6b7280">Assignment proposal</text><line x1="118" y1="82" x2="392" y2="82" stroke="#6b7280" marker-end="url(#b1)"/><text x="255" y="132" text-anchor="middle" font-size="10" fill="#6b7280">Orders dropped?</text><line x1="392" y1="140" x2="118" y2="140" stroke="#6b7280" marker-end="url(#b2)"/><rect x="118" y="155" width="200" height="65" rx="2" fill="none" stroke="#9ca3af" stroke-width="1" stroke-dasharray="4,3"/><text x="126" y="169" font-size="9" fill="#9ca3af">[alt: yes]</text><text x="218" y="192" text-anchor="middle" font-size="10" fill="#1e40af">Add no-good cut → re-solve</text><path d="M118,197 L92,197 L92,215 L118,215" stroke="#2563eb" stroke-width="1.5" fill="none" marker-end="url(#b3)"/><text x="255" y="260" text-anchor="middle" font-size="10" fill="#6b7280">Done (or budget exhausted)</text><line x1="392" y1="268" x2="118" y2="268" stroke="#6b7280" marker-end="url(#b2)"/></svg>
+<h3>Phase Dispatch</h3>
+<div class="row2">
+<div style="background:#f9fafb;border-radius:6px;padding:12px">
+<strong>Phase 1 — Line-restricted</strong>
+<p>Orders with <code>alleen_l1</code> or <code>alleen_l2</code> flags set. Placed first with hard line locks. <code>FRIGI_TWO_PHASE_HARD_FIRST=1</code>: hard constraints before softening.</p>
+</div>
+<div style="background:#f9fafb;border-radius:6px;padding:12px">
+<strong>Phase 2 — Flexible</strong>
+<p>All remaining unplaced orders compete for available capacity on either line within their legal slots.</p>
+</div>
+<div style="background:#f9fafb;border-radius:6px;padding:12px">
+<strong>Phase 3 — Split retry</strong>
+<p>Orders never placed in Phases 1–2 (<code>FRIGI_RETRY_SPLIT_NEVER_PLACED=1</code>) retried with forced splits: max <code>FRIGI_MAX_CHUNKS=5</code> chunks, min <code>FRIGI_MIN_CHUNK_MIN=60</code> min each.</p>
+</div>
+</div>
+</div>
+</section>
+<div class="card accent" style="margin-top:-20px;border-top:none;border-radius:0 0 8px 8px">
+<h3>Objective Function</h3>
+<p>The solver minimises a weighted sum. Completeness always dominates efficiency — an unscheduled order costs 10 000 points, making any scheduling penalty negligible by comparison.</p>
+<pre>cost = Σ unscheduled_orders × 10 000
+     + Σ unscheduled_units  × 10   (FRIGI_UNSCHEDULED_UNIT_WEIGHT)
+     + Σ efficiency_penalties</pre>
+<table><thead><tr><th>Penalty term</th><th>Weight</th><th>Trigger</th></tr></thead><tbody>
+<tr><td>Late delivery</td><td>100 / day</td><td>Production day after delivery date</td></tr>
+<tr><td>Early (beyond grace)</td><td>1 / day</td><td>More than 7 days before delivery date</td></tr>
+<tr><td>Off-priority line</td><td>50</td><td>Order placed on non-preferred line</td></tr>
+<tr><td>Day activation</td><td>2</td><td>Each additional calendar day opened</td></tr>
+<tr><td>Line activation</td><td>5</td><td>Each additional line activated on a day</td></tr>
+<tr><td>Format spread</td><td>1</td><td>Scale-format variety within a day</td></tr>
+<tr><td>Positie soft miss</td><td>500</td><td>Must-first/last order not at its required position</td></tr>
+<tr><td>Split penalty</td><td>0 (off)</td><td>Order split across multiple chunks</td></tr>
+</tbody></table>
+<h3>Solver Parameters</h3>
+<table><thead><tr><th>Parameter</th><th>Value</th><th>Source</th></tr></thead><tbody>
+<tr><td>Search workers</td><td>8</td><td>Hardcoded in solver params</td></tr>
+<tr><td>Iteration timeout</td><td>10 s</td><td><code>feedback_iter_timeout_seconds</code></td></tr>
+<tr><td>Committed budget</td><td>240 s / 15 iters</td><td><code>feedback_timeout_seconds</code> / <code>FRIGI_MAX_ITERS</code></td></tr>
+<tr><td>Open-tail budget</td><td>90 s / 5 iters</td><td><code>FRIGI_FAR_TIMEOUT_SECONDS</code> / <code>FRIGI_FAR_MAX_ITERS</code></td></tr>
+<tr><td>No-improve stop</td><td>6 iters</td><td><code>FRIGI_NO_IMPROVE_STOP</code></td></tr>
+</tbody></table>
+</div>
+<section id="tunable">
+<div class="card accent">
+<h2>Tunable Parameters</h2>
+<p>All <code>FRIGI_*</code> variables are read at run time. Set them as environment variables before launching the planner — no code change required. The <span class="impact-up">▲ raise</span> and <span class="impact-dn">▼ lower</span> columns describe the business effect of moving the value away from its default.</p>
+<table><thead><tr><th>Variable (default)</th><th>Category</th><th class="impact-up">▲ Raise → effect</th><th class="impact-dn">▼ Lower → effect</th></tr></thead><tbody>
+<tr><td><code>FRIGI_LATE_PENALTY</code> (100)</td><td>Delivery</td><td class="impact-up">Solver strongly avoids late production; may reject orders it can't place early enough</td><td class="impact-dn">Accepts producing after delivery date more readily; increases on-time risk</td></tr>
+<tr><td><code>FRIGI_EARLY_PENALTY</code> (1)</td><td>Delivery</td><td class="impact-up">Discourages producing far in advance; reduces stock-holding risk</td><td class="impact-dn">Allows early production freely; useful when cold-storage capacity is ample</td></tr>
+<tr><td><code>FRIGI_EARLY_GRACE_DAYS</code> (7)</td><td>Delivery</td><td class="impact-up">Widens the penalty-free window; planner has more scheduling freedom</td><td class="impact-dn">Tightens the window; more pressure to produce close to delivery date</td></tr>
+<tr><td><code>FRIGI_OFF_PRIO_LINE_PENALTY</code> (50)</td><td>Line balance</td><td class="impact-up">Keeps products on their preferred line more strictly; may increase rejections when that line is full</td><td class="impact-dn">Mixes lines more freely; reduces rejections but may cause suboptimal changeovers</td></tr>
+<tr><td><code>FRIGI_POSITIE_MOET_PENALTY</code> (500)</td><td>Sequencing</td><td class="impact-up">Honours must-first/last requirements more strictly; may displace other orders from that day</td><td class="impact-dn">May miss positie rules silently; reduces constraint pressure but plan may need manual correction</td></tr>
+<tr><td><code>FRIGI_UNSCHEDULED_UNIT_WEIGHT</code> (10)</td><td>Completeness</td><td class="impact-up">Prioritises placing high-volume orders; small orders may be displaced to fit large ones</td><td class="impact-dn">Treats all orders equally by volume; small and large orders compete on equal footing</td></tr>
+<tr><td><code>FRIGI_PROXY_BUFFER_MIN</code> (30)</td><td>Devices</td><td class="impact-up">Safer gap between shared-device users; fewer runtime conflicts, less capacity used</td><td class="impact-dn">Tighter schedule; more orders fit but higher risk of device-conflict drops</td></tr>
+<tr><td><code>FRIGI_DEVICE_LINE_CAP</code> (0.7)</td><td>Devices</td><td class="impact-up">Device may occupy more of the shift; more orders placed but higher conflict probability</td><td class="impact-dn">More conservative device use; fewer conflicts but capacity left unused</td></tr>
+<tr><td><code>FRIGI_MIN_CHUNK_MIN</code> (60)</td><td>Splits</td><td class="impact-up">Larger minimum chunks; fewer splits, less fragmentation, simpler floor plan</td><td class="impact-dn">Smaller chunks allowed; harder-to-place orders more likely to fit, plan more fragmented</td></tr>
+<tr><td><code>FRIGI_MAX_CHUNKS</code> (5)</td><td>Splits</td><td class="impact-up">More split flexibility; nearly any order can be placed across many days</td><td class="impact-dn">Orders must fit in fewer chunks or be rejected; simpler plan, more rejections</td></tr>
+<tr><td><code>FRIGI_SEQUENCE_TIME_LIMIT</code> (2.0 s)</td><td>Sequencer</td><td class="impact-up">Better within-day sequences, less changeover time; slower run</td><td class="impact-dn">Faster run; sequencer may settle for a suboptimal order within a day</td></tr>
+<tr><td><code>FRIGI_TWO_PHASE_HARD_FIRST</code> (1 = on)</td><td>Algorithm</td><td colspan="2">On: Phase 1 solves with hard constraints first, then softens if infeasible — more robust placement for line-restricted orders. Off: skips the hard-first pass, marginally faster.</td></tr>
+<tr><td><code>FRIGI_RETRY_SPLIT_NEVER_PLACED</code> (1 = on)</td><td>Algorithm</td><td colspan="2">On: orders rejected by Phases 1–2 get a split-retry (Phase 3) — fewer final rejections. Off: no retry, run is faster but more orders rejected.</td></tr>
+<tr><td><code>FRIGI_INCREMENTAL_RESOLVE</code> (1 = on)</td><td>Algorithm</td><td colspan="2">On: a backfill pass after the main solve fills gaps left by earlier phases — raises order coverage. Off: no backfill; faster, but more unplaced orders.</td></tr>
+<tr><td><code>FRIGI_SATE_EXCLUSIVE</code> (1 = on)</td><td>Allergens</td><td colspan="2">On: sate (allergen level 6) forces the other line to halt — enforces hall-clear protocol. Off: sate treated as a high-allergen product only; other line continues. Turn off only if the sate-isolation protocol is not required on your site.</td></tr>
+</tbody></table>
+</div>
+</section>
+<section id="stage-6">
+<div class="card blue">
+<h2>Stage 6 — Oracle Day Builder</h2>
+<p>Given a proposed (order → day, line) assignment from CP-SAT, the Oracle builds a minute-by-minute shift schedule and either returns a valid <code>DaySchedule</code> or reports dropped orders. Any drop feeds back as a no-good cut.</p>
+<h3>Shift Windows</h3>
+<table><thead><tr><th>Line</th><th>Start</th><th>Normal end</th><th>Friday end</th><th>Normal cap (min)</th><th>Friday cap (min)</th></tr></thead><tbody>
+<tr><td>L1</td><td>06:00</td><td>22:30</td><td>20:30</td><td>990</td><td>870</td></tr>
+<tr><td>L2</td><td>06:30</td><td>22:30</td><td>20:30</td><td>960</td><td>840</td></tr>
+</tbody></table>
+<h3>Changeover Times — MAX Rule</h3>
+<p>Changeover between two consecutive orders = <strong>maximum</strong> of all applicable scenarios (never summed — steps overlap physically):</p>
+<table><thead><tr><th>Scenario</th><th>Time (min)</th></tr></thead><tbody>
+<tr><td>Same format (schaal-formaat)</td><td>20</td></tr>
+<tr><td>Different format</td><td>30</td></tr>
+<tr><td>Kapvorm change (andere_kapvorm)</td><td>+15 on top of format time</td></tr>
+<tr><td>Allergen drop — cleaning</td><td>30</td></tr>
+<tr><td>CFS transition</td><td>15</td></tr>
+<tr><td><strong>CFS afterrun (cfs_naloop)</strong></td><td><strong>60</strong></td></tr>
+<tr><td>Multifill machine floor</td><td>30</td></tr>
+<tr><td>Leonard machine floor</td><td>40</td></tr>
+<tr><td>Line change cleaning (lijnwissel)</td><td>30</td></tr>
+<tr><td>Daesang exception (6542000 ↔ 64420200)</td><td>20 (overrides all above)</td></tr>
+</tbody></table>
+<h3>Allergen Scale</h3>
+<table style="width:auto"><thead><tr><th>Level</th><th>Symbol</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>0</td><td><code>-</code></td><td>No allergen</td></tr>
+<tr><td>1–5</td><td><code>!</code> … <code>!!!!!</code></td><td>Increasing trace / cross-contamination levels</td></tr>
+<tr><td>6</td><td><code>X</code></td><td>Sate / peanut — hall-clear protocol required (A5)</td></tr>
+</tbody></table>
+<p>Allergen levels must be <em>non-decreasing</em> within a shift. A drop forces a 30-minute cleaning changeover. Sate (level 6) additionally halts the other line (constraint A5, see below).</p>
+<h3>Position Rules (S2)</h3>
+<table><thead><tr><th>Rule</th><th>Meaning</th><th>Enforcement</th></tr></thead><tbody>
+<tr><td>opstart_moet</td><td>Must open the day</td><td>Soft — 500-pt penalty if unmet; two claimants on one day will conflict</td></tr>
+<tr><td>opstart_kan_niet</td><td>Must not open the day</td><td>Hard — rejected from position 1 in both sort and sequencer</td></tr>
+<tr><td>afsluit_moet</td><td>Must close the day</td><td>Soft — 500-pt penalty if unmet</td></tr>
+<tr><td>afsluit_kan_niet</td><td>Must not close the day</td><td>Hard — rejected from last position</td></tr>
+</tbody></table>
+<div class="row2" style="margin-top:16px">
+<div class="card amber" style="margin:0;padding:16px">
+<h3 style="margin-top:0">Sate Exclusion (A5)</h3>
+<p>Any order with <code>allergie_niveau ≥ 6</code> is sate. When <code>FRIGI_SATE_EXCLUSIVE=1</code>, the other production line must halt before the sate block starts. The sate block is slid to end-of-day (<code>sate_last()</code>) so the halt coincides with the natural shift end, minimising the capacity cost to the other line.</p>
+</div>
+<div class="card blue" style="margin:0;padding:16px">
+<h3 style="margin-top:0">Staffing Ramp (P1)</h3>
+<p>Staff increases between consecutive orders are capped at <code>max_bezetting_delta = 3</code> FTE. Only increases are capped — ramp-down is unrestricted. Orders with duration &gt; 4 h (240 min) are exempt, as staff can arrive gradually during the order.</p>
+</div>
+</div>
+<h3 style="margin-top:16px">Device Contention (M1)</h3>
+<p>Single-unit devices serve only one order at a time. A <code>FRIGI_PROXY_BUFFER_MIN=30</code> min gap is enforced between consecutive users. Single-unit devices: <code>ks_menger, stephan_mixer_klein, stephan_mixer_groot, multifill, kaastrooi, multipond, isihda_l1, isihda_l2, grote_cfs_pomp</code>.</p>
+</div>
+</section>
+<section id="stage-7">
+<div class="card blue">
+<h2>Stage 7 — Day Sequencer</h2>
+<p>After CP-SAT assigns orders to days, the Day Sequencer finds the best within-day order for each line using a CP-SAT <code>AddCircuit</code> (TSP prize-collecting variant). Time limit: <code>FRIGI_SEQUENCE_TIME_LIMIT = 2.0 s</code> per line per day.</p>
+<h3>Objective</h3>
+<table><thead><tr><th>Term</th><th>Value</th><th>Effect</th></tr></thead><tbody>
+<tr><td>Positie bonus</td><td>+1 000</td><td>Reward for placing a must-first/last order in its required position</td></tr>
+<tr><td>Kapvorm penalty (general)</td><td>−50</td><td>Penalise each kapvorm change between consecutive orders</td></tr>
+<tr><td>Kapvorm penalty (L1 only)</td><td>−2 000</td><td>Strongly discourage kapvorm changes on Line 1 (preferred line)</td></tr>
+</tbody></table>
+<h3>Staffing Arc Pruning</h3>
+<p>Before solving, arcs (i → j) where the staff increase exceeds <code>max_bezetting_delta = 3</code> FTE are removed from the circuit graph — unless order j has duration &gt; 4 h (240 min), which exempts it. This prunes the search space while preserving all legal sequences.</p>
+<p>After sequencing, the full <code>DaySchedule</code> is re-validated by the validator to confirm no hard constraints were broken.</p>
+</div>
+</section>
+<section id="stage-8">
+<div class="card blue">
+<h2>Stage 8 — Post-solve Regroup</h2>
+<p>After a valid schedule exists, the campaign-regrouper clusters same-kapvorm orders onto the same day to reduce changeover time.</p>
+<ul>
+<li><strong>Campaign map:</strong> <code>(line, kapvorm) → {day: order_count}</code></li>
+<li><strong>Move logic:</strong> An isolated kapvorm order (its kapvorm appears only on that day) is a candidate. The regrouper finds a target day that already has ≥ 1 order of the same kapvorm, within the order's delivery window. Both days are verified through the oracle after the move.</li>
+<li><strong>Swap fallback:</strong> If the target day is at capacity, one order from the target day moves to the source day to make room.</li>
+</ul>
+</div>
+</section>
+<section id="stage-9">
+<div class="card grey">
+<h2>Stage 9 — Plan Scoring</h2>
+<p>Plans are compared lexicographically — a lower value on an earlier field always wins regardless of later fields. Lower is better for all fields.</p>
+<table><thead><tr><th>Priority</th><th>Field</th><th>Description</th></tr></thead><tbody>
+<tr style="background:#dbeafe"><td>1</td><td><code>rejected_orders</code></td><td>Number of orders that could not be scheduled at all — the primary success metric</td></tr>
+<tr><td>2</td><td><code>rejected_units</code></td><td>Total production units across all rejected orders</td></tr>
+<tr><td>3</td><td><code>transition_minutes</code></td><td>Total changeover time across all days and lines</td></tr>
+<tr><td>4</td><td><code>scale_changes</code></td><td>Number of scale-format changes (drives packaging-line resetting)</td></tr>
+<tr><td>5</td><td><code>early_days</code></td><td>Orders produced more than 7 days before delivery (stock-holding risk)</td></tr>
+<tr><td>6</td><td><code>moved_forecast_orders</code></td><td>Forecast orders relocated from their original forecast day</td></tr>
+</tbody></table>
+</div>
+</section>
+<section id="constraints">
+<div class="card grey">
+<h2>Constraint Reference</h2>
+<p>All 41 production rules. <span style="color:#166534;font-weight:500">BUILD</span> = day builder &nbsp;·&nbsp; <span style="color:#1e40af;font-weight:500">FILTER</span> = slot filter (cannot be violated by construction) &nbsp;·&nbsp; <span style="color:#854d0e;font-weight:500">VERIFY</span> = report-only &nbsp;·&nbsp; <span style="color:#6b7280;font-weight:500">NONE</span> = not enforced (data present in spreadsheet, rule absent from code).</p>
+<table><thead><tr><th>ID</th><th>Rule</th><th>Stage</th></tr></thead><tbody>
+<tr><td><code>C1</code></td><td>Shift end time — 22:30 normal, 20:30 Friday</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>C2</code></td><td>Shift start per line — L1 06:00, L2 06:30</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>C3</code></td><td>Production window before delivery date</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>C4</code></td><td>Workdays only (Mon–Fri)</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>C5</code></td><td>Frozen days are untouchable</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>L1</code></td><td>Line-only products (alleen_l1 / alleen_l2)</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>L2</code></td><td>Explicit line exclusion (kan_niet)</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>L3</code></td><td>Line preference (voorkeur) and load balancing</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>L4</code></td><td>Maximum productions per day</td><td style="color:#6b7280;font-weight:500">NONE</td></tr>
+<tr><td><code>L5</code></td><td>Spiral (freezer) availability per line</td><td style="color:#6b7280;font-weight:500">NONE</td></tr>
+<tr><td><code>K1</code></td><td>Daily planning capacity per line</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>K2</code></td><td>Real capacity under actual changeovers (oracle)</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>O1</code></td><td>Changeover time between consecutive orders (MAX rule)</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>O2</code></td><td>Scale format families (kop equivalence)</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>O3</code></td><td>Daesang fixed-time exception (20 min)</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>O4</code></td><td>Minimise total changeover per day (TSP sequencer)</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>O5</code></td><td>Cluster same-format orders on one line (objective term)</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>A1</code></td><td>Allergen level must not drop without cleaning</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>A2</code></td><td>Cross-contamination cleaning</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>A3</code></td><td>Allergen level derived from X-count / label</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>A4</code></td><td>Halal isolation</td><td style="color:#6b7280;font-weight:500">NONE</td></tr>
+<tr><td><code>A5</code></td><td>Sate (level 6) stops the other production line</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>A6</code></td><td>Sate reserves the other line's minutes in the solver</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>D1</code></td><td>Allowed production weekdays per product</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>D2</code></td><td>MEP lead time (D-1 / D-2) warning</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>D3</code></td><td>Parameterised MEP lead days</td><td style="color:#6b7280;font-weight:500">NONE</td></tr>
+<tr><td><code>D4</code></td><td>Special day restriction string</td><td style="color:#6b7280;font-weight:500">NONE</td></tr>
+<tr><td><code>M1</code></td><td>Shared single-unit equipment stagger</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>M2</code></td><td>Device conflicts become solver no-good cuts</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>P1</code></td><td>Headcount ramp between orders (max +3 FTE)</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>P2</code></td><td>FTE limits per shift</td><td style="color:#6b7280;font-weight:500">NONE</td></tr>
+<tr><td><code>P3</code></td><td>Skill level requirements</td><td style="color:#6b7280;font-weight:500">NONE</td></tr>
+<tr><td><code>V1</code></td><td>Production duration from line speed</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>V2</code></td><td>Speed caps (e.g. 800 g on L2)</td><td style="color:#6b7280;font-weight:500">NONE</td></tr>
+<tr><td><code>S1</code></td><td>Sort by kapvorm, then ascending allergen level</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>S2</code></td><td>Must / cannot be first or last of day</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+<tr><td><code>S3</code></td><td>Line-day set must supply both its ends</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>G1</code></td><td>Identical products together, smallest first</td><td style="color:#6b7280;font-weight:500">NONE</td></tr>
+<tr><td><code>X1</code></td><td>No partial delivery of a split order</td><td style="color:#1e40af;font-weight:500">FILTER</td></tr>
+<tr><td><code>X2</code></td><td>Every order scheduled or rejected exactly once</td><td style="color:#854d0e;font-weight:500">VERIFY</td></tr>
+<tr><td><code>X3</code></td><td>Frozen days replay byte-for-byte</td><td style="color:#166534;font-weight:500">BUILD</td></tr>
+</tbody></table>
+</div>
+</section>
+<section id="constants">
+<div class="card grey">
+<h2>Numeric Constants</h2>
+<p>All values are read from source at report generation time. Values marked <code>env</code> can be overridden at run time.</p>
+<table><thead><tr><th>Parameter</th><th>Value</th><th>Unit</th><th>Source</th></tr></thead><tbody>
+<tr><td colspan="4" style="background:#f9fafb;font-size:11px;font-weight:500;color:#6b7280">Shift windows — src/config.py</td></tr>
+<tr><td>L1 shift start</td><td>06:00</td><td>time</td><td><code>_LINE_START[1]</code></td></tr>
+<tr><td>L2 shift start</td><td>06:30</td><td>time</td><td><code>_LINE_START[2]</code></td></tr>
+<tr><td>Shift end (normal)</td><td>22:30</td><td>time</td><td><code>_SHIFT_END</code></td></tr>
+<tr><td>Shift end (Friday)</td><td>20:30</td><td>time</td><td><code>_SHIFT_END_VR</code></td></tr>
+<tr><td>L1 normal capacity</td><td>990</td><td>min</td><td>capacity.json explicit block</td></tr>
+<tr><td>L2 normal capacity</td><td>960</td><td>min</td><td>capacity.json explicit block</td></tr>
+<tr><td>L1 Friday capacity</td><td>870</td><td>min</td><td>capacity.json explicit block</td></tr>
+<tr><td>L2 Friday capacity</td><td>840</td><td>min</td><td>capacity.json explicit block</td></tr>
+<tr><td>Planning reserve</td><td>0</td><td>min</td><td><code>_PLANNING_RESERVE</code></td></tr>
+<tr><td colspan="4" style="background:#f9fafb;font-size:11px;font-weight:500;color:#6b7280">Changeover times — data/setup_times.json</td></tr>
+<tr><td>Same format</td><td>20</td><td>min</td><td>zelfde_formaat</td></tr>
+<tr><td>Different format</td><td>30</td><td>min</td><td>ander_formaat</td></tr>
+<tr><td>Kapvorm change</td><td>+15</td><td>min</td><td>andere_kapvorm (added to format time)</td></tr>
+<tr><td>Allergen cleaning</td><td>30</td><td>min</td><td>allergie_daling</td></tr>
+<tr><td>CFS transition</td><td>15</td><td>min</td><td>cfs_omstelling</td></tr>
+<tr><td>CFS afterrun</td><td>60</td><td>min</td><td>cfs_naloop</td></tr>
+<tr><td>Multifill floor</td><td>30</td><td>min</td><td>machine floors</td></tr>
+<tr><td>Leonard floor</td><td>40</td><td>min</td><td>machine floors</td></tr>
+<tr><td>Daesang exception</td><td>20</td><td>min</td><td>daesang_uitzondering (overrides all above)</td></tr>
+<tr><td colspan="4" style="background:#f9fafb;font-size:11px;font-weight:500;color:#6b7280">Solver — src/scheduler_ortools_v3.py</td></tr>
+<tr><td>Unscheduled order base cost</td><td>10 000</td><td>pts</td><td>hardcoded</td></tr>
+<tr><td>Unscheduled unit weight</td><td>10</td><td>pts/unit</td><td><code>env FRIGI_UNSCHEDULED_UNIT_WEIGHT</code></td></tr>
+<tr><td>Late penalty</td><td>100</td><td>pts/day</td><td><code>env FRIGI_LATE_PENALTY</code></td></tr>
+<tr><td>Early grace period</td><td>7</td><td>days</td><td><code>env FRIGI_EARLY_GRACE_DAYS</code></td></tr>
+<tr><td>Off-priority line penalty</td><td>50</td><td>pts</td><td><code>env FRIGI_OFF_PRIO_LINE_PENALTY</code></td></tr>
+<tr><td>Positie soft miss</td><td>500</td><td>pts</td><td><code>env FRIGI_POSITIE_MOET_PENALTY</code></td></tr>
+<tr><td>Search workers</td><td>8</td><td>threads</td><td>hardcoded</td></tr>
+<tr><td>Committed solve budget</td><td>240</td><td>s</td><td>capacity.json feedback_timeout_seconds</td></tr>
+<tr><td>Open-tail solve budget</td><td>90</td><td>s</td><td><code>env FRIGI_FAR_TIMEOUT_SECONDS</code></td></tr>
+<tr><td>Max iterations (committed)</td><td>15</td><td>iters</td><td><code>env FRIGI_MAX_ITERS</code></td></tr>
+<tr><td>Max iterations (open-tail)</td><td>5</td><td>iters</td><td><code>env FRIGI_FAR_MAX_ITERS</code></td></tr>
+<tr><td colspan="4" style="background:#f9fafb;font-size:11px;font-weight:500;color:#6b7280">Staffing, sequencing &amp; allergens</td></tr>
+<tr><td>Max FTE ramp per order</td><td>3</td><td>FTE</td><td>capacity.json max_bezetting_delta</td></tr>
+<tr><td>Commit horizon</td><td>4</td><td>weeks</td><td><code>COMMIT_WEEKS</code> (plan_state.py)</td></tr>
+<tr><td>Sequencer time limit</td><td>2.0</td><td>s</td><td><code>env FRIGI_SEQUENCE_TIME_LIMIT</code></td></tr>
+<tr><td>Sate level threshold</td><td>6</td><td>level</td><td><code>SATE_NIVEAU</code> (allergen_rules.py)</td></tr>
+<tr><td>Device proxy buffer</td><td>30</td><td>min</td><td><code>env FRIGI_PROXY_BUFFER_MIN</code></td></tr>
+<tr><td>Device line cap fraction</td><td>0.7</td><td>—</td><td><code>env FRIGI_DEVICE_LINE_CAP</code></td></tr>
+</tbody></table>
+</div>
+</section>
+<section id="not-enforced">
+<div class="card amber" style="background:#fffbeb">
+<h2>Not Yet Enforced</h2>
+<p>These 9 rules have a data field on the <code>Product</code> model and a column in Planning info.xlsx — which makes them look implemented. Nothing in the running system reads them. They are listed here so they can be prioritised for future development.</p>
+<table><thead><tr><th>ID</th><th>Rule</th><th>Why absent</th></tr></thead><tbody>
+<tr><td><code>L4</code></td><td>Maximum productions per day</td><td>Field always 0; rule never triggered</td></tr>
+<tr><td><code>L5</code></td><td>Spiral (freezer) availability per line</td><td>Both flags default True; nothing reads them</td></tr>
+<tr><td><code>A4</code></td><td>Halal isolation</td><td>Halal-first-of-day and pork separation not implemented</td></tr>
+<tr><td><code>D3</code></td><td>Parameterised MEP lead days</td><td>Only fixed D-1/D-2 split exists</td></tr>
+<tr><td><code>D4</code></td><td>Special day restriction string</td><td>Superseded by D1's explicit weekday columns</td></tr>
+<tr><td><code>P2</code></td><td>FTE limits per shift</td><td>Config block was dead and has been deleted</td></tr>
+<tr><td><code>P3</code></td><td>Skill level requirements</td><td>Computed in loader.py, never consumed downstream</td></tr>
+<tr><td><code>V2</code></td><td>Speed caps (e.g. 800 g on L2)</td><td>Duration always uses raw sheet speed without cap</td></tr>
+<tr><td><code>G1</code></td><td>Identical products together, smallest first</td><td>Written to products.json by setup loader; dropped in loader.py</td></tr>
+</tbody></table>
+</div>
+</section>
+</main>
+</body>
+</html>

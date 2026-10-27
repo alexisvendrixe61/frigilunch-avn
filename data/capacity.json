@@ -1,0 +1,56 @@
+{
+  "capacity_minuten": {
+    "normale_dag": {
+      "lijn1": 990,
+      "lijn2": 960
+    },
+    "vrijdag": {
+      "lijn1": 870,
+      "lijn2": 840
+    },
+    "_beschrijving": "Minuten die de assignment-solver per (dag, lijn) mag boeken. Dit is nu het VOLLEDIGE shiftvenster (L1 06:00-22:30, L2 06:30-22:30; vrijdag beide tot 20:30) — de planning reserve is 0. Was 900/870/750/720, oftewel venster minus 90 min (120 op vrijdag), als marge omdat stage 1 de echte omsteltijd pas kent nadat de dagvolgorde bepaald is. Gemeten op wk32 (--dry-run --reset, 4 runs zonder reserve tegen 3 met): afgewezen minuten 13.923 -> 9.503 (-32%, arms overlappen niet) en 238.625 stuks meer ingepland. Kosten: ~1 order per run die het dagschema niet meer rond krijgt; die wordt sinds de reconciliatie in create_plan.py als DAY-BUILD-DROP afgewezen in plaats van stilzwijgend als ingepland geteld. Zet terug op 900/870/750/720 om de marge te herstellen."
+  },
+  "production_timing": {
+    "min_days_before_delivery": 0,
+    "delivery_proximity_grace_days": 7,
+    "description": "Production may happen on any legal unfrozen day up to the delivery cutoff. Proximity is a soft objective after completeness and exact setup efficiency."
+  },
+  "staffing": {
+    "max_bezetting_delta": 3,
+    "description": "max_bezetting_delta caps INCREASES in per-line headcount between consecutive orders (you cannot ramp staff up faster than this mid-shift); a decrease of any size is always fine. A jump beyond it is still allowed when the incoming order's own production period exceeds 4h. Read by src/scheduler.py (check_bezetting_continuity) and src/day_sequencer.py (arc pruning)."
+  },
+  "toestellen_beschikbaarheid": {
+    "_beschrijving": "Aantal beschikbare eenheden per toestel. Toestellen met >=2 kunnen NOOIT conflicteren tussen L1 en L2 (check is availability < 2). Bron: foto's aangeleverd door planner.",
+    "gernal": 2,
+    "teriet": 4,
+    "berief": 3,
+    "ks_menger": 1,
+    "stephan_mixer_klein": 1,
+    "stephan_mixer_groot": 1,
+    "leonard": 2,
+    "weegschalen": 99,
+    "multifill": 1,
+    "kaastrooi": 1,
+    "turbo": 8,
+    "handtmann": 5,
+    "multipond": 1,
+    "isihda_l1": 1,
+    "isihda_l2": 1,
+    "grote_cfs_pomp": 1,
+    "_opmerkingen": {
+      "gernal": "2 stuks (planner, meeting 02/10)",
+      "leonard": "2 stuks (planner, meeting 02/10)",
+      "turbo": "8 enkele + 3 dubbele -> ruim voldoende, nooit knelpunt",
+      "handtmann": "5 stuks (2 stroomverdelers)",
+      "teriet": "Terlet: 4 kookketels (verticaal roerwerk)",
+      "berief": "Berief: 3 kookketels (horizontaal roerwerk)",
+      "weegschalen": "AANNAME: niet in aangeleverde data; verondersteld ruim beschikbaar (bevestigen!)",
+      "grote_cfs_pomp": "GROTE ham-snijmachine=2 EN CFS dieptrekker=1 zijn in code samengevoegd tot 1 sleutel; conservatief op 1 (schaarste CFS). Later opsplitsen."
+    }
+  },
+  "or_tools_solver": {
+    "feedback_timeout_seconds": 240,
+    "feedback_iter_timeout_seconds": 10,
+    "description": "OR-Tools CP-SAT feedback-loop settings. feedback_timeout_seconds = wall-clock budget for ONE phase of the loop — the three-phase solver (line-restricted / flexible / forced-split retry) spends it up to three times, plus reconciliation. feedback_iter_timeout_seconds = per-iteration solve cap. Objective weights are env-tunable, see FRIGI_* in .env and src/scheduler_ortools_v3.py."
+  }
+}

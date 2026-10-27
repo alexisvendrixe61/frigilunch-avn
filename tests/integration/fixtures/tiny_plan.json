@@ -1,0 +1,48 @@
+{
+  "description": "Synthetic 3-order dataset for Benders smoke test",
+  "orders": [
+    {
+      "order_nr": "O001",
+      "art_nr": "P001",
+      "klant": "TestKlant",
+      "aantal": 300,
+      "lever_datum": "2026-10-09",
+      "productie_datum": "2026-10-07",
+      "lijn": 1
+    },
+    {
+      "order_nr": "O002",
+      "art_nr": "P002",
+      "klant": "TestKlant",
+      "aantal": 400,
+      "lever_datum": "2026-10-09",
+      "productie_datum": "2026-10-07",
+      "lijn": 2
+    },
+    {
+      "order_nr": "O003",
+      "art_nr": "P001",
+      "klant": "TestKlant",
+      "aantal": 250,
+      "lever_datum": "2026-10-09",
+      "productie_datum": "2026-10-08",
+      "lijn": 1
+    }
+  ],
+  "products": {
+    "P001": {
+      "art_nr": "P001",
+      "naam": "Product One",
+      "schaal": "UK59",
+      "kapvorm": "A",
+      "snelheid": 200
+    },
+    "P002": {
+      "art_nr": "P002",
+      "naam": "Product Two",
+      "schaal": "C2227",
+      "kapvorm": "B",
+      "snelheid": 150
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "setup_times": {
+    "beschrijving": "Ombouwtijden in minuten, o.b.v. klant-flowchart 'Bepaal ombouwtijd': standaardtijd per scenario, MAX genomen (nooit opgeteld) over alle toepasselijke scenario's voor een gegeven overgang. Lijnwissel: +30 min.",
+    "ombouw_standaard": {
+      "beschrijving": "zelfde_formaat/ander_formaat o.b.v. schaal-'formaat'-familie (zie rules._schaal_formaat: kop-gelijkwaardigheid, bovenplaat telt niet mee). cfs_overschakeling is nog niet toegepast in calculate_setup_time — CFS is nog geen modelleerde productielijn (zie prio_lijn.cfs in products.json, wel al ingelezen, nog niet gebruikt voor lijn-toewijzing of capaciteit).",
+      "zelfde_formaat": 20,
+      "ander_formaat": 30,
+      "cfs_overschakeling": 15
+    },
+    "kapvorm_wissel_extra": {
+      "beschrijving": "Ombouwtijd bij kapvorm-wissel",
+      "zelfde_kapvorm": 0,
+      "andere_kapvorm": 15
+    },
+    "reiniging": {
+      "allergie_daling": 30,
+      "lijnwissel": 30
+    },
+    "zelfde_machine_wissel": {
+      "beschrijving": "Minimum ombouwtijd als opeenvolgende producten dezelfde machine gebruiken (klantfeedback: multifill->multifill 30 min op L2, Leonard->Leonard 40 min op L1 — Leonard bevestigd door klant-flowchart). Toegepast als ondergrens bovenop de formaat/kapvorm-berekening.",
+      "multifill": 30,
+      "leonard": 40
+    },
+    "daesang_uitzondering": {
+      "beschrijving": "Productie Daesang: tss 6542000 en 64420200 = 20 min overschakeling ipv 40min (zelfde rissoto)",
+      "art_nr_combinaties": [
+        {"van": "6542000", "naar": "64420200", "tijd": 20},
+        {"van": "64420200", "naar": "6542000", "tijd": 20}
+      ]
+    },
+    "schaal_configuratie": {
+      "beschrijving": "Mapping van schaal-identifiers naar kop (heads) en bovenplaten (top plates)",
+      "C2325-1C": {"kop": 1, "bovenplaten": 1},
+      "C2227-1H": {"kop": 1, "bovenplaten": 1},
+      "C2227-2K": {"kop": 2, "bovenplaten": 2},
+      "C2227-3R": {"kop": 3, "bovenplaten": 3},
+      "UK-59": {"kop": 2, "bovenplaten": 2},
+      "KRAFT ROND": {"kop": 1, "bovenplaten": 1}
+    }
+  }
+}

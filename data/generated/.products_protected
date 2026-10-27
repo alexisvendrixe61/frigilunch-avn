@@ -1,0 +1,8 @@
+GENERATED FILE — reingested on every run
+
+`products.json` is regenerated from `data/source_data/Planning info.xlsx`
+(the "product database") every time create_plan.py or gen_chart_data.py
+runs. Do not hand-edit it — changes will be overwritten on the next run.
+Make product corrections in Planning info.xlsx instead.
+
+Updated: 2026-08-18

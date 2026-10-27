@@ -1,0 +1,14 @@
+{
+  "run_start": "2026-09-07",
+  "run_starts": ["2026-08-31", "2026-09-07", "2026-09-14", "2026-09-21", "2026-09-28"],
+  "delivery_date": "2026-10-02",
+  "orders": [
+    {"plan_nr": "44924", "known_date": "2026-05-20", "article": "61690500", "units": 8800, "minutes": 240, "may_open": true, "may_close": false, "days": ["di", "wo", "do", "vr"], "devices": []},
+    {"plan_nr": "44927", "known_date": "2026-05-20", "article": "61693700", "units": 10000, "minutes": 400, "may_open": false, "may_close": false, "days": ["di", "wo", "do", "vr"], "devices": []},
+    {"plan_nr": "45328", "known_date": "2026-07-13", "article": "63311100", "units": 2500, "minutes": 70, "may_open": true, "may_close": false, "days": ["ma", "di", "wo", "do", "vr"], "devices": ["gernal", "multifill"]},
+    {"plan_nr": "45398", "known_date": "2026-08-03", "article": "64224100", "units": 6000, "minutes": 240, "may_open": true, "may_close": true, "days": ["ma", "di", "wo", "do", "vr"], "devices": []},
+    {"plan_nr": "45370", "known_date": "2026-07-17", "article": "65050400", "units": 6000, "minutes": 105, "may_open": true, "may_close": true, "days": ["ma", "di", "wo", "do", "vr"], "devices": ["gernal"]},
+    {"plan_nr": "45697", "known_date": "2026-09-18", "article": "65060000", "units": 4000, "minutes": 75, "may_open": true, "may_close": true, "days": ["di", "wo", "vr"], "devices": []},
+    {"plan_nr": "45698", "known_date": "2026-09-18", "article": "65060400", "units": 4000, "minutes": 75, "may_open": true, "may_close": true, "days": ["di", "wo", "vr"], "devices": []}
+  ]
+}

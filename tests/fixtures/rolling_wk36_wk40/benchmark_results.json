@@ -1,0 +1,12 @@
+{
+  "description": "Deterministic target-order replay after rolling optimizer changes",
+  "priority": ["complete", "transition_efficiency", "delivery_proximity", "forecast_stability"],
+  "results": [
+    {"week": 36, "known_orders": 5, "scheduled_orders": 5, "rejected_orders": 0},
+    {"week": 37, "known_orders": 5, "scheduled_orders": 5, "rejected_orders": 0},
+    {"week": 38, "known_orders": 5, "scheduled_orders": 5, "rejected_orders": 0},
+    {"week": 39, "known_orders": 7, "scheduled_orders": 7, "rejected_orders": 0},
+    {"week": 40, "known_orders": 7, "scheduled_orders": 7, "rejected_orders": 0}
+  ],
+  "frozen_control": {"scheduled_orders": 0, "rejected_orders": 7, "category": "late_after_freeze"}
+}

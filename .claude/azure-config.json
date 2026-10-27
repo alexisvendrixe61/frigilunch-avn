@@ -1,0 +1,21 @@
+{
+    "tenantNames": {
+        "523547c7-9f96-45a5-9f07-1dbd22c7e3a6": "element61"
+    },
+    "services": {
+        "foundry": {
+            "tenant": "523547c7-9f96-45a5-9f07-1dbd22c7e3a6",
+            "subscription": "1ce45907-24f6-4c1e-ac04-3686ac90d9c5",
+            "user": "alexis.vendrix@element61.be"
+        },
+        "fabric": {
+            "tenant": "523547c7-9f96-45a5-9f07-1dbd22c7e3a6",
+            "user": "alexis.vendrix@element61.be"
+        },
+        "loganalytics": {
+            "tenant": "523547c7-9f96-45a5-9f07-1dbd22c7e3a6",
+            "subscription": "f61bb6a5-2da6-4516-95f0-157981774342",
+            "user": "alexis.vendrix@element61.be"
+        }
+    }
+}

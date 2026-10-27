@@ -1,0 +1,1 @@
+# frigilunch.application — orchestration layer

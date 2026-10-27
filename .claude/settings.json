@@ -1,0 +1,9 @@
+{
+  "env": {
+    "ANTHROPIC_FOUNDRY_BASE_URL": "https://aif-e61-dsa-prod.cognitiveservices.azure.com/anthropic"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"C:/Users/AlexisVendrix/Documents/11_Projects/04_frigilunch/frigilunch_discovery/.claude/statusline.sh\""
+  }
+}

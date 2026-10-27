@@ -1,0 +1,34 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# ── Virtual environment ────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Excel temp / lock files ────────────────────────────────────────────────────
+~$*.xlsx
+~$*.xls
+
+# ── Node (documentation scripts) ──────────────────────────────────────────────
+documentation/node_modules/
+documentation/package-lock.json
+
+# ── Claude Code local files ────────────────────────────────────────────────────
+.claude/msal-cache.bin
+.claude/settings.local.json
+
+# ── OS / editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.env
+.claude/skills/skill-code-council/
