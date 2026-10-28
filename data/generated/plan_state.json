@@ -6,1162 +6,16 @@
         {
           "aantal": 26810,
           "eind": "13:40",
-          "identity": "plan:45459",
+          "identity": "plan:45463",
           "ombouw_voor": 0,
           "start": "06:00"
         },
         {
           "aantal": 26810,
-          "eind": "22:00",
-          "identity": "plan:45308",
-          "ombouw_voor": 40,
-          "start": "14:20"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 710,
-          "eind": "07:15",
-          "identity": "plan:45472",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 5700,
-          "eind": "10:05",
-          "identity": "plan:45382",
-          "ombouw_voor": 30,
-          "start": "07:45"
-        },
-        {
-          "aantal": 4200,
-          "eind": "12:30",
-          "identity": "plan:45296",
-          "ombouw_voor": 30,
-          "start": "10:35"
-        },
-        {
-          "aantal": 9000,
-          "eind": "17:10",
-          "identity": "plan:45407",
-          "ombouw_voor": 30,
-          "start": "13:00"
-        },
-        {
-          "aantal": 2500,
-          "eind": "18:40",
-          "identity": "plan:45418",
-          "ombouw_voor": 20,
-          "start": "17:30"
-        },
-        {
-          "aantal": 1200,
-          "eind": "19:40",
-          "identity": "plan:45385",
-          "ombouw_voor": 20,
-          "start": "19:00"
-        },
-        {
-          "aantal": 384,
-          "eind": "20:50",
-          "identity": "plan:45474",
-          "ombouw_voor": 30,
-          "start": "20:10"
-        }
-      ],
-      "warnings": [
-        "MEP datum 2026-09-27 voor order 2026-08-05 00:00:00 (FITMEALS EW PULLED KIP CURRY HALAL 425G NL FR D) valt op weekend - eerder klaarzetten",
-        "Lijn 1 bezetting 97% van het 990min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->2 met 30 min reiniging (order 2026-08-10 00:00:00)"
-      ]
-    },
-    "2026-09-29": {
-      "lijn1": [
-        {
-          "aantal": 26810,
-          "eind": "13:40",
-          "identity": "plan:45310",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 26810,
-          "eind": "21:50",
+          "eind": "21:40",
           "identity": "plan:43614",
-          "ombouw_voor": 30,
-          "start": "14:10"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 384,
-          "eind": "07:05",
-          "identity": "plan:45250",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 576,
-          "eind": "08:00",
-          "identity": "plan:45244",
-          "ombouw_voor": 20,
-          "start": "07:25"
-        },
-        {
-          "aantal": 650,
-          "eind": "08:50",
-          "identity": "plan:45561",
-          "ombouw_voor": 30,
-          "start": "08:30"
-        },
-        {
-          "aantal": 2100,
-          "eind": "10:20",
-          "identity": "plan:45292",
-          "ombouw_voor": 30,
-          "start": "09:20"
-        },
-        {
-          "aantal": 1200,
-          "eind": "11:15",
-          "identity": "plan:45039",
-          "ombouw_voor": 20,
-          "start": "10:40"
-        },
-        {
-          "aantal": 1300,
-          "eind": "12:25",
-          "identity": "plan:45482",
-          "ombouw_voor": 30,
-          "start": "11:45"
-        },
-        {
-          "aantal": 750,
-          "eind": "13:10",
-          "identity": "plan:45485",
-          "ombouw_voor": 20,
-          "start": "12:45"
-        },
-        {
-          "aantal": 11700,
-          "eind": "18:50",
-          "identity": "plan:45404",
-          "ombouw_voor": 20,
-          "start": "13:30"
-        },
-        {
-          "aantal": 1000,
-          "eind": "19:40",
-          "identity": "plan:45411",
-          "ombouw_voor": 20,
-          "start": "19:10"
-        },
-        {
-          "aantal": 1000,
-          "eind": "20:40",
-          "identity": "plan:45331",
-          "ombouw_voor": 30,
-          "start": "20:10"
-        }
-      ],
-      "warnings": [
-        "Lijn 1 bezetting 96% van het 990min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.5->3 met 30 min reiniging (order 2026-02-19 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->2 met 30 min reiniging (order 2026-07-01 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.5->3 met 30 min reiniging (order 2026-08-10 00:00:00)"
-      ]
-    },
-    "2026-09-30": {
-      "lijn1": [
-        {
-          "aantal": 3000,
-          "eind": "07:25",
-          "identity": "plan:44926",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 5000,
-          "eind": "09:20",
-          "identity": "plan:45489",
-          "ombouw_voor": 20,
-          "start": "07:45"
-        },
-        {
-          "aantal": 4000,
-          "eind": "10:55",
-          "identity": "plan:45395",
-          "ombouw_voor": 20,
-          "start": "09:40"
-        },
-        {
-          "aantal": 3000,
-          "eind": "12:25",
-          "identity": "plan:45394",
-          "ombouw_voor": 30,
-          "start": "11:25"
-        },
-        {
-          "aantal": 3000,
-          "eind": "14:40",
-          "identity": "plan:44925",
-          "ombouw_voor": 30,
-          "start": "12:55"
-        },
-        {
-          "aantal": 8800,
-          "eind": "19:10",
-          "identity": "plan:44924",
-          "ombouw_voor": 30,
-          "start": "15:10"
-        },
-        {
-          "aantal": 4000,
-          "eind": "20:55",
-          "identity": "plan:45698",
-          "ombouw_voor": 30,
-          "start": "19:40"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 1800,
-          "eind": "07:25",
-          "identity": "plan:45297",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 3000,
-          "eind": "11:05",
-          "identity": "plan:44923",
-          "ombouw_voor": 30,
-          "start": "07:55"
-        },
-        {
-          "aantal": 600,
-          "eind": "12:00",
-          "identity": "plan:45288",
-          "ombouw_voor": 30,
-          "start": "11:35"
-        },
-        {
-          "aantal": 2250,
-          "eind": "13:35",
-          "identity": "plan:45406",
-          "ombouw_voor": 30,
-          "start": "12:30"
-        },
-        {
-          "aantal": 1700,
-          "eind": "14:55",
-          "identity": "plan:45293",
-          "ombouw_voor": 30,
-          "start": "14:05"
-        },
-        {
-          "aantal": 2500,
-          "eind": "16:35",
-          "identity": "plan:45328",
-          "ombouw_voor": 30,
-          "start": "15:25"
-        },
-        {
-          "aantal": 2050,
-          "eind": "18:05",
-          "identity": "plan:45405",
-          "ombouw_voor": 30,
-          "start": "17:05"
-        },
-        {
-          "aantal": 2000,
-          "eind": "19:20",
-          "identity": "plan:43944",
-          "ombouw_voor": 20,
-          "start": "18:25"
-        },
-        {
-          "aantal": 1000,
-          "eind": "21:40",
-          "identity": "plan:45471",
-          "ombouw_voor": 30,
-          "start": "19:50"
-        }
-      ],
-      "warnings": [
-        "Lijn 1 bezetting 90% van het 990min venster > 90% - risico bij uitval",
-        "Lijn 2 bezetting 95% van het 960min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.4->2 met 30 min reiniging (order 2026-05-20 00:00:00)",
-        "[WARNING] KAPVORM_WISSEL: L1: kapvorm-wissel zonder allergie-reden: H10 -> H29 (order 2026-09-18 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: BOF BE HAMWITLOOFROLLETJE IN KAASSAUS 800G heeft voorkeur voor L1 maar staat op L2 (order 2026-05-20 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-05-20 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-08-04 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-08-10 00:00:00)"
-      ]
-    },
-    "2026-10-01": {
-      "lijn1": [
-        {
-          "aantal": 26810,
-          "eind": "13:40",
-          "identity": "plan:43860",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 5000,
-          "eind": "15:35",
-          "identity": "plan:45488",
           "ombouw_voor": 20,
           "start": "14:00"
-        },
-        {
-          "aantal": 5000,
-          "eind": "17:50",
-          "identity": "plan:45487",
-          "ombouw_voor": 40,
-          "start": "16:15"
-        },
-        {
-          "aantal": 6000,
-          "eind": "19:55",
-          "identity": "plan:45024",
-          "ombouw_voor": 20,
-          "start": "18:10"
-        },
-        {
-          "aantal": 3000,
-          "eind": "21:25",
-          "identity": "plan:45399",
-          "ombouw_voor": 30,
-          "start": "20:25"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 576,
-          "eind": "07:30",
-          "identity": "plan:45475",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 576,
-          "eind": "08:50",
-          "identity": "plan:45476",
-          "ombouw_voor": 30,
-          "start": "08:00"
-        },
-        {
-          "aantal": 3000,
-          "eind": "10:20",
-          "identity": "plan:45355",
-          "ombouw_voor": 30,
-          "start": "09:20"
-        },
-        {
-          "aantal": 3400,
-          "eind": "12:25",
-          "identity": "plan:45291",
-          "ombouw_voor": 30,
-          "start": "10:50"
-        },
-        {
-          "aantal": 11300,
-          "eind": "17:55",
-          "identity": "plan:45290",
-          "ombouw_voor": 20,
-          "start": "12:45"
-        },
-        {
-          "aantal": 3650,
-          "eind": "20:05",
-          "identity": "plan:45289",
-          "ombouw_voor": 20,
-          "start": "18:15"
-        },
-        {
-          "aantal": 1800,
-          "eind": "21:30",
-          "identity": "plan:45037",
-          "ombouw_voor": 30,
-          "start": "20:35"
-        }
-      ],
-      "warnings": [
-        "Lijn 1 bezetting 93% van het 990min venster > 90% - risico bij uitval",
-        "Lijn 2 bezetting 94% van het 960min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.5->3 met 40 min reiniging (order 2026-08-10 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 30 min reiniging (order 2026-08-03 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-08-10 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: BOF BE BABI PANGANG RIJSTMIX 450G heeft voorkeur voor L1 maar staat op L2 (order 2026-07-17 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.5->2 met 30 min reiniging (order 2026-07-01 00:00:00)"
-      ]
-    },
-    "2026-10-02": {
-      "lijn1": [
-        {
-          "aantal": 4500,
-          "eind": "07:20",
-          "identity": "plan:45368",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 6000,
-          "eind": "11:50",
-          "identity": "plan:45398",
-          "ombouw_voor": 30,
-          "start": "07:50"
-        },
-        {
-          "aantal": 4000,
-          "eind": "13:35",
-          "identity": "plan:45352",
-          "ombouw_voor": 30,
-          "start": "12:20"
-        },
-        {
-          "aantal": 3000,
-          "eind": "15:15",
-          "identity": "plan:45353",
-          "ombouw_voor": 40,
-          "start": "14:15"
-        },
-        {
-          "aantal": 2646,
-          "eind": "16:35",
-          "identity": "plan:45397",
-          "ombouw_voor": 30,
-          "start": "15:45"
-        },
-        {
-          "aantal": 3000,
-          "eind": "17:55",
-          "identity": "plan:45356",
-          "ombouw_voor": 20,
-          "start": "16:55"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 2300,
-          "eind": "07:35",
-          "identity": "plan:45294",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 2300,
-          "eind": "09:00",
-          "identity": "plan:45295",
-          "ombouw_voor": 20,
-          "start": "07:55"
-        },
-        {
-          "aantal": 4000,
-          "eind": "10:45",
-          "identity": "plan:45697",
-          "ombouw_voor": 30,
-          "start": "09:30"
-        },
-        {
-          "aantal": 6000,
-          "eind": "13:00",
-          "identity": "plan:45370",
-          "ombouw_voor": 30,
-          "start": "11:15"
-        },
-        {
-          "aantal": 3360,
-          "eind": "14:55",
-          "identity": "plan:45509",
-          "ombouw_voor": 30,
-          "start": "13:30"
-        },
-        {
-          "aantal": 1150,
-          "eind": "17:35",
-          "identity": "plan:45473",
-          "ombouw_voor": 30,
-          "start": "15:25"
-        },
-        {
-          "aantal": 2750,
-          "eind": "19:40",
-          "identity": "plan:45409",
-          "ombouw_voor": 30,
-          "start": "18:25"
-        }
-      ],
-      "warnings": [
-        "Lijn 2 bezetting 92% van het 840min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.4->2 met 30 min reiniging (order 2026-08-03 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: ALDI BE GEHAKTBAL PROVENCAAL GEB AARDAP 450G (MIXED) heeft voorkeur voor L1 maar staat op L2 (order 2026-09-18 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: CARREFOUR MACARONI HAM KAAS 450G heeft voorkeur voor L1 maar staat op L2 (order 2026-07-17 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-17 00:00:00)"
-      ]
-    },
-    "2026-10-05": {
-      "lijn1": [
-        {
-          "aantal": 13405,
-          "eind": "13:40",
-          "identity": "plan:45322",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 26810,
-          "eind": "21:50",
-          "identity": "plan:45466",
-          "ombouw_voor": 30,
-          "start": "14:10"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 830,
-          "eind": "07:30",
-          "identity": "plan:45565",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 1000,
-          "eind": "08:35",
-          "identity": "plan:45391",
-          "ombouw_voor": 30,
-          "start": "08:00"
-        },
-        {
-          "aantal": 700,
-          "eind": "09:25",
-          "identity": "plan:45573",
-          "ombouw_voor": 30,
-          "start": "09:05"
-        },
-        {
-          "aantal": 5700,
-          "eind": "12:35",
-          "identity": "plan:45412",
-          "ombouw_voor": 30,
-          "start": "09:55"
-        },
-        {
-          "aantal": 6000,
-          "eind": "15:50",
-          "identity": "plan:45410",
-          "ombouw_voor": 30,
-          "start": "13:05"
-        },
-        {
-          "aantal": 2150,
-          "eind": "17:20",
-          "identity": "plan:45572",
-          "ombouw_voor": 30,
-          "start": "16:20"
-        },
-        {
-          "aantal": 960,
-          "eind": "19:30",
-          "identity": "plan:45535",
-          "ombouw_voor": 30,
-          "start": "17:50"
-        },
-        {
-          "aantal": 1000,
-          "eind": "21:40",
-          "identity": "plan:45510",
-          "ombouw_voor": 20,
-          "start": "19:50"
-        }
-      ],
-      "warnings": [
-        "Lijn 1 bezetting 96% van het 990min venster > 90% - risico bij uitval",
-        "Lijn 2 bezetting 95% van het 960min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-08-24 00:00:00)"
-      ]
-    },
-    "2026-10-06": {
-      "lijn1": [
-        {
-          "aantal": 26810,
-          "eind": "13:40",
-          "identity": "plan:45462",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 20000,
-          "eind": "20:35",
-          "identity": "plan:45065",
-          "ombouw_voor": 40,
-          "start": "14:20"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 384,
-          "eind": "07:15",
-          "identity": "plan:45566",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 5700,
-          "eind": "10:25",
-          "identity": "plan:45381",
-          "ombouw_voor": 30,
-          "start": "07:45"
-        },
-        {
-          "aantal": 2500,
-          "eind": "12:05",
-          "identity": "plan:45587",
-          "ombouw_voor": 30,
-          "start": "10:55"
-        },
-        {
-          "aantal": 4700,
-          "eind": "14:45",
-          "identity": "plan:45530",
-          "ombouw_voor": 30,
-          "start": "12:35"
-        },
-        {
-          "aantal": 3800,
-          "eind": "16:50",
-          "identity": "plan:45236",
-          "ombouw_voor": 20,
-          "start": "15:05"
-        },
-        {
-          "aantal": 5350,
-          "eind": "19:55",
-          "identity": "plan:45433",
-          "ombouw_voor": 20,
-          "start": "17:10"
-        }
-      ],
-      "warnings": [
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-27 00:00:00)"
-      ]
-    },
-    "2026-10-07": {
-      "lijn1": [
-        {
-          "aantal": 26810,
-          "eind": "13:40",
-          "identity": "plan:43621",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 16852,
-          "eind": "21:50",
-          "identity": "plan:45341",
-          "ombouw_voor": 30,
-          "start": "14:10"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 1296,
-          "eind": "07:05",
-          "identity": "plan:45558",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 5150,
-          "eind": "11:05",
-          "identity": "plan:45365",
-          "ombouw_voor": 30,
-          "start": "07:35"
-        },
-        {
-          "aantal": 900,
-          "eind": "11:50",
-          "identity": "plan:45559",
-          "ombouw_voor": 20,
-          "start": "11:25"
-        },
-        {
-          "aantal": 1600,
-          "eind": "13:05",
-          "identity": "plan:45384",
-          "ombouw_voor": 30,
-          "start": "12:20"
-        },
-        {
-          "aantal": 576,
-          "eind": "14:10",
-          "identity": "plan:45477",
-          "ombouw_voor": 30,
-          "start": "13:35"
-        },
-        {
-          "aantal": 1250,
-          "eind": "15:25",
-          "identity": "plan:45413",
-          "ombouw_voor": 30,
-          "start": "14:40"
-        },
-        {
-          "aantal": 3900,
-          "eind": "17:45",
-          "identity": "plan:45415",
-          "ombouw_voor": 30,
-          "start": "15:55"
-        },
-        {
-          "aantal": 3000,
-          "eind": "19:30",
-          "identity": "plan:45103",
-          "ombouw_voor": 20,
-          "start": "18:05"
-        },
-        {
-          "aantal": 750,
-          "eind": "20:25",
-          "identity": "plan:45483",
-          "ombouw_voor": 30,
-          "start": "20:00"
-        }
-      ],
-      "warnings": [
-        "Lijn 1 bezetting 96% van het 990min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-15 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: BOF BE KALKOEN WITBIERSAUS WORT BROCCOLI GRATIN 480G heeft voorkeur voor L1 maar staat op L2 (order 2026-07-17 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-17 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.5->2 met 30 min reiniging (order 2026-07-27 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->3 met 30 min reiniging (order 2026-08-10 00:00:00)"
-      ]
-    },
-    "2026-10-08": {
-      "lijn1": [
-        {
-          "aantal": 26810,
-          "eind": "13:40",
-          "identity": "plan:45375",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 26810,
-          "eind": "22:00",
-          "identity": "plan:45456",
-          "ombouw_voor": 40,
-          "start": "14:20"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 750,
-          "eind": "06:55",
-          "identity": "plan:45484",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 13400,
-          "eind": "14:10",
-          "identity": "plan:45607",
-          "ombouw_voor": 30,
-          "start": "07:25"
-        },
-        {
-          "aantal": 800,
-          "eind": "15:05",
-          "identity": "plan:45380",
-          "ombouw_voor": 30,
-          "start": "14:40"
-        },
-        {
-          "aantal": 4000,
-          "eind": "17:15",
-          "identity": "plan:45378",
-          "ombouw_voor": 20,
-          "start": "15:25"
-        },
-        {
-          "aantal": 4000,
-          "eind": "19:25",
-          "identity": "plan:45414",
-          "ombouw_voor": 20,
-          "start": "17:35"
-        },
-        {
-          "aantal": 2800,
-          "eind": "21:20",
-          "identity": "plan:45109",
-          "ombouw_voor": 30,
-          "start": "19:55"
-        }
-      ],
-      "warnings": [
-        "Lijn 1 bezetting 97% van het 990min venster > 90% - risico bij uitval",
-        "Lijn 2 bezetting 93% van het 960min venster > 90% - risico bij uitval"
-      ]
-    },
-    "2026-10-09": {
-      "lijn1": [
-        {
-          "aantal": 5000,
-          "eind": "08:55",
-          "identity": "plan:45023",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 4500,
-          "eind": "11:30",
-          "identity": "plan:45026",
-          "ombouw_voor": 30,
-          "start": "09:25"
-        },
-        {
-          "aantal": 10000,
-          "eind": "15:20",
-          "identity": "plan:45372",
-          "ombouw_voor": 30,
-          "start": "12:00"
-        },
-        {
-          "aantal": 3000,
-          "eind": "17:00",
-          "identity": "plan:45686",
-          "ombouw_voor": 40,
-          "start": "16:00"
-        },
-        {
-          "aantal": 5000,
-          "eind": "19:20",
-          "identity": "plan:45681",
-          "ombouw_voor": 40,
-          "start": "17:40"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 2800,
-          "eind": "07:50",
-          "identity": "plan:45038",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 1300,
-          "eind": "09:00",
-          "identity": "plan:45531",
-          "ombouw_voor": 30,
-          "start": "08:20"
-        },
-        {
-          "aantal": 750,
-          "eind": "09:55",
-          "identity": "plan:45440",
-          "ombouw_voor": 30,
-          "start": "09:30"
-        },
-        {
-          "aantal": 768,
-          "eind": "11:50",
-          "identity": "plan:45533",
-          "ombouw_voor": 30,
-          "start": "10:25"
-        },
-        {
-          "aantal": 768,
-          "eind": "13:30",
-          "identity": "plan:45534",
-          "ombouw_voor": 20,
-          "start": "12:10"
-        },
-        {
-          "aantal": 768,
-          "eind": "15:25",
-          "identity": "plan:45513",
-          "ombouw_voor": 30,
-          "start": "14:00"
-        },
-        {
-          "aantal": 192,
-          "eind": "16:05",
-          "identity": "plan:45220",
-          "ombouw_voor": 20,
-          "start": "15:45"
-        },
-        {
-          "aantal": 576,
-          "eind": "17:25",
-          "identity": "plan:45119",
-          "ombouw_voor": 20,
-          "start": "16:25"
-        },
-        {
-          "aantal": 477,
-          "eind": "18:15",
-          "identity": "plan:45540",
-          "ombouw_voor": 20,
-          "start": "17:45"
-        },
-        {
-          "aantal": 650,
-          "eind": "19:05",
-          "identity": "plan:45313",
-          "ombouw_voor": 30,
-          "start": "18:45"
-        }
-      ],
-      "warnings": [
-        "Lijn 1 bezetting 92% van het 870min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.5->2 met 40 min reiniging (order 2026-09-15 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->3 met 30 min reiniging (order 2026-08-04 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-08-24 00:00:00)"
-      ]
-    },
-    "2026-10-12": {
-      "lijn1": [
-        {
-          "aantal": 26810,
-          "eind": "13:40",
-          "identity": "plan:43864",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 26810,
-          "eind": "21:40",
-          "identity": "plan:45373",
-          "ombouw_voor": 20,
-          "start": "14:00"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 2200,
-          "eind": "07:40",
-          "identity": "plan:45416",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 12000,
-          "eind": "13:00",
-          "identity": "plan:45377",
-          "ombouw_voor": 30,
-          "start": "08:10"
-        },
-        {
-          "aantal": 6000,
-          "eind": "16:30",
-          "identity": "plan:45420",
-          "ombouw_voor": 30,
-          "start": "13:30"
-        },
-        {
-          "aantal": 11000,
-          "eind": "21:50",
-          "identity": "plan:43800",
-          "ombouw_voor": 30,
-          "start": "17:00"
-        }
-      ],
-      "warnings": [
-        "MEP datum 2026-10-10 voor order 2026-03-25 00:00:00 (ALDI BE ZALM MSC PROVENCAALS 2X225G (MIXED)) valt op weekend - eerder klaarzetten",
-        "Lijn 1 bezetting 95% van het 990min venster > 90% - risico bij uitval",
-        "Lijn 2 bezetting 96% van het 960min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->3 met 30 min reiniging (order 2026-08-04 00:00:00)"
-      ]
-    },
-    "2026-10-13": {
-      "lijn1": [
-        {
-          "aantal": 15320,
-          "eind": "13:40",
-          "identity": "plan:43646",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 5750,
-          "eind": "18:00",
-          "identity": "plan:45342",
-          "ombouw_voor": 30,
-          "start": "14:10"
-        },
-        {
-          "aantal": 3000,
-          "eind": "19:20",
-          "identity": "plan:45360",
-          "ombouw_voor": 20,
-          "start": "18:20"
-        },
-        {
-          "aantal": 5000,
-          "eind": "21:25",
-          "identity": "plan:45685",
-          "ombouw_voor": 30,
-          "start": "19:50"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 8800,
-          "eind": "14:10",
-          "identity": "plan:45318",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 9000,
-          "eind": "19:10",
-          "identity": "plan:45417",
-          "ombouw_voor": 30,
-          "start": "14:40"
-        },
-        {
-          "aantal": 768,
-          "eind": "20:45",
-          "identity": "plan:45541",
-          "ombouw_voor": 30,
-          "start": "19:40"
-        },
-        {
-          "aantal": 750,
-          "eind": "21:40",
-          "identity": "plan:45390",
-          "ombouw_voor": 30,
-          "start": "21:15"
-        }
-      ],
-      "warnings": [
-        "MEP datum 2026-10-11 voor order 2026-02-26 00:00:00 (ALDI BE RUNDSTONG BR MADEIRASAUS 750G) valt op weekend - eerder klaarzetten",
-        "MEP datum 2026-10-11 voor order 2026-07-27 00:00:00 (DLC MIX ZALM IN VISSAUS WORTELEN AARDAPPELPUREE) valt op weekend - eerder klaarzetten",
-        "Lijn 1 bezetting 93% van het 990min venster > 90% - risico bij uitval",
-        "Lijn 2 bezetting 95% van het 960min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-16 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 30 min reiniging (order 2026-09-15 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->0 met 30 min reiniging (order 2026-08-24 00:00:00)"
-      ]
-    },
-    "2026-10-14": {
-      "lijn1": [
-        {
-          "aantal": 26810,
-          "eind": "13:40",
-          "identity": "plan:45460",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 26810,
-          "eind": "22:00",
-          "identity": "plan:45548",
-          "ombouw_voor": 40,
-          "start": "14:20"
-        }
-      ],
-      "lijn2": [
-        {
-          "aantal": 1200,
-          "eind": "07:55",
-          "identity": "plan:45511",
-          "ombouw_voor": 0,
-          "start": "06:30"
-        },
-        {
-          "aantal": 1500,
-          "eind": "09:10",
-          "identity": "plan:45419",
-          "ombouw_voor": 30,
-          "start": "08:25"
-        },
-        {
-          "aantal": 550,
-          "eind": "09:50",
-          "identity": "plan:45431",
-          "ombouw_voor": 20,
-          "start": "09:30"
-        },
-        {
-          "aantal": 8000,
-          "eind": "13:50",
-          "identity": "plan:43801",
-          "ombouw_voor": 30,
-          "start": "10:20"
-        },
-        {
-          "aantal": 650,
-          "eind": "14:40",
-          "identity": "plan:45560",
-          "ombouw_voor": 30,
-          "start": "14:20"
-        },
-        {
-          "aantal": 2708,
-          "eind": "16:15",
-          "identity": "plan:43740",
-          "ombouw_voor": 30,
-          "start": "15:10"
-        },
-        {
-          "aantal": 2500,
-          "eind": "18:00",
-          "identity": "plan:45388",
-          "ombouw_voor": 30,
-          "start": "16:45"
-        },
-        {
-          "aantal": 1000,
-          "eind": "20:00",
-          "identity": "plan:45564",
-          "ombouw_voor": 30,
-          "start": "18:30"
-        },
-        {
-          "aantal": 960,
-          "eind": "21:40",
-          "identity": "plan:45568",
-          "ombouw_voor": 20,
-          "start": "20:20"
-        }
-      ],
-      "warnings": [
-        "Lijn 1 bezetting 97% van het 990min venster > 90% - risico bij uitval",
-        "Lijn 2 bezetting 95% van het 960min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 40 min reiniging (order 2026-08-25 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->3 met 30 min reiniging (order 2026-08-31 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: LIDL DE AT ROSTI HAM KAASSAUS 360G (MIXED) heeft voorkeur voor L1 maar staat op L2 (order 2026-03-11 00:00:00)",
-        "[WARNING] KAPVORM_WISSEL: L2: kapvorm-wissel zonder allergie-reden: NVT -> H22 (order 2026-03-11 00:00:00)",
-        "[WARNING] KAPVORM_WISSEL: L2: kapvorm-wissel zonder allergie-reden: H22 -> NVT (order 2026-07-27 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->0 met 30 min reiniging (order 2026-08-31 00:00:00)"
-      ]
-    },
-    "2026-10-15": {
-      "lijn1": [
-        {
-          "aantal": 3500,
-          "eind": "07:40",
-          "identity": "plan:45021",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 3000,
-          "eind": "09:25",
-          "identity": "plan:45366",
-          "ombouw_voor": 20,
-          "start": "08:00"
-        },
-        {
-          "aantal": 26810,
-          "eind": "19:55",
-          "identity": "plan:45374",
-          "ombouw_voor": 30,
-          "start": "12:15"
         }
       ],
       "lijn2": [
@@ -1173,70 +27,954 @@
           "start": "06:30"
         },
         {
-          "aantal": 768,
-          "eind": "09:10",
-          "identity": "plan:45538",
+          "aantal": 384,
+          "eind": "08:40",
+          "identity": "plan:45250",
           "ombouw_voor": 30,
           "start": "08:05"
         },
         {
-          "aantal": 768,
-          "eind": "10:35",
-          "identity": "plan:45539",
+          "aantal": 576,
+          "eind": "09:35",
+          "identity": "plan:45244",
           "ombouw_voor": 20,
-          "start": "09:30"
+          "start": "09:00"
         },
         {
-          "aantal": 1300,
-          "eind": "11:45",
-          "identity": "plan:45562",
+          "aantal": 4200,
+          "eind": "12:00",
+          "identity": "plan:45296",
           "ombouw_voor": 30,
-          "start": "11:05"
+          "start": "10:05"
         },
         {
-          "aantal": 18300,
-          "eind": "20:35",
-          "identity": "plan:45453",
+          "aantal": 11300,
+          "eind": "17:30",
+          "identity": "plan:45290",
+          "ombouw_voor": 20,
+          "start": "12:20"
+        },
+        {
+          "aantal": 3650,
+          "eind": "19:40",
+          "identity": "plan:45289",
+          "ombouw_voor": 20,
+          "start": "17:50"
+        },
+        {
+          "aantal": 1800,
+          "eind": "21:05",
+          "identity": "plan:45037",
           "ombouw_voor": 30,
-          "start": "12:15"
+          "start": "20:10"
+        }
+      ],
+      "warnings": [
+        "Lijn 1 bezetting 95% van het 990min venster > 90% - risico bij uitval",
+        "Lijn 2 bezetting 91% van het 960min venster > 90% - risico bij uitval",
+        "[WARNING] KAPVORM_WISSEL: L1: kapvorm-wissel zonder allergie-reden: H25 -> H22 (order 2026-02-19 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.2->0 met 30 min reiniging (order 2026-07-01 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->2 met 30 min reiniging (order 2026-07-01 00:00:00)"
+      ]
+    },
+    "2026-09-29": {
+      "lijn1": [
+        {
+          "aantal": 13405,
+          "eind": "09:50",
+          "identity": "plan:43859",
+          "ombouw_voor": 0,
+          "start": "06:00"
         },
         {
-          "aantal": 1150,
+          "aantal": 3000,
+          "eind": "13:30",
+          "identity": "plan:44923",
+          "ombouw_voor": 30,
+          "start": "10:20"
+        },
+        {
+          "aantal": 26810,
           "eind": "21:40",
-          "identity": "plan:45574",
+          "identity": "plan:45311",
+          "ombouw_voor": 30,
+          "start": "14:00"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 2300,
+          "eind": "07:35",
+          "identity": "plan:45294",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 2100,
+          "eind": "08:55",
+          "identity": "plan:45292",
+          "ombouw_voor": 20,
+          "start": "07:55"
+        },
+        {
+          "aantal": 1200,
+          "eind": "10:10",
+          "identity": "plan:45439",
+          "ombouw_voor": 30,
+          "start": "09:25"
+        },
+        {
+          "aantal": 1700,
+          "eind": "11:30",
+          "identity": "plan:45293",
+          "ombouw_voor": 30,
+          "start": "10:40"
+        },
+        {
+          "aantal": 600,
+          "eind": "12:25",
+          "identity": "plan:45288",
+          "ombouw_voor": 30,
+          "start": "12:00"
+        },
+        {
+          "aantal": 800,
+          "eind": "13:20",
+          "identity": "plan:45380",
+          "ombouw_voor": 30,
+          "start": "12:55"
+        },
+        {
+          "aantal": 2750,
+          "eind": "15:05",
+          "identity": "plan:45409",
+          "ombouw_voor": 20,
+          "start": "13:50"
+        },
+        {
+          "aantal": 13500,
+          "eind": "21:45",
+          "identity": "plan:45408",
+          "ombouw_voor": 30,
+          "start": "15:35"
+        }
+      ],
+      "warnings": [
+        "Lijn 1 bezetting 95% van het 990min venster > 90% - risico bij uitval",
+        "Lijn 2 bezetting 94% van het 960min venster > 90% - risico bij uitval",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 30 min reiniging (order 2026-05-20 00:00:00)",
+        "[ERROR] AFSLUIT_MOET_NIET_GEHONOREERD: L2: VAT EW BAMI GORENG SPECIAAL MET KIP IN SATESAUS moet afsluiten maar staat op positie 7 van 8 — VAT BAMI GORENG SPECIAAL MET KIP IN SATESAUS heeft die plaats. Twee producten met dezelfde eis op één lijndag; verplaats er een naar een andere dag of pas de regel aan in Planning info.xlsx (order 2026-08-04 00:00:00)"
+      ]
+    },
+    "2026-09-30": {
+      "lijn1": [
+        {
+          "aantal": 4500,
+          "eind": "07:20",
+          "identity": "plan:45368",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 10000,
+          "eind": "14:30",
+          "identity": "plan:44927",
+          "ombouw_voor": 30,
+          "start": "07:50"
+        },
+        {
+          "aantal": 8800,
+          "eind": "18:50",
+          "identity": "plan:44924",
+          "ombouw_voor": 20,
+          "start": "14:50"
+        },
+        {
+          "aantal": 3000,
+          "eind": "21:05",
+          "identity": "plan:44925",
+          "ombouw_voor": 30,
+          "start": "19:20"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 710,
+          "eind": "07:15",
+          "identity": "plan:45472",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 1200,
+          "eind": "08:25",
+          "identity": "plan:45385",
+          "ombouw_voor": 30,
+          "start": "07:45"
+        },
+        {
+          "aantal": 1000,
+          "eind": "09:25",
+          "identity": "plan:45331",
+          "ombouw_voor": 30,
+          "start": "08:55"
+        },
+        {
+          "aantal": 1800,
+          "eind": "10:50",
+          "identity": "plan:45297",
+          "ombouw_voor": 30,
+          "start": "09:55"
+        },
+        {
+          "aantal": 1200,
+          "eind": "11:55",
+          "identity": "plan:45039",
+          "ombouw_voor": 30,
+          "start": "11:20"
+        },
+        {
+          "aantal": 750,
+          "eind": "12:50",
+          "identity": "plan:45484",
+          "ombouw_voor": 30,
+          "start": "12:25"
+        },
+        {
+          "aantal": 11700,
+          "eind": "18:30",
+          "identity": "plan:45404",
+          "ombouw_voor": 20,
+          "start": "13:10"
+        },
+        {
+          "aantal": 2300,
+          "eind": "20:05",
+          "identity": "plan:45295",
+          "ombouw_voor": 30,
+          "start": "19:00"
+        },
+        {
+          "aantal": 4000,
+          "eind": "22:20",
+          "identity": "plan:45697",
           "ombouw_voor": 30,
           "start": "21:05"
         }
       ],
       "warnings": [
-        "Lijn 2 bezetting 95% van het 960min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.2->0 met 30 min reiniging (order 2026-08-24 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: BOF DE BE KIP SATE RIJSTMIX BROCC PAPR WORTEL 450G heeft voorkeur voor L1 maar staat op L2 (order 2026-08-05 00:00:00)",
-        "[WARNING] KAPVORM_WISSEL: L2: kapvorm-wissel zonder allergie-reden: H34 -> NVT (order 2026-08-31 00:00:00)"
+        "Lijn 1 bezetting 91% van het 990min venster > 90% - risico bij uitval",
+        "Lijn 2 bezetting 96% van het 960min venster > 90% - risico bij uitval",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.4->2 met 30 min reiniging (order 2026-05-20 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 30 min reiniging (order 2026-05-20 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->3 met 30 min reiniging (order 2026-07-13 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.5->3 met 30 min reiniging (order 2026-08-10 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-01 00:00:00)",
+        "[INFO] LIJN_VOORKEUR: ALDI BE GEHAKTBAL PROVENCAAL GEB AARDAP 450G (MIXED) heeft voorkeur voor L1 maar staat op L2 (order 2026-09-18 00:00:00)"
       ]
     },
-    "2026-10-16": {
+    "2026-10-01": {
       "lijn1": [
         {
           "aantal": 3000,
-          "eind": "07:15",
-          "identity": "plan:45608",
+          "eind": "07:25",
+          "identity": "plan:45366",
           "ombouw_voor": 0,
           "start": "06:00"
         },
         {
           "aantal": 26810,
-          "eind": "15:25",
-          "identity": "plan:43609",
+          "eind": "15:35",
+          "identity": "plan:45308",
           "ombouw_voor": 30,
-          "start": "07:45"
+          "start": "07:55"
         },
         {
-          "aantal": 13405,
-          "eind": "19:45",
-          "identity": "plan:43859",
+          "aantal": 2646,
+          "eind": "16:55",
+          "identity": "plan:45397",
           "ombouw_voor": 30,
-          "start": "15:55"
+          "start": "16:05"
+        },
+        {
+          "aantal": 3000,
+          "eind": "18:25",
+          "identity": "plan:45399",
+          "ombouw_voor": 30,
+          "start": "17:25"
+        },
+        {
+          "aantal": 4000,
+          "eind": "20:00",
+          "identity": "plan:45395",
+          "ombouw_voor": 20,
+          "start": "18:45"
+        },
+        {
+          "aantal": 4000,
+          "eind": "21:45",
+          "identity": "plan:45687",
+          "ombouw_voor": 30,
+          "start": "20:30"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 576,
+          "eind": "07:30",
+          "identity": "plan:45475",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 1150,
+          "eind": "10:10",
+          "identity": "plan:45473",
+          "ombouw_voor": 30,
+          "start": "08:00"
+        },
+        {
+          "aantal": 2050,
+          "eind": "11:40",
+          "identity": "plan:45405",
+          "ombouw_voor": 30,
+          "start": "10:40"
+        },
+        {
+          "aantal": 3400,
+          "eind": "13:45",
+          "identity": "plan:45291",
+          "ombouw_voor": 30,
+          "start": "12:10"
+        },
+        {
+          "aantal": 2250,
+          "eind": "15:10",
+          "identity": "plan:45406",
+          "ombouw_voor": 20,
+          "start": "14:05"
+        },
+        {
+          "aantal": 2600,
+          "eind": "17:25",
+          "identity": "plan:45651",
+          "ombouw_voor": 30,
+          "start": "15:40"
+        },
+        {
+          "aantal": 384,
+          "eind": "18:35",
+          "identity": "plan:45474",
+          "ombouw_voor": 30,
+          "start": "17:55"
+        },
+        {
+          "aantal": 1000,
+          "eind": "20:45",
+          "identity": "plan:45471",
+          "ombouw_voor": 20,
+          "start": "18:55"
+        }
+      ],
+      "warnings": [
+        "Lijn 1 bezetting 96% van het 990min venster > 90% - risico bij uitval",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.5->2 met 30 min reiniging (order 2026-08-03 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-01 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-08-10 00:00:00)"
+      ]
+    },
+    "2026-10-02": {
+      "lijn1": [
+        {
+          "aantal": 4000,
+          "eind": "07:15",
+          "identity": "plan:45352",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 6000,
+          "eind": "11:35",
+          "identity": "plan:45398",
+          "ombouw_voor": 20,
+          "start": "07:35"
+        },
+        {
+          "aantal": 3000,
+          "eind": "12:55",
+          "identity": "plan:45353",
+          "ombouw_voor": 20,
+          "start": "11:55"
+        },
+        {
+          "aantal": 3000,
+          "eind": "14:35",
+          "identity": "plan:45394",
+          "ombouw_voor": 40,
+          "start": "13:35"
+        },
+        {
+          "aantal": 3000,
+          "eind": "16:15",
+          "identity": "plan:45355",
+          "ombouw_voor": 40,
+          "start": "15:15"
+        },
+        {
+          "aantal": 6000,
+          "eind": "18:40",
+          "identity": "plan:45370",
+          "ombouw_voor": 40,
+          "start": "16:55"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 576,
+          "eind": "07:20",
+          "identity": "plan:45476",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 4000,
+          "eind": "09:05",
+          "identity": "plan:45698",
+          "ombouw_voor": 30,
+          "start": "07:50"
+        },
+        {
+          "aantal": 2500,
+          "eind": "10:45",
+          "identity": "plan:45328",
+          "ombouw_voor": 30,
+          "start": "09:35"
+        },
+        {
+          "aantal": 750,
+          "eind": "11:40",
+          "identity": "plan:45485",
+          "ombouw_voor": 30,
+          "start": "11:15"
+        },
+        {
+          "aantal": 3360,
+          "eind": "13:35",
+          "identity": "plan:45509",
+          "ombouw_voor": 30,
+          "start": "12:10"
+        },
+        {
+          "aantal": 5000,
+          "eind": "15:30",
+          "identity": "plan:45489",
+          "ombouw_voor": 20,
+          "start": "13:55"
+        },
+        {
+          "aantal": 5000,
+          "eind": "17:50",
+          "identity": "plan:45488",
+          "ombouw_voor": 40,
+          "start": "16:15"
+        },
+        {
+          "aantal": 5000,
+          "eind": "20:05",
+          "identity": "plan:45487",
+          "ombouw_voor": 40,
+          "start": "18:30"
+        }
+      ],
+      "warnings": [
+        "Lijn 2 bezetting 96% van het 840min venster > 90% - risico bij uitval",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.5->2 met 40 min reiniging (order 2026-07-17 00:00:00)",
+        "[INFO] LIJN_VOORKEUR: ALDI BE HAMBURGER SPINAZIEPUREE JUS 450G (MIXED) heeft voorkeur voor L1 maar staat op L2 (order 2026-09-18 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-13 00:00:00)",
+        "[INFO] LIJN_VOORKEUR: GEIA EW SPAGHETTI BOLOGNAISE BROCCOLI 370G heeft voorkeur voor L1 maar staat op L2 (order 2026-08-10 00:00:00)",
+        "[WARNING] KAPVORM_WISSEL: L2: kapvorm-wissel zonder allergie-reden: NVT -> H22 (order 2026-08-10 00:00:00)",
+        "[INFO] LIJN_VOORKEUR: GEIA EW KIP LINGUINE TERIYAKI BROCCOLI 370G heeft voorkeur voor L1 maar staat op L2 (order 2026-08-10 00:00:00)",
+        "[INFO] LIJN_VOORKEUR: GEIA EW KIP CURRY RIJST BROCCOLI GR BONEN 370G heeft voorkeur voor L1 maar staat op L2 (order 2026-08-10 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.5->3 met 40 min reiniging (order 2026-08-10 00:00:00)"
+      ]
+    },
+    "2026-10-05": {
+      "lijn1": [
+        {
+          "aantal": 26810,
+          "eind": "13:40",
+          "identity": "plan:43864",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 20000,
+          "eind": "20:15",
+          "identity": "plan:45065",
+          "ombouw_voor": 20,
+          "start": "14:00"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 3000,
+          "eind": "07:30",
+          "identity": "plan:45356",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 4000,
+          "eind": "09:50",
+          "identity": "plan:45414",
+          "ombouw_voor": 30,
+          "start": "08:00"
+        },
+        {
+          "aantal": 2800,
+          "eind": "11:45",
+          "identity": "plan:45109",
+          "ombouw_voor": 30,
+          "start": "10:20"
+        }
+      ],
+      "warnings": [
+        "[INFO] LIJN_VOORKEUR: BOF BE KIPPENHAASJE ZOET ZURE RIJST GROENTEN 420G heeft voorkeur voor L1 maar staat op L2 (order 2026-07-17 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.5->3 met 30 min reiniging (order 2026-08-04 00:00:00)"
+      ]
+    },
+    "2026-10-06": {
+      "lijn1": [
+        {
+          "aantal": 10000,
+          "eind": "09:20",
+          "identity": "plan:45371",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 5000,
+          "eind": "12:45",
+          "identity": "plan:45023",
+          "ombouw_voor": 30,
+          "start": "09:50"
+        },
+        {
+          "aantal": 26810,
+          "eind": "21:20",
+          "identity": "plan:45374",
+          "ombouw_voor": 30,
+          "start": "13:40"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 768,
+          "eind": "07:50",
+          "identity": "plan:45676",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 12000,
+          "eind": "13:10",
+          "identity": "plan:45377",
+          "ombouw_voor": 30,
+          "start": "08:20"
+        },
+        {
+          "aantal": 16000,
+          "eind": "18:30",
+          "identity": "plan:45066",
+          "ombouw_voor": 20,
+          "start": "13:30"
+        }
+      ],
+      "warnings": [
+        "Lijn 1 bezetting 90% van het 990min venster > 90% - risico bij uitval",
+        "[WARNING] KAPVORM_WISSEL: L1: kapvorm-wissel zonder allergie-reden: H16 -> H10 (order 2026-06-08 00:00:00)",
+        "[INFO] LIJN_VOORKEUR: LIDL DE EW KIPFILET SATE RIJST SOJAB 400G (MIXED) heeft voorkeur voor L1 maar staat op L2 (order 2026-06-08 00:00:00)"
+      ]
+    },
+    "2026-10-07": {
+      "lijn1": [
+        {
+          "aantal": 13405,
+          "eind": "13:40",
+          "identity": "plan:45322",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 26810,
+          "eind": "21:50",
+          "identity": "plan:45462",
+          "ombouw_voor": 30,
+          "start": "14:10"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 650,
+          "eind": "06:50",
+          "identity": "plan:45313",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 5700,
+          "eind": "10:00",
+          "identity": "plan:45381",
+          "ombouw_voor": 30,
+          "start": "07:20"
+        },
+        {
+          "aantal": 576,
+          "eind": "11:30",
+          "identity": "plan:45119",
+          "ombouw_voor": 30,
+          "start": "10:30"
+        },
+        {
+          "aantal": 3900,
+          "eind": "13:50",
+          "identity": "plan:45415",
+          "ombouw_voor": 30,
+          "start": "12:00"
+        },
+        {
+          "aantal": 750,
+          "eind": "14:35",
+          "identity": "plan:45390",
+          "ombouw_voor": 20,
+          "start": "14:10"
+        },
+        {
+          "aantal": 3800,
+          "eind": "16:50",
+          "identity": "plan:45581",
+          "ombouw_voor": 30,
+          "start": "15:05"
+        },
+        {
+          "aantal": 750,
+          "eind": "17:45",
+          "identity": "plan:45440",
+          "ombouw_voor": 30,
+          "start": "17:20"
+        },
+        {
+          "aantal": 1300,
+          "eind": "18:45",
+          "identity": "plan:45482",
+          "ombouw_voor": 20,
+          "start": "18:05"
+        },
+        {
+          "aantal": 1000,
+          "eind": "19:35",
+          "identity": "plan:45411",
+          "ombouw_voor": 20,
+          "start": "19:05"
+        }
+      ],
+      "warnings": [
+        "Lijn 1 bezetting 96% van het 990min venster > 90% - risico bij uitval",
+        "[WARNING] KAPVORM_WISSEL: L1: kapvorm-wissel zonder allergie-reden: H44 -> H25 (order 2026-08-05 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->2 met 30 min reiniging (order 2026-07-27 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->2 met 30 min reiniging (order 2026-08-31 00:00:00)"
+      ]
+    },
+    "2026-10-08": {
+      "lijn1": [
+        {
+          "aantal": 10192,
+          "eind": "09:25",
+          "identity": "plan:45450",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 26810,
+          "eind": "17:45",
+          "identity": "plan:45456",
+          "ombouw_voor": 40,
+          "start": "10:05"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 1296,
+          "eind": "07:05",
+          "identity": "plan:45558",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 5700,
+          "eind": "09:55",
+          "identity": "plan:45382",
+          "ombouw_voor": 30,
+          "start": "07:35"
+        },
+        {
+          "aantal": 192,
+          "eind": "10:45",
+          "identity": "plan:45220",
+          "ombouw_voor": 30,
+          "start": "10:25"
+        },
+        {
+          "aantal": 1250,
+          "eind": "12:00",
+          "identity": "plan:45413",
+          "ombouw_voor": 30,
+          "start": "11:15"
+        },
+        {
+          "aantal": 6000,
+          "eind": "15:15",
+          "identity": "plan:45410",
+          "ombouw_voor": 30,
+          "start": "12:30"
+        },
+        {
+          "aantal": 5700,
+          "eind": "18:25",
+          "identity": "plan:45412",
+          "ombouw_voor": 30,
+          "start": "15:45"
+        },
+        {
+          "aantal": 2000,
+          "eind": "19:40",
+          "identity": "plan:43944",
+          "ombouw_voor": 20,
+          "start": "18:45"
+        },
+        {
+          "aantal": 1150,
+          "eind": "20:35",
+          "identity": "plan:45574",
+          "ombouw_voor": 20,
+          "start": "20:00"
+        }
+      ],
+      "warnings": [
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-27 00:00:00)"
+      ]
+    },
+    "2026-10-09": {
+      "lijn1": [
+        {
+          "aantal": 3000,
+          "eind": "07:00",
+          "identity": "plan:45684",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 5750,
+          "eind": "11:10",
+          "identity": "plan:45342",
+          "ombouw_voor": 20,
+          "start": "07:20"
+        },
+        {
+          "aantal": 26810,
+          "eind": "19:20",
+          "identity": "plan:45466",
+          "ombouw_voor": 30,
+          "start": "11:40"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 830,
+          "eind": "07:30",
+          "identity": "plan:45565",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 4000,
+          "eind": "09:50",
+          "identity": "plan:45378",
+          "ombouw_voor": 30,
+          "start": "08:00"
+        },
+        {
+          "aantal": 900,
+          "eind": "10:35",
+          "identity": "plan:45559",
+          "ombouw_voor": 20,
+          "start": "10:10"
+        },
+        {
+          "aantal": 1600,
+          "eind": "11:50",
+          "identity": "plan:45384",
+          "ombouw_voor": 30,
+          "start": "11:05"
+        },
+        {
+          "aantal": 3800,
+          "eind": "13:55",
+          "identity": "plan:45236",
+          "ombouw_voor": 20,
+          "start": "12:10"
+        },
+        {
+          "aantal": 750,
+          "eind": "14:50",
+          "identity": "plan:45483",
+          "ombouw_voor": 30,
+          "start": "14:25"
+        },
+        {
+          "aantal": 576,
+          "eind": "15:55",
+          "identity": "plan:45477",
+          "ombouw_voor": 30,
+          "start": "15:20"
+        },
+        {
+          "aantal": 768,
+          "eind": "17:45",
+          "identity": "plan:45534",
+          "ombouw_voor": 30,
+          "start": "16:25"
+        },
+        {
+          "aantal": 768,
+          "eind": "19:40",
+          "identity": "plan:45513",
+          "ombouw_voor": 30,
+          "start": "18:15"
+        }
+      ],
+      "warnings": [
+        "Lijn 1 bezetting 92% van het 870min venster > 90% - risico bij uitval",
+        "Lijn 2 bezetting 94% van het 840min venster > 90% - risico bij uitval",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.5->2 met 30 min reiniging (order 2026-07-27 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-08-10 00:00:00)"
+      ]
+    },
+    "2026-10-12": {
+      "lijn1": [
+        {
+          "aantal": 26810,
+          "eind": "13:40",
+          "identity": "plan:45460",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 26810,
+          "eind": "22:00",
+          "identity": "plan:45464",
+          "ombouw_voor": 40,
+          "start": "14:20"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 768,
+          "eind": "07:35",
+          "identity": "plan:45541",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 960,
+          "eind": "09:45",
+          "identity": "plan:45535",
+          "ombouw_voor": 30,
+          "start": "08:05"
+        },
+        {
+          "aantal": 5400,
+          "eind": "12:45",
+          "identity": "plan:45577",
+          "ombouw_voor": 30,
+          "start": "10:15"
+        }
+      ],
+      "warnings": [
+        "MEP datum 2026-10-11 voor order 2026-08-05 00:00:00 (FITMEALS EW PULLED KIP CURRY HALAL 425G NL FR D) valt op weekend - eerder klaarzetten",
+        "Lijn 1 bezetting 97% van het 990min venster > 90% - risico bij uitval"
+      ]
+    },
+    "2026-10-13": {
+      "lijn1": [
+        {
+          "aantal": 26810,
+          "eind": "13:40",
+          "identity": "plan:43621",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 26810,
+          "eind": "22:00",
+          "identity": "plan:45373",
+          "ombouw_voor": 40,
+          "start": "14:20"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 10000,
+          "eind": "09:50",
+          "identity": "plan:45372",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 8800,
+          "eind": "18:00",
+          "identity": "plan:45318",
+          "ombouw_voor": 30,
+          "start": "10:20"
+        },
+        {
+          "aantal": 768,
+          "eind": "19:35",
+          "identity": "plan:45539",
+          "ombouw_voor": 30,
+          "start": "18:30"
+        },
+        {
+          "aantal": 1000,
+          "eind": "21:45",
+          "identity": "plan:45510",
+          "ombouw_voor": 20,
+          "start": "19:55"
+        }
+      ],
+      "warnings": [
+        "Lijn 1 bezetting 97% van het 990min venster > 90% - risico bij uitval",
+        "Lijn 2 bezetting 95% van het 960min venster > 90% - risico bij uitval",
+        "[INFO] LIJN_VOORKEUR: GEIA EW KIP RAMEN SOEP 370G heeft voorkeur voor L1 maar staat op L2 (order 2026-07-17 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.5->0 met 30 min reiniging (order 2026-07-09 00:00:00)",
+        "[WARNING] KAPVORM_WISSEL: L2: kapvorm-wissel zonder allergie-reden: Bedrukte folie 470x300 -> NVT (order 2026-08-24 00:00:00)"
+      ]
+    },
+    "2026-10-14": {
+      "lijn1": [
+        {
+          "aantal": 15320,
+          "eind": "13:40",
+          "identity": "plan:43646",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 26810,
+          "eind": "21:50",
+          "identity": "plan:45467",
+          "ombouw_voor": 30,
+          "start": "14:10"
         }
       ],
       "lijn2": [
@@ -1248,183 +986,334 @@
           "start": "06:30"
         },
         {
-          "aantal": 9450,
-          "eind": "11:10",
-          "identity": "plan:45614",
+          "aantal": 13400,
+          "eind": "14:55",
+          "identity": "plan:45607",
           "ombouw_voor": 30,
           "start": "08:10"
         },
         {
-          "aantal": 2600,
-          "eind": "12:55",
-          "identity": "plan:45582",
+          "aantal": 2800,
+          "eind": "16:45",
+          "identity": "plan:45038",
           "ombouw_voor": 30,
-          "start": "11:40"
+          "start": "15:25"
         },
         {
           "aantal": 650,
-          "eind": "13:45",
+          "eind": "17:35",
           "identity": "plan:45437",
           "ombouw_voor": 30,
-          "start": "13:25"
+          "start": "17:15"
         },
         {
           "aantal": 3200,
-          "eind": "15:45",
+          "eind": "19:35",
           "identity": "plan:45107",
           "ombouw_voor": 20,
-          "start": "14:05"
+          "start": "17:55"
         },
         {
-          "aantal": 10000,
-          "eind": "19:35",
-          "identity": "plan:45371",
-          "ombouw_voor": 30,
-          "start": "16:15"
+          "aantal": 650,
+          "eind": "20:15",
+          "identity": "plan:45561",
+          "ombouw_voor": 20,
+          "start": "19:55"
         }
       ],
       "warnings": [
-        "Lijn 1 bezetting 95% van het 870min venster > 90% - risico bij uitval",
-        "Lijn 2 bezetting 94% van het 840min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.5->3 met 30 min reiniging (order 2026-02-19 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: ALDI BE HAMBURGER SPINAZIEPUREE JUS 450G (MIXED) heeft voorkeur voor L1 maar staat op L2 (order 2026-09-04 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->3 met 30 min reiniging (order 2026-08-04 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: GEIA EW KIP CURRY SOUP 370G heeft voorkeur voor L1 maar staat op L2 (order 2026-07-17 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->2 met 30 min reiniging (order 2026-07-17 00:00:00)"
+        "Lijn 1 bezetting 96% van het 990min venster > 90% - risico bij uitval"
+      ]
+    },
+    "2026-10-15": {
+      "lijn1": [
+        {
+          "aantal": 11000,
+          "eind": "09:10",
+          "identity": "plan:45461",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 5150,
+          "eind": "13:10",
+          "identity": "plan:45365",
+          "ombouw_voor": 30,
+          "start": "09:40"
+        },
+        {
+          "aantal": 26810,
+          "eind": "21:20",
+          "identity": "plan:45375",
+          "ombouw_voor": 30,
+          "start": "13:40"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 1200,
+          "eind": "07:55",
+          "identity": "plan:45511",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 16852,
+          "eind": "16:05",
+          "identity": "plan:45317",
+          "ombouw_voor": 30,
+          "start": "08:25"
+        },
+        {
+          "aantal": 2500,
+          "eind": "17:40",
+          "identity": "plan:45388",
+          "ombouw_voor": 20,
+          "start": "16:25"
+        },
+        {
+          "aantal": 2500,
+          "eind": "19:10",
+          "identity": "plan:45418",
+          "ombouw_voor": 20,
+          "start": "18:00"
+        },
+        {
+          "aantal": 2200,
+          "eind": "20:40",
+          "identity": "plan:45416",
+          "ombouw_voor": 20,
+          "start": "19:30"
+        }
+      ],
+      "warnings": [
+        "Lijn 1 bezetting 93% van het 990min venster > 90% - risico bij uitval",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-17 00:00:00)",
+        "[INFO] LIJN_VOORKEUR: BOF DE KIP MADAGASCAR RIJST 420G heeft voorkeur voor L1 maar staat op L2 (order 2026-09-18 00:00:00)",
+        "[WARNING] KAPVORM_WISSEL: L2: kapvorm-wissel zonder allergie-reden: H10 -> NVT (order 2026-07-27 00:00:00)"
+      ]
+    },
+    "2026-10-16": {
+      "lijn1": [
+        {
+          "aantal": 3500,
+          "eind": "07:40",
+          "identity": "plan:45021",
+          "ombouw_voor": 0,
+          "start": "06:00"
+        },
+        {
+          "aantal": 6000,
+          "eind": "09:55",
+          "identity": "plan:45024",
+          "ombouw_voor": 30,
+          "start": "08:10"
+        },
+        {
+          "aantal": 26810,
+          "eind": "17:55",
+          "identity": "plan:43609",
+          "ombouw_voor": 20,
+          "start": "10:15"
+        }
+      ],
+      "lijn2": [
+        {
+          "aantal": 9000,
+          "eind": "11:00",
+          "identity": "plan:45417",
+          "ombouw_voor": 0,
+          "start": "06:30"
+        },
+        {
+          "aantal": 1300,
+          "eind": "12:00",
+          "identity": "plan:45531",
+          "ombouw_voor": 20,
+          "start": "11:20"
+        },
+        {
+          "aantal": 3000,
+          "eind": "13:55",
+          "identity": "plan:45103",
+          "ombouw_voor": 30,
+          "start": "12:30"
+        },
+        {
+          "aantal": 768,
+          "eind": "15:30",
+          "identity": "plan:45538",
+          "ombouw_voor": 30,
+          "start": "14:25"
+        },
+        {
+          "aantal": 768,
+          "eind": "17:25",
+          "identity": "plan:45533",
+          "ombouw_voor": 30,
+          "start": "16:00"
+        },
+        {
+          "aantal": 2700,
+          "eind": "19:00",
+          "identity": "plan:45527",
+          "ombouw_voor": 30,
+          "start": "17:55"
+        }
+      ],
+      "warnings": [
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->0 met 30 min reiniging (order 2026-08-24 00:00:00)"
       ]
     },
     "2026-10-19": {
       "lijn1": [
         {
-          "aantal": 26810,
-          "eind": "13:40",
-          "identity": "plan:45467",
+          "aantal": 3000,
+          "eind": "07:00",
+          "identity": "plan:45683",
           "ombouw_voor": 0,
           "start": "06:00"
         },
         {
-          "aantal": 18300,
-          "eind": "21:40",
-          "identity": "plan:45646",
+          "aantal": 3000,
+          "eind": "08:40",
+          "identity": "plan:45686",
           "ombouw_voor": 40,
-          "start": "14:20"
+          "start": "07:40"
+        },
+        {
+          "aantal": 5000,
+          "eind": "10:35",
+          "identity": "plan:45685",
+          "ombouw_voor": 20,
+          "start": "09:00"
+        },
+        {
+          "aantal": 3000,
+          "eind": "11:55",
+          "identity": "plan:45491",
+          "ombouw_voor": 20,
+          "start": "10:55"
         }
       ],
       "lijn2": [
         {
-          "aantal": 768,
-          "eind": "07:50",
-          "identity": "plan:45675",
+          "aantal": 1100,
+          "eind": "07:30",
+          "identity": "plan:45600",
           "ombouw_voor": 0,
-          "start": "06:30"
+          "start": "07:00"
         },
         {
-          "aantal": 3800,
-          "eind": "10:05",
-          "identity": "plan:45581",
+          "aantal": 1000,
+          "eind": "09:30",
+          "identity": "plan:45564",
           "ombouw_voor": 30,
-          "start": "08:20"
+          "start": "08:00"
         },
         {
-          "aantal": 14000,
-          "eind": "16:45",
-          "identity": "plan:43799",
-          "ombouw_voor": 30,
-          "start": "10:35"
+          "aantal": 768,
+          "eind": "10:55",
+          "identity": "plan:45571",
+          "ombouw_voor": 20,
+          "start": "09:50"
         },
         {
-          "aantal": 10584,
-          "eind": "21:55",
-          "identity": "plan:45004",
+          "aantal": 576,
+          "eind": "12:05",
+          "identity": "plan:45542",
+          "ombouw_voor": 20,
+          "start": "11:15"
+        },
+        {
+          "aantal": 18300,
+          "eind": "20:55",
+          "identity": "plan:45453",
           "ombouw_voor": 30,
-          "start": "17:15"
+          "start": "12:35"
         }
       ],
       "warnings": [
-        "L2 kreeg voorrang op de gedeelde toestellen (isihda_l2) — +0 order(s) t.o.v. L1 eerst",
-        "MEP datum 2026-10-17 voor order 2026-03-25 00:00:00 (ALDI BE ZALM MSC BEARNAISE 2X225G (MIXED)) valt op weekend - eerder klaarzetten",
-        "MEP datum 2026-10-17 voor order 2026-06-04 00:00:00 (ALDI FR ZALM MSC BOTERSAUS 2X200G (VR MIXED KARTON)) valt op weekend - eerder klaarzetten",
-        "Lijn 1 bezetting 95% van het 990min venster > 90% - risico bij uitval",
-        "Lijn 2 bezetting 96% van het 960min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.5->4 met 40 min reiniging (order 2026-09-10 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->2 met 30 min reiniging (order 2026-08-31 00:00:00)"
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->0 met 30 min reiniging (order 2026-08-31 00:00:00)",
+        "[INFO] LIJN_VOORKEUR: BOF DE BE KIP SATE RIJSTMIX BROCC PAPR WORTEL 450G heeft voorkeur voor L1 maar staat op L2 (order 2026-08-05 00:00:00)"
       ]
     },
     "2026-10-20": {
       "lijn1": [
         {
-          "aantal": 3000,
-          "eind": "07:00",
-          "identity": "plan:45684",
+          "aantal": 26810,
+          "eind": "13:40",
+          "identity": "plan:45751",
           "ombouw_voor": 0,
           "start": "06:00"
         },
         {
           "aantal": 26810,
-          "eind": "15:10",
-          "identity": "plan:43852",
-          "ombouw_voor": 30,
-          "start": "07:30"
-        },
-        {
-          "aantal": 7500,
-          "eind": "17:50",
-          "identity": "plan:45616",
-          "ombouw_voor": 30,
-          "start": "15:40"
+          "eind": "21:40",
+          "identity": "plan:45457",
+          "ombouw_voor": 20,
+          "start": "14:00"
         }
       ],
       "lijn2": [
         {
-          "aantal": 900,
-          "eind": "07:00",
-          "identity": "plan:45430",
+          "aantal": 1000,
+          "eind": "07:05",
+          "identity": "plan:45391",
           "ombouw_voor": 0,
           "start": "06:30"
         },
         {
-          "aantal": 13650,
-          "eind": "13:35",
-          "identity": "plan:45421",
-          "ombouw_voor": 20,
-          "start": "07:20"
-        },
-        {
-          "aantal": 2250,
-          "eind": "15:00",
-          "identity": "plan:45422",
-          "ombouw_voor": 20,
-          "start": "13:55"
-        },
-        {
-          "aantal": 14112,
-          "eind": "21:40",
-          "identity": "plan:45002",
+          "aantal": 700,
+          "eind": "07:55",
+          "identity": "plan:45573",
           "ombouw_voor": 30,
-          "start": "15:30"
+          "start": "07:35"
+        },
+        {
+          "aantal": 576,
+          "eind": "09:35",
+          "identity": "plan:45631",
+          "ombouw_voor": 30,
+          "start": "08:25"
+        },
+        {
+          "aantal": 14000,
+          "eind": "16:15",
+          "identity": "plan:43799",
+          "ombouw_voor": 30,
+          "start": "10:05"
+        },
+        {
+          "aantal": 11000,
+          "eind": "21:35",
+          "identity": "plan:43800",
+          "ombouw_voor": 30,
+          "start": "16:45"
         }
       ],
       "warnings": [
-        "MEP datum 2026-10-18 voor order 2026-06-04 00:00:00 (ALDI FR ZALM MSC PREISAUS 2X200G (VR MIXED KARTON)) valt op weekend - eerder klaarzetten",
-        "Lijn 2 bezetting 95% van het 960min venster > 90% - risico bij uitval",
-        "[WARNING] KAPVORM_WISSEL: L1: kapvorm-wissel zonder allergie-reden: H22 -> H29 (order 2026-09-04 00:00:00)"
+        "MEP datum 2026-10-18 voor order 2026-03-25 00:00:00 (ALDI BE ZALM MSC BEARNAISE 2X225G (MIXED)) valt op weekend - eerder klaarzetten",
+        "MEP datum 2026-10-18 voor order 2026-03-25 00:00:00 (ALDI BE ZALM MSC PROVENCAALS 2X225G (MIXED)) valt op weekend - eerder klaarzetten",
+        "Lijn 1 bezetting 95% van het 990min venster > 90% - risico bij uitval",
+        "Lijn 2 bezetting 94% van het 960min venster > 90% - risico bij uitval"
       ]
     },
     "2026-10-21": {
       "lijn1": [
         {
-          "aantal": 16852,
+          "aantal": 26810,
           "eind": "13:40",
-          "identity": "plan:45317",
+          "identity": "plan:43854",
           "ombouw_voor": 0,
           "start": "06:00"
         },
         {
           "aantal": 26810,
-          "eind": "22:00",
-          "identity": "plan:45457",
-          "ombouw_voor": 40,
-          "start": "14:20"
+          "eind": "21:50",
+          "identity": "plan:45548",
+          "ombouw_voor": 30,
+          "start": "14:10"
         }
       ],
       "lijn2": [
@@ -1436,86 +1325,50 @@
           "start": "06:30"
         },
         {
-          "aantal": 1200,
-          "eind": "15:35",
-          "identity": "plan:45438",
+          "aantal": 3200,
+          "eind": "16:15",
+          "identity": "plan:45428",
           "ombouw_voor": 30,
           "start": "14:45"
         },
         {
-          "aantal": 650,
-          "eind": "16:25",
-          "identity": "plan:45705",
+          "aantal": 2150,
+          "eind": "17:45",
+          "identity": "plan:45572",
           "ombouw_voor": 30,
-          "start": "16:05"
-        },
-        {
-          "aantal": 1600,
-          "eind": "17:40",
-          "identity": "plan:45575",
-          "ombouw_voor": 20,
           "start": "16:45"
         },
         {
-          "aantal": 1500,
-          "eind": "19:05",
-          "identity": "plan:45578",
+          "aantal": 1600,
+          "eind": "19:10",
+          "identity": "plan:45575",
           "ombouw_voor": 30,
-          "start": "18:10"
+          "start": "18:15"
         },
         {
-          "aantal": 576,
-          "eind": "20:25",
-          "identity": "plan:45679",
+          "aantal": 2600,
+          "eind": "20:55",
+          "identity": "plan:45436",
           "ombouw_voor": 30,
-          "start": "19:35"
+          "start": "19:40"
         },
         {
-          "aantal": 576,
-          "eind": "21:35",
-          "identity": "plan:45542",
-          "ombouw_voor": 20,
-          "start": "20:45"
+          "aantal": 477,
+          "eind": "21:55",
+          "identity": "plan:45540",
+          "ombouw_voor": 30,
+          "start": "21:25"
         }
       ],
       "warnings": [
-        "Lijn 1 bezetting 97% van het 990min venster > 90% - risico bij uitval",
-        "Lijn 2 bezetting 94% van het 960min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->3 met 30 min reiniging (order 2026-08-04 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.3->0 met 30 min reiniging (order 2026-09-14 00:00:00)"
+        "Lijn 1 bezetting 96% van het 990min venster > 90% - risico bij uitval",
+        "Lijn 2 bezetting 96% van het 960min venster > 90% - risico bij uitval",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 30 min reiniging (order 2026-08-25 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->2 met 30 min reiniging (order 2026-08-04 00:00:00)"
       ]
     },
     "2026-10-22": {
-      "lijn1": [
-        {
-          "aantal": 11000,
-          "eind": "09:10",
-          "identity": "plan:45461",
-          "ombouw_voor": 0,
-          "start": "06:00"
-        },
-        {
-          "aantal": 3000,
-          "eind": "10:50",
-          "identity": "plan:45683",
-          "ombouw_voor": 40,
-          "start": "09:50"
-        },
-        {
-          "aantal": 4500,
-          "eind": "13:10",
-          "identity": "plan:45358",
-          "ombouw_voor": 30,
-          "start": "11:20"
-        },
-        {
-          "aantal": 26810,
-          "eind": "21:15",
-          "identity": "plan:45464",
-          "ombouw_voor": 20,
-          "start": "13:35"
-        }
-      ],
+      "lijn1": [],
       "lijn2": [
         {
           "aantal": 576,
@@ -1525,85 +1378,112 @@
           "start": "06:30"
         },
         {
-          "aantal": 768,
-          "eind": "08:55",
-          "identity": "plan:45571",
+          "aantal": 384,
+          "eind": "08:35",
+          "identity": "plan:45566",
           "ombouw_voor": 30,
           "start": "07:50"
         },
         {
-          "aantal": 1084,
-          "eind": "11:00",
-          "identity": "plan:45729",
+          "aantal": 13650,
+          "eind": "15:20",
+          "identity": "plan:45421",
           "ombouw_voor": 30,
-          "start": "09:25"
+          "start": "09:05"
         },
         {
-          "aantal": 2600,
-          "eind": "13:15",
-          "identity": "plan:45651",
-          "ombouw_voor": 30,
-          "start": "11:30"
-        },
-        {
-          "aantal": 16000,
-          "eind": "18:35",
-          "identity": "plan:45068",
+          "aantal": 2250,
+          "eind": "16:45",
+          "identity": "plan:45422",
           "ombouw_voor": 20,
-          "start": "13:35"
+          "start": "15:40"
+        },
+        {
+          "aantal": 8000,
+          "eind": "20:45",
+          "identity": "plan:43801",
+          "ombouw_voor": 30,
+          "start": "17:15"
         }
       ],
-      "warnings": [
-        "Lijn 1 bezetting 92% van het 990min venster > 90% - risico bij uitval",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->0 met 40 min reiniging (order 2026-09-15 00:00:00)",
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.2->0 met 30 min reiniging (order 2026-08-31 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: LIDL DE EW KIPFILET SATE RIJST SOJAB 400G (MIXED) heeft voorkeur voor L1 maar staat op L2 (order 2026-06-08 00:00:00)"
-      ]
+      "warnings": []
     },
     "2026-10-23": {
       "lijn1": [
         {
-          "aantal": 26810,
-          "eind": "13:40",
-          "identity": "plan:43854",
+          "aantal": 3000,
+          "eind": "07:15",
+          "identity": "plan:45608",
           "ombouw_voor": 0,
           "start": "06:00"
         },
         {
-          "aantal": 5000,
-          "eind": "16:30",
-          "identity": "plan:45682",
+          "aantal": 3000,
+          "eind": "09:10",
+          "identity": "plan:44926",
           "ombouw_voor": 30,
-          "start": "14:10"
+          "start": "07:45"
+        },
+        {
+          "aantal": 5000,
+          "eind": "11:50",
+          "identity": "plan:45682",
+          "ombouw_voor": 20,
+          "start": "09:30"
+        },
+        {
+          "aantal": 3000,
+          "eind": "13:10",
+          "identity": "plan:45360",
+          "ombouw_voor": 20,
+          "start": "12:10"
+        },
+        {
+          "aantal": 3500,
+          "eind": "15:20",
+          "identity": "plan:45363",
+          "ombouw_voor": 30,
+          "start": "13:40"
         },
         {
           "aantal": 4000,
-          "eind": "19:00",
+          "eind": "17:40",
           "identity": "plan:45364",
-          "ombouw_voor": 30,
-          "start": "17:00"
+          "ombouw_voor": 20,
+          "start": "15:40"
         }
       ],
       "lijn2": [
         {
-          "aantal": 10900,
-          "eind": "10:55",
-          "identity": "plan:45434",
+          "aantal": 18300,
+          "eind": "13:50",
+          "identity": "plan:45646",
           "ombouw_voor": 0,
           "start": "06:30"
         },
         {
-          "aantal": 26810,
-          "eind": "18:55",
-          "identity": "plan:45393",
-          "ombouw_voor": 20,
-          "start": "11:15"
+          "aantal": 5000,
+          "eind": "15:50",
+          "identity": "plan:45615",
+          "ombouw_voor": 30,
+          "start": "14:20"
+        },
+        {
+          "aantal": 6000,
+          "eind": "19:20",
+          "identity": "plan:45420",
+          "ombouw_voor": 30,
+          "start": "16:20"
         }
       ],
       "warnings": [
-        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 30 min reiniging (order 2026-09-15 00:00:00)",
-        "[INFO] LIJN_VOORKEUR: LIDL BE AARDAPPELGRATIN 450G heeft voorkeur voor L1 maar staat op L2 (order 2026-07-29 00:00:00)",
-        "[WARNING] KAPVORM_WISSEL: L2: kapvorm-wissel zonder allergie-reden: NVT -> H11 (order 2026-07-29 00:00:00)"
+        "Lijn 2 bezetting 92% van het 840min venster > 90% - risico bij uitval",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.5->2 met 30 min reiniging (order 2026-05-20 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L1: allergie-daling niv.3->2 met 30 min reiniging (order 2026-07-17 00:00:00)",
+        "[INFO] LIJN_VOORKEUR: BOF DE BE SCAMPI ASC LIMOEN KOKOS NOODLE 450G heeft voorkeur voor L1 maar staat op L2 (order 2026-09-10 00:00:00)",
+        "[INFO] LIJN_VOORKEUR: CARREFOUR BALLETJES TOMATENSAUS BONEN PUREE 450G heeft voorkeur voor L1 maar staat op L2 (order 2026-09-04 00:00:00)",
+        "[INFO] ALLERGIE_DALING_MET_REINIGING: L2: allergie-daling niv.4->3 met 30 min reiniging (order 2026-09-04 00:00:00)",
+        "[WARNING] KAPVORM_WISSEL: L2: kapvorm-wissel zonder allergie-reden: H29 -> NVT (order 2026-08-04 00:00:00)"
       ]
     }
   },
@@ -1611,17 +1491,26 @@
   "rejections": {
     "plan:43606": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft grote_cfs_pomp, kaastrooi nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
     "plan:43739": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2027-05-14, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact.",
-    "plan:44927": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact.",
-    "plan:45066": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-06, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft ks_menger nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
-    "plan:45311": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft multipond nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
-    "plan:45325": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft isihda_l2, kaastrooi nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken. Tijdens het zoeken is deze order 1x geweigerd op precies zo'n toestelconflict; meer lijntijd lost dat niet op.",
+    "plan:43848": "POSITIE-REGEL: this order fit its assigned day on capacity, but the day builder removed it to keep that day's ends legal: IGLO BE WITLOOFGRATIN HAM VERSE PUREE 450G may not close the day, so it needs another order on the same line-day to take that end, and the day it was assigned to retained no usable companion after exact time, device and saté validation. Other unfrozen days before 2026-11-20 may still support a legal pair; this assignment must be repaired rather than treated as a plain capacity rejection.",
+    "plan:43857": "POSITIE-REGEL: this order fit its assigned day on capacity, but the day builder removed it to keep that day's ends legal: IGLO BE SPAGHETTI BOLOGNAISE 450G may not close the day, so it needs another order on the same line-day to take that end, and the day it was assigned to retained no usable companion after exact time, device and saté validation. Other unfrozen days before 2026-12-18 may still support a legal pair; this assignment must be repaired rather than treated as a plain capacity rejection.",
+    "plan:43860": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact.",
+    "plan:45004": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-30, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft grote_cfs_pomp nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
+    "plan:45310": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft multipond nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
+    "plan:45325": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft isihda_l2, kaastrooi nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
     "plan:45327": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-30, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft isihda_l2 nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
-    "plan:45408": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft isihda_l2, ks_menger, multifill nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
-    "plan:45463": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact.",
+    "plan:45341": "ORACLE-DROPPED: the optimizer assigned this order to a day, but the real daily schedule (actual sequence-dependent setup times) could not fit it once built — capacity looked available in the approximate model but wasn't once real changeovers were applied. Deadline 2026-10-09, 3 feedback iterations, up to 1 chunks. TOESTELLEN: dit product heeft ks_menger, multipond nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken. Tijdens het zoeken is deze order 1x geweigerd op precies zo'n toestelconflict; meer lijntijd lost dat niet op.",
+    "plan:45393": "ORACLE-DROPPED: the optimizer assigned this order to a day, but the real daily schedule (actual sequence-dependent setup times) could not fit it once built — capacity looked available in the approximate model but wasn't once real changeovers were applied. Deadline 2026-10-30, 3 feedback iterations, up to 1 chunks. TOESTELLEN: dit product heeft isihda_l2, kaastrooi nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken. Tijdens het zoeken is deze order 2x geweigerd op precies zo'n toestelconflict; meer lijntijd lost dat niet op.",
+    "plan:45407": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft kaastrooi, multifill nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
+    "plan:45419": "ORACLE-DROPPED: the optimizer assigned this order to a day, but the real daily schedule (actual sequence-dependent setup times) could not fit it once built — capacity looked available in the approximate model but wasn't once real changeovers were applied. Deadline 2026-10-16, 3 feedback iterations, up to 1 chunks. TOESTELLEN: dit product heeft multipond, stephan_mixer_groot nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken. Tijdens het zoeken is deze order 2x geweigerd op precies zo'n toestelconflict; meer lijntijd lost dat niet op.",
+    "plan:45438": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-30, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft isihda_l2, stephan_mixer_groot nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
+    "plan:45459": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-02, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft ks_menger nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken. Tijdens het zoeken is deze order 1x geweigerd op precies zo'n toestelconflict; meer lijntijd lost dat niet op.",
+    "plan:45517": "POSITIE-REGEL: this order fit its assigned day on capacity, but the day builder removed it to keep that day's ends legal: LIDL CH SE DK FR LV LT RUND PHO SOEP 400G (MIXED) may not close the day, so it needs another order on the same line-day to take that end, and the day it was assigned to retained no usable companion after exact time, device and saté validation. Other unfrozen days before 2026-12-04 may still support a legal pair; this assignment must be repaired rather than treated as a plain capacity rejection.",
+    "plan:45520": "ORACLE-DROPPED: the optimizer assigned this order to a day, but the real daily schedule (actual sequence-dependent setup times) could not fit it once built — capacity looked available in the approximate model but wasn't once real changeovers were applied. Deadline 2026-12-04, 3 feedback iterations, up to 1 chunks. TOESTELLEN: dit product heeft multipond nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken. Tijdens het zoeken is deze order 1x geweigerd op precies zo'n toestelconflict; meer lijntijd lost dat niet op.",
+    "plan:45550": "ORACLE-DROPPED: the optimizer assigned this order to a day, but the real daily schedule (actual sequence-dependent setup times) could not fit it once built — capacity looked available in the approximate model but wasn't once real changeovers were applied. Deadline 2026-11-13, 3 feedback iterations, up to 1 chunks. TOESTELLEN: dit product heeft multipond nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
     "plan:45553": "Product 66812600 unknown",
     "plan:45554": "Product 66812600 unknown",
-    "plan:45600": "ORACLE-DROPPED: the optimizer assigned this order to a day, but the real daily schedule (actual sequence-dependent setup times) could not fit it once built — capacity looked available in the approximate model but wasn't once real changeovers were applied. Deadline 2026-11-27, 3 feedback iterations, up to 1 chunks. TOESTELLEN: dit product heeft ks_menger, multifill, multipond nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken. Tijdens het zoeken is deze order 2x geweigerd op precies zo'n toestelconflict; meer lijntijd lost dat niet op.",
     "plan:45605": "Product 65126600 unknown",
+    "plan:45620": "NEVER-PLACED: the optimizer could not find ANY day/line slot with room for this order within its delivery window before 2026-10-30, across 3 feedback iterations, even split across up to 1 chunks — genuinely oversubscribed, not a sequencing artifact. TOESTELLEN: dit product heeft grote_cfs_pomp nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken.",
     "plan:45644": "Product 66850800 unknown",
     "plan:45657": "MISSING-SPEED: Product 63953700 has no speed on either production line",
     "plan:45659": "MISSING-SPEED: Product 63552200 has no speed on either production line",
@@ -1630,8 +1519,7 @@
     "plan:45696": "Product 64226900 unknown",
     "plan:45716": "MISSING-SPEED: Product 64257000 has no speed on either production line",
     "plan:45717": "MISSING-SPEED: Product 64257100 has no speed on either production line",
-    "plan:45718": "MISSING-SPEED: Product 64257200 has no speed on either production line",
-    "plan:45728": "ORACLE-DROPPED: the optimizer assigned this order to a day, but the real daily schedule (actual sequence-dependent setup times) could not fit it once built — capacity looked available in the approximate model but wasn't once real changeovers were applied. Deadline 2026-12-25, 3 feedback iterations, up to 1 chunks. TOESTELLEN: dit product heeft kaastrooi, ks_menger, multifill nodig — daarvan is er 1 exemplaar, dus L1 en L2 kunnen het nooit tegelijk gebruiken. Tijdens het zoeken is deze order 2x geweigerd op precies zo'n toestelconflict; meer lijntijd lost dat niet op."
+    "plan:45718": "MISSING-SPEED: Product 64257200 has no speed on either production line"
   },
   "schema_version": 2
 }

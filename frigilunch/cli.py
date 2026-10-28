@@ -18,8 +18,8 @@ from datetime import datetime
 from pathlib import Path
 
 from frigilunch.application.run_week import run_week
+from frigilunch.adapters.json_state import load_plan_state
 from frigilunch.domain.state import COMMIT_WEEKS, iso_weeks_before
-from src.plan_state import load_plan_state  # src bridge — migrate with json_state.py
 
 
 def _build_parser() -> argparse.ArgumentParser:

@@ -253,7 +253,7 @@ def test_a_position_rejection_reaches_the_planner_action_list():
     future run hits the identical dead end. It has to be on the list.
     """
     from src import exceptions_report
-    from src.plan_state import order_identity
+    from frigilunch.domain.state import order_identity
 
     order = make_order("A", 1000, DAG, order_nr="positie")
     products = {"A": make_product("A", afsluit_kan_niet=True)}

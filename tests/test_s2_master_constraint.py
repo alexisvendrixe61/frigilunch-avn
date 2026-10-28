@@ -20,7 +20,7 @@ from datetime import date, timedelta
 
 import pytest
 
-from src.plan_state import order_identity
+from frigilunch.domain.state import order_identity
 from src.scheduler_ortools_v3 import assign_production_dates_feedback
 from tests.conftest import make_order, make_product
 

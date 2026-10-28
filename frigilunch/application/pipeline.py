@@ -18,13 +18,15 @@ from datetime import date, timedelta
 from pathlib import Path
 from typing import Callable
 
-from frigilunch.adapters.json_state import read_state, write_state
+from frigilunch.adapters.json_state import load_plan_state, save_plan_state, STATE_SCHEMA_VERSION
 from frigilunch.adapters.master_data import read_products, validate_master
 from frigilunch.domain.benders import Solvers, run_benders
 from frigilunch.domain.models import DaySchedule, Order, Product, SolveOutcome
 from frigilunch.domain.oracle import schedule_day
-from frigilunch.domain.state import freeze_window, load_frozen_orders, _order_key
-from src.plan_state import exclusive_horizon_end
+from frigilunch.domain.state import (
+    block_end, build_new_state, commit_window, exclusive_horizon_end,
+    partition_locked_days,
+)
 
 
 # ── context ───────────────────────────────────────────────────────────────────
@@ -118,7 +120,6 @@ def _load_orders(ctx: PipelineContext) -> PipelineContext:
 def _filter_orders(ctx: PipelineContext) -> PipelineContext:
     """Stage 4: Filter to known-by-as-of and delivery window (src bridge)."""
     from src.order_filter import filter_by_delivery_range, filter_by_known_date
-    from src.plan_state import commit_window
     plan_start = _plan_start(ctx)
     as_of = plan_start
     known, warns = filter_by_known_date(ctx.orders, as_of)
@@ -135,13 +136,11 @@ def _filter_orders(ctx: PipelineContext) -> PipelineContext:
 
 
 def _apply_freeze(ctx: PipelineContext) -> PipelineContext:
-    """Stage 5: Separate frozen (locked) from free orders using state (src bridge)."""
-    from src.plan_state import partition_locked_days
+    """Stage 5: Separate frozen (locked) from free orders using state."""
     plan_start = _plan_start(ctx)
     if ctx.reset:
         ctx.plan_state = {}
     else:
-        from src.plan_state import load_plan_state
         try:
             ctx.plan_state = load_plan_state(ctx.state_path)
         except Exception:
@@ -199,7 +198,6 @@ def _run_solver(ctx: PipelineContext) -> PipelineContext:
 
     try:
         from src.loader import load_products as _load_src, load_setup_times
-        from src.plan_state import block_end
         from src.scheduler_ortools_v3 import assign_production_dates_feedback
 
         src_products, _ = _load_src(_repo_root / "data" / "generated" / "products.json")
@@ -243,13 +241,12 @@ def _run_solver(ctx: PipelineContext) -> PipelineContext:
 
 
 def _commit_window(ctx: PipelineContext) -> PipelineContext:
-    """Stage 8: Commit this week's schedule to plan_state.json (src bridge)."""
+    """Stage 8: Commit this week's schedule to plan_state.json."""
     if ctx.outcome is None:
         return ctx
     if ctx.dry_run:
         print("[DRY-RUN] plan_state.json niet aangepast.")
         return ctx
-    from src.plan_state import STATE_SCHEMA_VERSION, build_new_state, save_plan_state
     all_days = ctx.outcome.stats.get("days", [])
     plan_start = _plan_start(ctx)
     commit_end = ctx.commit_end
@@ -313,9 +310,9 @@ def _build_schedules(ctx: PipelineContext) -> PipelineContext:
 
 
 def _load_toestellen() -> dict:
-    """Load device availability from capacity.json (src bridge)."""
-    from src import config
-    return config.device_availability()
+    """Load device availability from capacity.json."""
+    from frigilunch.adapters.config import device_availability
+    return device_availability()
 
 
 def _export_outputs(ctx: PipelineContext) -> PipelineContext:
@@ -394,16 +391,16 @@ def _export_dashboard(ctx: PipelineContext, label: str) -> None:
 
 
 def _export_action_csv(ctx: PipelineContext, label: str) -> None:
-    """Write action-required CSV via the original src exceptions report."""
-    from src import exceptions_report
+    """Write action-required CSV via the exceptions report adapter."""
+    from frigilunch.adapters.exceptions_report import build, write_csv
     path = ctx.output_dir / f"actie_vereist_{label}.csv"
-    rows = exceptions_report.build(
+    rows = build(
         list(ctx.outcome.rejected),
         ctx.products,
         ctx.outcome.stats.get("rejection_reasons", {}),
     )
     if rows:
-        exceptions_report.write_csv(rows, path)
+        write_csv(rows, path)
         print(f"[OK] Actie CSV geschreven: {path}")
 
 

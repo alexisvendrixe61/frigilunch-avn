@@ -4,7 +4,7 @@ from datetime import date, time, timedelta
 
 from src.models import DaySchedule, PlannedOrder
 from src.plan_score import calculate_plan_score
-from src.plan_state import order_identity
+from frigilunch.domain.state import order_identity
 from tests.conftest import make_order, make_product
 
 

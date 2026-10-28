@@ -9,7 +9,7 @@ import csv
 from datetime import date
 
 from src import exceptions_report
-from src.plan_state import order_identity
+from frigilunch.domain.state import order_identity
 from tests.conftest import make_order, make_product
 
 D = date(2026, 7, 31)
@@ -118,7 +118,7 @@ def test_csv_round_trips(tmp_path):
 
 def _frozen_with_history(order, original_reason, *, pogingen=2, eerste=32, laatste=33):
     """A reason built the way create_plan builds it, via plan_state itself."""
-    from src.plan_state import explain_from_history
+    from frigilunch.domain.state import explain_from_history
 
     return "ARRIVED-AFTER-FREEZE: ..." + explain_from_history({
         "pogingen": pogingen, "eerste_week": eerste,

@@ -24,18 +24,17 @@ from datetime import date, time, timedelta
 import pytest
 
 from src.models import DaySchedule, PlannedOrder
-from src.plan_state import (
+from frigilunch.adapters.json_state import load_plan_state, save_plan_state
+from frigilunch.domain.state import (
     COMMIT_WEEKS,
     block_end,
     build_new_state,
     commit_window,
     explain_from_history,
-    load_plan_state,
     merge_rejection_history,
     order_identity,
     partition_locked_days,
     roll_completed_orders,
-    save_plan_state,
 )
 from tests.conftest import make_order, make_product
 

@@ -274,7 +274,7 @@ def test_fresh_and_replayed_days_are_measured_identically(setup_matrix, monday):
     16.5h, so a frozen day read ~3% busier than an identical fresh one in the
     same workbook.
     """
-    from src.plan_state import build_new_state, commit_window, partition_locked_days
+    from frigilunch.domain.state import build_new_state, commit_window, partition_locked_days
     from src.scheduler import replay_locked_days
 
     products = {"A": make_product("A"), "B": make_product("B")}

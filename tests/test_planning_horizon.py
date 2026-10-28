@@ -1,6 +1,6 @@
 from datetime import date
 
-from src.plan_state import exclusive_horizon_end
+from frigilunch.domain.state import exclusive_horizon_end
 
 
 def test_monday_delivery_gets_the_following_monday_as_exclusive_end():

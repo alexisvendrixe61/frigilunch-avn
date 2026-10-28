@@ -6160,136 +6160,136 @@
     "plan_nr": "45550"
   },
   {
-    "order_nr": "2025-10-14 00:00:00",
-    "art_nr": "66901700",
-    "klant": "lidl int",
-    "aantal": 7030,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-19",
-    "opmerking": "effectief aantal nodig = 6930 zie verpakking",
-    "opmerking_analyse": "",
-    "plan_nr": "42816"
-  },
-  {
-    "order_nr": "2025-10-14 00:00:00",
-    "art_nr": "66901800",
-    "klant": "lidl int",
-    "aantal": 8416,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-19",
-    "opmerking": "effectief aantal nodig = 8316 zie verpakking",
-    "opmerking_analyse": "",
-    "plan_nr": "42817"
-  },
-  {
-    "order_nr": "2025-10-14 00:00:00",
-    "art_nr": "66901900",
-    "klant": "lidl int",
-    "aantal": 5644,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-19",
-    "opmerking": "effectief aantal nodig = 5544 zie verpakking",
-    "opmerking_analyse": "PULLED CHICKEN D-2 ontdooien",
-    "plan_nr": "42818"
-  },
-  {
-    "order_nr": "2026-01-29 00:00:00",
-    "art_nr": "63860500",
-    "klant": "findus se",
-    "aantal": 26810,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-23",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43405"
-  },
-  {
-    "order_nr": "2026-08-26 00:00:00",
-    "art_nr": "65062000",
-    "klant": "aldi be",
-    "aantal": 5400,
-    "lever_datum": "2026-12-11",
-    "productie_datum": "2026-12-10",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43529"
-  },
-  {
-    "order_nr": "2026-08-26 00:00:00",
-    "art_nr": "65062100",
-    "klant": "aldi be",
-    "aantal": 9500,
-    "lever_datum": "2026-12-11",
-    "productie_datum": "2026-12-10",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43530"
-  },
-  {
-    "order_nr": "2026-08-26 00:00:00",
-    "art_nr": "65062200",
-    "klant": "aldi be",
-    "aantal": 5400,
-    "lever_datum": "2026-12-11",
-    "productie_datum": "2026-12-09",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43531"
-  },
-  {
-    "order_nr": "2026-08-26 00:00:00",
-    "art_nr": "65062300",
-    "klant": "aldi be",
-    "aantal": 3900,
-    "lever_datum": "2026-12-11",
-    "productie_datum": "2026-12-09",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43532"
-  },
-  {
-    "order_nr": "2026-08-26 00:00:00",
-    "art_nr": "65062400",
-    "klant": "aldi be",
-    "aantal": 5400,
-    "lever_datum": "2026-12-11",
-    "productie_datum": "2026-12-10",
-    "opmerking": "",
-    "opmerking_analyse": "Bulgur koken D-1",
-    "plan_nr": "43533"
-  },
-  {
-    "order_nr": "2026-02-18 00:00:00",
-    "art_nr": "61686000",
-    "klant": "lidl be",
-    "aantal": 10000,
-    "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-10",
-    "opmerking": "effectief 10000 stuks nodig",
-    "opmerking_analyse": "",
-    "plan_nr": "43595"
-  },
-  {
-    "order_nr": "2026-02-19 00:00:00",
-    "art_nr": "63809000",
+    "order_nr": "2026-04-07 00:00:00",
+    "art_nr": "63808400",
     "klant": "iglo be",
-    "aantal": 19916,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-17",
+    "aantal": 26810,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-19",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "43619"
+    "plan_nr": "43852"
   },
   {
-    "order_nr": "2026-03-11 00:00:00",
-    "art_nr": "64256000",
-    "klant": "lidl int",
-    "aantal": 16500,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-25",
-    "opmerking": "Deel 1 - 29736st nodig",
+    "order_nr": "2026-09-15 00:00:00",
+    "art_nr": "64225000",
+    "klant": "bof fr",
+    "aantal": 4000,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-19",
+    "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "43736"
+    "plan_nr": "45687"
+  },
+  {
+    "order_nr": "2026-09-15 00:00:00",
+    "art_nr": "64225900",
+    "klant": "bof fr",
+    "aantal": 3000,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-19",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45683"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64255200",
+    "klant": "lidl DE",
+    "aantal": 12000,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-19",
+    "opmerking": "4000 stuks wave 3 + 8000 stuks wave 4",
+    "opmerking_analyse": "",
+    "plan_nr": "45069"
+  },
+  {
+    "order_nr": "2026-09-14 00:00:00",
+    "art_nr": "65107200",
+    "klant": "dmb",
+    "aantal": 576,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-19",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45677"
+  },
+  {
+    "order_nr": "2026-09-01 00:00:00",
+    "art_nr": "65126600",
+    "klant": "dmb",
+    "aantal": 576,
+    "lever_datum": "2026-10-23",
+    "productie_datum": "2026-10-19",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45605"
+  },
+  {
+    "order_nr": "2026-09-14 00:00:00",
+    "art_nr": "65130700",
+    "klant": "dmb",
+    "aantal": 384,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-19",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren, max 1000st/order",
+    "plan_nr": "45673"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "65131300",
+    "klant": "dmb",
+    "aantal": 960,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-19",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45568"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "65140200",
+    "klant": "dmb",
+    "aantal": 768,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-19",
+    "opmerking": "",
+    "opmerking_analyse": "shnitzel 3 weken levertermijn, Folie perforeren",
+    "plan_nr": "45569"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "65140600",
+    "klant": "dmb",
+    "aantal": 800,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-19",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45570"
+  },
+  {
+    "order_nr": "2026-09-04 00:00:00",
+    "art_nr": "66000100",
+    "klant": "bof de",
+    "aantal": 8800,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-19",
+    "opmerking": "CFS - enkel op spiraal L2 - vers r/v gehakt op 16/10",
+    "opmerking_analyse": "",
+    "plan_nr": "45620"
+  },
+  {
+    "order_nr": "2026-09-19 00:00:00",
+    "art_nr": "63573000",
+    "klant": "dlc",
+    "aantal": 750,
+    "lever_datum": "2026-11-13",
+    "productie_datum": "2026-10-20",
+    "opmerking": "ru gehakt op 19/10",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45708"
   },
   {
     "order_nr": "2026-06-09 00:00:00",
@@ -6622,15 +6622,15 @@
     "plan_nr": "45111"
   },
   {
-    "order_nr": "2026-03-11 00:00:00",
-    "art_nr": "64256100",
-    "klant": "lidl int",
-    "aantal": 6000,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-23",
-    "opmerking": "Deel 1 - 39648st nodig",
-    "opmerking_analyse": "",
-    "plan_nr": "43737"
+    "order_nr": "2026-09-19 00:00:00",
+    "art_nr": "63573400",
+    "klant": "dlc",
+    "aantal": 750,
+    "lever_datum": "2026-11-13",
+    "productie_datum": "2026-10-20",
+    "opmerking": "ru gehakt op 19/10",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45709"
   },
   {
     "order_nr": "2026-06-23 00:00:00",
@@ -6721,15 +6721,15 @@
     "plan_nr": "45220"
   },
   {
-    "order_nr": "2026-03-11 00:00:00",
-    "art_nr": "64256200",
-    "klant": "lidl int",
-    "aantal": 18500,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-23",
-    "opmerking": "Deel 1 - 29736st nodig",
-    "opmerking_analyse": "",
-    "plan_nr": "43738"
+    "order_nr": "2026-08-24 00:00:00",
+    "art_nr": "63574000",
+    "klant": "dlc",
+    "aantal": 750,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-20",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren,alaska pollak verzagen (227g)",
+    "plan_nr": "45532"
   },
   {
     "order_nr": "2026-06-26 00:00:00",
@@ -6853,15 +6853,15 @@
     "plan_nr": "45233"
   },
   {
-    "order_nr": "2026-03-11 00:00:00",
-    "art_nr": "64256000",
-    "klant": "lidl int",
-    "aantal": 33616,
-    "lever_datum": "2027-05-14",
-    "productie_datum": "2027-05-11",
-    "opmerking": "33516st nodig",
-    "opmerking_analyse": "",
-    "plan_nr": "43739"
+    "order_nr": "2026-07-27 00:00:00",
+    "art_nr": "63596400",
+    "klant": "dlc",
+    "aantal": 1000,
+    "lever_datum": "2026-10-23",
+    "productie_datum": "2026-10-20",
+    "opmerking": "selder+ prei 19/10",
+    "opmerking_analyse": "idem 64000400",
+    "plan_nr": "45391"
   },
   {
     "order_nr": "2026-06-29 00:00:00",
@@ -7667,15 +7667,15 @@
     "plan_nr": "45308"
   },
   {
-    "order_nr": "2026-03-11 00:00:00",
-    "art_nr": "64256100",
-    "klant": "lidl int",
-    "aantal": 44788,
-    "lever_datum": "2027-05-14",
-    "productie_datum": "2027-05-11",
-    "opmerking": "44688st nodig",
-    "opmerking_analyse": "",
-    "plan_nr": "43740"
+    "order_nr": "2026-08-10 00:00:00",
+    "art_nr": "63597000",
+    "klant": "dmc",
+    "aantal": 1000,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-20",
+    "opmerking": "selder 19/10",
+    "opmerking_analyse": "idem 64001000",
+    "plan_nr": "45486"
   },
   {
     "order_nr": "2026-07-02 00:00:00",
@@ -7755,26 +7755,26 @@
     "plan_nr": "45316"
   },
   {
-    "order_nr": "2026-03-11 00:00:00",
-    "art_nr": "64256200",
-    "klant": "lidl int",
-    "aantal": 33616,
-    "lever_datum": "2027-05-14",
-    "productie_datum": "2027-05-12",
-    "opmerking": "33516st nodig",
-    "opmerking_analyse": "",
-    "plan_nr": "43741"
+    "order_nr": "2026-04-07 00:00:00",
+    "art_nr": "63808500",
+    "klant": "iglo be",
+    "aantal": 26810,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-20",
+    "opmerking": "vers r/v gehakt op 19/10",
+    "opmerking_analyse": "om de 4u band van mondini reinigen",
+    "plan_nr": "43854"
   },
   {
-    "order_nr": "2026-03-17 00:00:00",
-    "art_nr": "63110200",
-    "klant": "aldi be",
-    "aantal": 8300,
-    "lever_datum": "2027-01-29",
-    "productie_datum": "2027-01-25",
-    "opmerking": "opwerken verpakking",
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63900900",
+    "klant": "vat",
+    "aantal": 5900,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-20",
+    "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "43767"
+    "plan_nr": "45576"
   },
   {
     "order_nr": "2026-07-09 00:00:00",
@@ -7843,15 +7843,15 @@
     "plan_nr": "45326"
   },
   {
-    "order_nr": "2026-03-17 00:00:00",
-    "art_nr": "63110300",
-    "klant": "aldi be",
-    "aantal": 7300,
-    "lever_datum": "2027-01-29",
-    "productie_datum": "2027-01-25",
-    "opmerking": "opwerken verpakking",
-    "opmerking_analyse": "",
-    "plan_nr": "43768"
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63991000",
+    "klant": "vat",
+    "aantal": 550,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-20",
+    "opmerking": "selder 19/10",
+    "opmerking_analyse": "idem 63597000",
+    "plan_nr": "45431"
   },
   {
     "order_nr": "2026-07-13 00:00:00",
@@ -7964,15 +7964,15 @@
     "plan_nr": "45337"
   },
   {
-    "order_nr": "2026-03-17 00:00:00",
-    "art_nr": "63110900",
-    "klant": "aldi be",
-    "aantal": 8700,
-    "lever_datum": "2027-01-29",
-    "productie_datum": "2027-01-25",
-    "opmerking": "opwerken verpakking",
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63991100",
+    "klant": "vat",
+    "aantal": 1500,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-20",
+    "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "43769"
+    "plan_nr": "45578"
   },
   {
     "order_nr": "2026-07-15 00:00:00",
@@ -7997,15 +7997,15 @@
     "plan_nr": "45341"
   },
   {
-    "order_nr": "2026-03-20 00:00:00",
-    "art_nr": "63141400",
-    "klant": "colr",
-    "aantal": 9000,
-    "lever_datum": "2026-12-31",
-    "productie_datum": "2026-12-14",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43778"
+    "order_nr": "2026-09-15 00:00:00",
+    "art_nr": "64224600",
+    "klant": "bof fr",
+    "aantal": 5000,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-20",
+    "opmerking": "prei 19/10",
+    "opmerking_analyse": "KALFSBLANKET (vacuumzakken) + RIJST D-1",
+    "plan_nr": "45682"
   },
   {
     "order_nr": "2026-07-16 00:00:00",
@@ -8129,15 +8129,15 @@
     "plan_nr": "45353"
   },
   {
-    "order_nr": "2026-03-25 00:00:00",
-    "art_nr": "65706000",
-    "klant": "aldi be",
-    "aantal": 14000,
-    "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-21",
+    "order_nr": "2026-09-15 00:00:00",
+    "art_nr": "64226000",
+    "klant": "bof fr",
+    "aantal": 5000,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-20",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "43799"
+    "plan_nr": "45681"
   },
   {
     "order_nr": "2026-07-17 00:00:00",
@@ -8162,48 +8162,48 @@
     "plan_nr": "45356"
   },
   {
-    "order_nr": "2026-03-25 00:00:00",
-    "art_nr": "65706100",
-    "klant": "aldi be",
-    "aantal": 11000,
+    "order_nr": "2026-09-03 00:00:00",
+    "art_nr": "64226800",
+    "klant": "bof fr",
+    "aantal": 3000,
     "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-22",
+    "productie_datum": "2026-10-20",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "43800"
+    "plan_nr": "45608"
   },
   {
-    "order_nr": "2026-03-25 00:00:00",
-    "art_nr": "65706200",
-    "klant": "aldi be",
-    "aantal": 8000,
+    "order_nr": "2026-05-20 00:00:00",
+    "art_nr": "64281100",
+    "klant": "bof be",
+    "aantal": 3000,
     "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-23",
-    "opmerking": "opwerken verpakking",
-    "opmerking_analyse": "",
-    "plan_nr": "43801"
+    "productie_datum": "2026-10-20",
+    "opmerking": "prei 19/10",
+    "opmerking_analyse": "KALFSBLANKET (vacuumzakken) D-1 + KRIELEN steamen D-0",
+    "plan_nr": "44926"
   },
   {
-    "order_nr": "2026-09-28 00:00:00",
-    "art_nr": "63804300",
-    "klant": "iglo be",
-    "aantal": 19150,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-18",
+    "order_nr": "2026-09-14 00:00:00",
+    "art_nr": "65106000",
+    "klant": "dmb",
+    "aantal": 768,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-20",
     "opmerking": "",
-    "opmerking_analyse": "Hamsnijm. na 4uur productie ontsmetten, D-1 3p WITLOOF",
-    "plan_nr": "43848"
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45675"
   },
   {
-    "order_nr": "2026-04-07 00:00:00",
-    "art_nr": "63808200",
-    "klant": "iglo be",
-    "aantal": 26810,
-    "lever_datum": "2026-11-13",
-    "productie_datum": "2026-11-09",
+    "order_nr": "2026-09-14 00:00:00",
+    "art_nr": "65106400",
+    "klant": "dmb",
+    "aantal": 768,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-20",
     "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43849"
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45676"
   },
   {
     "order_nr": "2026-07-17 00:00:00",
@@ -8217,59 +8217,59 @@
     "plan_nr": "45361"
   },
   {
-    "order_nr": "2026-04-07 00:00:00",
-    "art_nr": "63808200",
-    "klant": "iglo be",
-    "aantal": 26810,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-14",
-    "opmerking": "CSB : ingepland op 13/11",
-    "opmerking_analyse": "",
-    "plan_nr": "43850"
-  },
-  {
-    "order_nr": "2026-04-07 00:00:00",
-    "art_nr": "63808200",
-    "klant": "iglo be",
-    "aantal": 26810,
-    "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-19",
+    "order_nr": "2026-09-14 00:00:00",
+    "art_nr": "65120200",
+    "klant": "dmb",
+    "aantal": 768,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-20",
     "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43851"
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45678"
   },
   {
-    "order_nr": "2026-04-07 00:00:00",
-    "art_nr": "63808400",
-    "klant": "iglo be",
-    "aantal": 26810,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-19",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43852"
-  },
-  {
-    "order_nr": "2026-04-07 00:00:00",
-    "art_nr": "63808500",
-    "klant": "iglo be",
-    "aantal": 26810,
+    "order_nr": "2026-09-14 00:00:00",
+    "art_nr": "65125000",
+    "klant": "dmb",
+    "aantal": 576,
     "lever_datum": "2026-10-30",
     "productie_datum": "2026-10-20",
-    "opmerking": "vers r/v gehakt op 19/10",
-    "opmerking_analyse": "om de 4u band van mondini reinigen",
-    "plan_nr": "43854"
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45679"
   },
   {
-    "order_nr": "2026-09-28 00:00:00",
-    "art_nr": "63808600",
-    "klant": "iglo be",
-    "aantal": 26810,
-    "lever_datum": "2027-01-22",
-    "productie_datum": "2027-01-19",
+    "order_nr": "2026-09-18 00:00:00",
+    "art_nr": "61699600",
+    "klant": "bof de",
+    "aantal": 16852,
+    "lever_datum": "2026-10-23",
+    "productie_datum": "2026-10-21",
     "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43855"
+    "opmerking_analyse": "BLIKKEN openen D-1 (1u/2100st); opvolgen fruitstukjes",
+    "plan_nr": "45317"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63588200",
+    "klant": "dlc",
+    "aantal": 650,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-21",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren - D-1 kalkoen filet",
+    "plan_nr": "45563"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63906400",
+    "klant": "vat",
+    "aantal": 6250,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-21",
+    "opmerking": "",
+    "opmerking_analyse": "RIJST D-1",
+    "plan_nr": "45579"
   },
   {
     "order_nr": "2026-07-17 00:00:00",
@@ -8316,37 +8316,37 @@
     "plan_nr": "45370"
   },
   {
-    "order_nr": "2026-04-07 00:00:00",
-    "art_nr": "63809200",
-    "klant": "iglo be",
-    "aantal": 26810,
-    "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-08",
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63936400",
+    "klant": "vat",
+    "aantal": 1300,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-21",
     "opmerking": "",
-    "opmerking_analyse": "vers gehakt",
-    "plan_nr": "43857"
+    "opmerking_analyse": "RIJST D-1, kl v 63906400",
+    "plan_nr": "45580"
   },
   {
-    "order_nr": "2026-04-07 00:00:00",
-    "art_nr": "63810000",
-    "klant": "iglo be",
-    "aantal": 13405,
+    "order_nr": "2026-09-15 00:00:00",
+    "art_nr": "64224300",
+    "klant": "bof fr",
+    "aantal": 5000,
     "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-27",
-    "opmerking": "1/2 productie",
+    "productie_datum": "2026-10-21",
+    "opmerking": "+/- 1000st in KOOIEN - saldo Etui's 3600st - ru gehakt op 19/10",
     "opmerking_analyse": "",
-    "plan_nr": "43859"
+    "plan_nr": "45685"
   },
   {
-    "order_nr": "2026-04-07 00:00:00",
-    "art_nr": "63810500",
-    "klant": "iglo be",
-    "aantal": 26810,
-    "lever_datum": "2026-12-04",
-    "productie_datum": "2026-11-30",
+    "order_nr": "2026-09-15 00:00:00",
+    "art_nr": "64225400",
+    "klant": "bof fr",
+    "aantal": 3000,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-21",
     "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43861"
+    "opmerking_analyse": "LINZEN D-1",
+    "plan_nr": "45684"
   },
   {
     "order_nr": "2026-07-17 00:00:00",
@@ -8382,26 +8382,26 @@
     "plan_nr": "45376"
   },
   {
-    "order_nr": "2026-04-07 00:00:00",
-    "art_nr": "63811000",
-    "klant": "iglo be",
-    "aantal": 13405,
-    "lever_datum": "2026-11-13",
-    "productie_datum": "2026-11-10",
-    "opmerking": "op vraag van Iglo een 1/2 batch produceren - ten vroegste 02/11 produceren",
-    "opmerking_analyse": "",
-    "plan_nr": "43862"
+    "order_nr": "2026-09-15 00:00:00",
+    "art_nr": "64225600",
+    "klant": "bof fr",
+    "aantal": 3000,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-21",
+    "opmerking": "",
+    "opmerking_analyse": "Opvolgen pasta",
+    "plan_nr": "45686"
   },
   {
-    "order_nr": "2026-09-28 00:00:00",
-    "art_nr": "63811100",
-    "klant": "iglo be",
-    "aantal": 26810,
-    "lever_datum": "2027-01-22",
-    "productie_datum": "2027-01-19",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "43863"
+    "order_nr": "2026-08-10 00:00:00",
+    "art_nr": "64400200",
+    "klant": "bof be",
+    "aantal": 3000,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-21",
+    "opmerking": "IN KOOIEN ??",
+    "opmerking_analyse": "COVIPEEL-ipeelcoio",
+    "plan_nr": "45490"
   },
   {
     "order_nr": "2026-07-22 00:00:00",
@@ -8459,15 +8459,15 @@
     "plan_nr": "45385"
   },
   {
-    "order_nr": "2026-05-20 00:00:00",
-    "art_nr": "64281100",
-    "klant": "bof be",
-    "aantal": 3000,
-    "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-20",
-    "opmerking": "prei 19/10",
-    "opmerking_analyse": "KALFSBLANKET (vacuumzakken) D-1 + KRIELEN steamen D-0",
-    "plan_nr": "44926"
+    "order_nr": "2026-08-24 00:00:00",
+    "art_nr": "65105200",
+    "klant": "dmb",
+    "aantal": 576,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-21",
+    "opmerking": "sneetjes kalkoen rollade op 21/10",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45536"
   },
   {
     "order_nr": "2026-07-27 00:00:00",
@@ -8481,26 +8481,26 @@
     "plan_nr": "45388"
   },
   {
-    "order_nr": "2026-05-29 00:00:00",
-    "art_nr": "63809300",
-    "klant": "iglo be",
-    "aantal": 26810,
-    "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-07",
-    "opmerking": "",
-    "opmerking_analyse": "ZALM verzagen (85g)",
-    "plan_nr": "44987"
+    "order_nr": "2026-09-08 00:00:00",
+    "art_nr": "65108300",
+    "klant": "dmb",
+    "aantal": 192,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-21",
+    "opmerking": "hamburger gesn 20/10",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45630"
   },
   {
-    "order_nr": "2026-05-29 00:00:00",
-    "art_nr": "63809400",
-    "klant": "iglo be",
-    "aantal": 26810,
-    "lever_datum": "2026-11-13",
-    "productie_datum": "2026-11-09",
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "65134000",
+    "klant": "dmb",
+    "aantal": 1000,
+    "lever_datum": "2026-10-23",
+    "productie_datum": "2026-10-21",
     "opmerking": "",
-    "opmerking_analyse": "KABELJAUW verzagen (90g)",
-    "plan_nr": "44988"
+    "opmerking_analyse": "Folie perforeren, RIJST D-1",
+    "plan_nr": "45564"
   },
   {
     "order_nr": "2026-07-27 00:00:00",
@@ -8514,15 +8514,15 @@
     "plan_nr": "45392"
   },
   {
-    "order_nr": "2026-06-04 00:00:00",
-    "art_nr": "65704800",
-    "klant": "aldi fr",
-    "aantal": 14112,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-22",
-    "opmerking": "verpakking opwerken",
-    "opmerking_analyse": "ZALM verzagen (100g)",
-    "plan_nr": "45002"
+    "order_nr": "2026-03-25 00:00:00",
+    "art_nr": "65706000",
+    "klant": "aldi be",
+    "aantal": 14000,
+    "lever_datum": "2026-10-23",
+    "productie_datum": "2026-10-21",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "43799"
   },
   {
     "order_nr": "2026-08-03 00:00:00",
@@ -8811,191 +8811,191 @@
     "plan_nr": "45419"
   },
   {
-    "order_nr": "2026-06-04 00:00:00",
-    "art_nr": "65704900",
-    "klant": "aldi fr",
-    "aantal": 17640,
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63504300",
+    "klant": "dmc",
+    "aantal": 2600,
     "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-28",
-    "opmerking": "verpakking opwerken",
-    "opmerking_analyse": "ZALM verzagen (100g)",
-    "plan_nr": "45003"
+    "productie_datum": "2026-10-22",
+    "opmerking": "prei 21/10",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45436"
   },
   {
-    "order_nr": "2026-06-04 00:00:00",
-    "art_nr": "65705000",
-    "klant": "aldi fr",
-    "aantal": 10584,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-29",
-    "opmerking": "verpakking opwerken",
-    "opmerking_analyse": "ZALM verzagen (100g)",
-    "plan_nr": "45004"
-  },
-  {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64282200",
-    "klant": "bof be",
-    "aantal": 6000,
+    "order_nr": "2026-09-08 00:00:00",
+    "art_nr": "65150000",
+    "klant": "dmb",
+    "aantal": 800,
     "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-26",
+    "productie_datum": "2026-10-22",
+    "opmerking": "r/v gehakt op 21/10",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45627"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "65151200",
+    "klant": "dmb",
+    "aantal": 384,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-22",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45566"
+  },
+  {
+    "order_nr": "2026-06-04 00:00:00",
+    "art_nr": "65704800",
+    "klant": "aldi fr",
+    "aantal": 14112,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-22",
+    "opmerking": "verpakking opwerken",
+    "opmerking_analyse": "ZALM verzagen (100g)",
+    "plan_nr": "45002"
+  },
+  {
+    "order_nr": "2026-03-25 00:00:00",
+    "art_nr": "65706100",
+    "klant": "aldi be",
+    "aantal": 11000,
+    "lever_datum": "2026-10-23",
+    "productie_datum": "2026-10-22",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45025"
+    "plan_nr": "43800"
   },
   {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64281900",
-    "klant": "bof be",
-    "aantal": 3500,
+    "order_nr": "2026-08-05 00:00:00",
+    "art_nr": "66811300",
+    "klant": "fit",
+    "aantal": 26810,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-22",
+    "opmerking": "",
+    "opmerking_analyse": "HALAL",
+    "plan_nr": "45458"
+  },
+  {
+    "order_nr": "2026-08-25 00:00:00",
+    "art_nr": "66812600",
+    "klant": "fit",
+    "aantal": 25000,
+    "lever_datum": "2026-10-23",
+    "productie_datum": "2026-10-22",
+    "opmerking": "Extra stalen QA : 2 begin - 2 midden - 2 einde / actie product, in totaal 35 000st (+2000st)",
+    "opmerking_analyse": "",
+    "plan_nr": "45553"
+  },
+  {
+    "order_nr": "2025-10-14 00:00:00",
+    "art_nr": "66901700",
+    "klant": "lidl int",
+    "aantal": 7030,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-19",
+    "opmerking": "effectief aantal nodig = 6930 zie verpakking",
+    "opmerking_analyse": "",
+    "plan_nr": "42816"
+  },
+  {
+    "order_nr": "2025-10-14 00:00:00",
+    "art_nr": "66901800",
+    "klant": "lidl int",
+    "aantal": 8416,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-19",
+    "opmerking": "effectief aantal nodig = 8316 zie verpakking",
+    "opmerking_analyse": "",
+    "plan_nr": "42817"
+  },
+  {
+    "order_nr": "2025-10-14 00:00:00",
+    "art_nr": "66901900",
+    "klant": "lidl int",
+    "aantal": 5644,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-19",
+    "opmerking": "effectief aantal nodig = 5544 zie verpakking",
+    "opmerking_analyse": "PULLED CHICKEN D-2 ontdooien",
+    "plan_nr": "42818"
+  },
+  {
+    "order_nr": "2026-01-29 00:00:00",
+    "art_nr": "63860500",
+    "klant": "findus se",
+    "aantal": 26810,
     "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-17",
+    "productie_datum": "2026-11-23",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45028"
+    "plan_nr": "43405"
   },
   {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64255000",
-    "klant": "lidl DE",
-    "aantal": 20000,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-26",
+    "order_nr": "2026-08-26 00:00:00",
+    "art_nr": "65062000",
+    "klant": "aldi be",
+    "aantal": 5400,
+    "lever_datum": "2026-12-11",
+    "productie_datum": "2026-12-10",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45067"
+    "plan_nr": "43529"
   },
   {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64255100",
-    "klant": "lidl DE",
-    "aantal": 16000,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-27",
+    "order_nr": "2026-08-26 00:00:00",
+    "art_nr": "65062100",
+    "klant": "aldi be",
+    "aantal": 9500,
+    "lever_datum": "2026-12-11",
+    "productie_datum": "2026-12-10",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45068"
+    "plan_nr": "43530"
   },
   {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64255200",
-    "klant": "lidl DE",
-    "aantal": 12000,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-19",
-    "opmerking": "4000 stuks wave 3 + 8000 stuks wave 4",
+    "order_nr": "2026-08-26 00:00:00",
+    "art_nr": "65062200",
+    "klant": "aldi be",
+    "aantal": 5400,
+    "lever_datum": "2026-12-11",
+    "productie_datum": "2026-12-10",
+    "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45069"
+    "plan_nr": "43531"
   },
   {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64255000",
-    "klant": "lidl DE",
-    "aantal": 14500,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-16",
-    "opmerking": "Deel 1 - 40000st nodig",
+    "order_nr": "2026-08-26 00:00:00",
+    "art_nr": "65062300",
+    "klant": "aldi be",
+    "aantal": 3900,
+    "lever_datum": "2026-12-11",
+    "productie_datum": "2026-12-10",
+    "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45070"
+    "plan_nr": "43532"
   },
   {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64255100",
-    "klant": "lidl DE",
-    "aantal": 24500,
-    "lever_datum": "2026-11-21",
-    "productie_datum": "2026-11-21",
-    "opmerking": "CSB : ingepland op 13/11 - Deel 1:  32000st nodig",
-    "opmerking_analyse": "",
-    "plan_nr": "45071"
+    "order_nr": "2026-08-26 00:00:00",
+    "art_nr": "65062400",
+    "klant": "aldi be",
+    "aantal": 5400,
+    "lever_datum": "2026-12-11",
+    "productie_datum": "2026-12-10",
+    "opmerking": "",
+    "opmerking_analyse": "Bulgur koken D-1",
+    "plan_nr": "43533"
   },
   {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64255000",
-    "klant": "lidl DE",
-    "aantal": 24500,
+    "order_nr": "2026-02-18 00:00:00",
+    "art_nr": "61686000",
+    "klant": "lidl be",
+    "aantal": 4300,
     "lever_datum": "2026-12-18",
     "productie_datum": "2026-12-14",
-    "opmerking": "Deel 1 - 30000st nodig",
+    "opmerking": "rest palet 192st aanvullen - eff. 4300 stuks nodig",
     "opmerking_analyse": "",
-    "plan_nr": "45072"
-  },
-  {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64255100",
-    "klant": "lidl DE",
-    "aantal": 24000,
-    "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-15",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45073"
-  },
-  {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64255200",
-    "klant": "lidl DE",
-    "aantal": 8000,
-    "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-14",
-    "opmerking": "6000 stuks wave 5 + 2000 stuks wave 6",
-    "opmerking_analyse": "",
-    "plan_nr": "45074"
-  },
-  {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64255000",
-    "klant": "lidl DE",
-    "aantal": 10000,
-    "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-11",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45075"
-  },
-  {
-    "order_nr": "2026-06-08 00:00:00",
-    "art_nr": "64255100",
-    "klant": "lidl DE",
-    "aantal": 8000,
-    "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-11",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45076"
-  },
-  {
-    "order_nr": "2026-06-09 00:00:00",
-    "art_nr": "64255000",
-    "klant": "lidl DE",
-    "aantal": 25500,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-18",
-    "opmerking": "Deel 2 - 40000st nodig - plannr 45070",
-    "opmerking_analyse": "",
-    "plan_nr": "45077"
-  },
-  {
-    "order_nr": "2026-06-09 00:00:00",
-    "art_nr": "64255100",
-    "klant": "lidl DE",
-    "aantal": 7500,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-16",
-    "opmerking": "Deel 2 - 32000st nodig - plannr 45071",
-    "opmerking_analyse": "",
-    "plan_nr": "45078"
-  },
-  {
-    "order_nr": "2026-06-09 00:00:00",
-    "art_nr": "64255000",
-    "klant": "lidl DE",
-    "aantal": 5500,
-    "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-14",
-    "opmerking": "Deel 2 - 30000st nodig - plannr 45072",
-    "opmerking_analyse": "",
-    "plan_nr": "45079"
+    "plan_nr": "43595"
   },
   {
     "order_nr": "2026-08-04 00:00:00",
@@ -9009,37 +9009,37 @@
     "plan_nr": "45437"
   },
   {
-    "order_nr": "2026-06-09 00:00:00",
-    "art_nr": "61642400",
-    "klant": "colr",
-    "aantal": 19150,
-    "lever_datum": "2026-12-31",
-    "productie_datum": "2026-12-22",
+    "order_nr": "2026-02-19 00:00:00",
+    "art_nr": "63809000",
+    "klant": "iglo be",
+    "aantal": 19916,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-17",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45080"
+    "plan_nr": "43619"
   },
   {
-    "order_nr": "2026-06-23 00:00:00",
-    "art_nr": "63516700",
-    "klant": "dmc",
-    "aantal": 2000,
-    "lever_datum": "2026-11-13",
-    "productie_datum": "2026-10-26",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45112"
-  },
-  {
-    "order_nr": "2026-10-02 00:00:00",
-    "art_nr": "63820200",
-    "klant": "iglo nl",
-    "aantal": 26810,
-    "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-15",
-    "opmerking": "",
+    "order_nr": "2026-03-11 00:00:00",
+    "art_nr": "64256000",
+    "klant": "lidl int",
+    "aantal": 16500,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-25",
+    "opmerking": "Deel 1 - 29736st nodig",
     "opmerking_analyse": "",
-    "plan_nr": "45221"
+    "plan_nr": "43736"
+  },
+  {
+    "order_nr": "2026-03-11 00:00:00",
+    "art_nr": "64256100",
+    "klant": "lidl int",
+    "aantal": 6000,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-23",
+    "opmerking": "Deel 1 - 39648st nodig",
+    "opmerking_analyse": "",
+    "plan_nr": "43737"
   },
   {
     "order_nr": "2026-08-04 00:00:00",
@@ -9053,136 +9053,136 @@
     "plan_nr": "45441"
   },
   {
-    "order_nr": "2026-06-29 00:00:00",
-    "art_nr": "63512200",
-    "klant": "dmc",
-    "aantal": 2200,
+    "order_nr": "2026-03-11 00:00:00",
+    "art_nr": "64256200",
+    "klant": "lidl int",
+    "aantal": 18500,
     "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-26",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45234"
+    "productie_datum": "2026-11-23",
+    "opmerking": "Deel 1 - 29736st nodig",
+    "opmerking_analyse": "",
+    "plan_nr": "43738"
   },
   {
-    "order_nr": "2026-07-02 00:00:00",
-    "art_nr": "61659300",
+    "order_nr": "2026-03-11 00:00:00",
+    "art_nr": "64256000",
+    "klant": "lidl int",
+    "aantal": 33616,
+    "lever_datum": "2027-05-14",
+    "productie_datum": "2027-05-11",
+    "opmerking": "33516st nodig",
+    "opmerking_analyse": "",
+    "plan_nr": "43739"
+  },
+  {
+    "order_nr": "2026-03-11 00:00:00",
+    "art_nr": "64256100",
+    "klant": "lidl int",
+    "aantal": 44788,
+    "lever_datum": "2027-05-14",
+    "productie_datum": "2027-05-11",
+    "opmerking": "44688st nodig",
+    "opmerking_analyse": "",
+    "plan_nr": "43740"
+  },
+  {
+    "order_nr": "2026-03-11 00:00:00",
+    "art_nr": "64256200",
+    "klant": "lidl int",
+    "aantal": 33616,
+    "lever_datum": "2027-05-14",
+    "productie_datum": "2027-05-12",
+    "opmerking": "33516st nodig",
+    "opmerking_analyse": "",
+    "plan_nr": "43741"
+  },
+  {
+    "order_nr": "2026-03-17 00:00:00",
+    "art_nr": "63110200",
     "klant": "aldi be",
-    "aantal": 15320,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-20",
-    "opmerking": "",
-    "opmerking_analyse": "om de 4u multipond reinigen+ontsmetten",
-    "plan_nr": "45309"
+    "aantal": 8300,
+    "lever_datum": "2027-01-29",
+    "productie_datum": "2027-01-25",
+    "opmerking": "opwerken verpakking",
+    "opmerking_analyse": "",
+    "plan_nr": "43767"
   },
   {
-    "order_nr": "2026-09-18 00:00:00",
-    "art_nr": "61699600",
-    "klant": "bof de",
-    "aantal": 16852,
-    "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-21",
-    "opmerking": "",
-    "opmerking_analyse": "BLIKKEN openen D-1 (1u/2100st); opvolgen fruitstukjes",
-    "plan_nr": "45317"
+    "order_nr": "2026-03-17 00:00:00",
+    "art_nr": "63110300",
+    "klant": "aldi be",
+    "aantal": 7300,
+    "lever_datum": "2027-01-29",
+    "productie_datum": "2027-01-25",
+    "opmerking": "opwerken verpakking",
+    "opmerking_analyse": "",
+    "plan_nr": "43768"
   },
   {
-    "order_nr": "2026-07-10 00:00:00",
-    "art_nr": "67100100",
-    "klant": "picard",
-    "aantal": 15000,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-30",
+    "order_nr": "2026-03-17 00:00:00",
+    "art_nr": "63110900",
+    "klant": "aldi be",
+    "aantal": 8700,
+    "lever_datum": "2027-01-29",
+    "productie_datum": "2027-01-25",
+    "opmerking": "opwerken verpakking",
+    "opmerking_analyse": "",
+    "plan_nr": "43769"
+  },
+  {
+    "order_nr": "2026-03-20 00:00:00",
+    "art_nr": "63141400",
+    "klant": "colr",
+    "aantal": 9000,
+    "lever_datum": "2026-12-31",
+    "productie_datum": "2026-12-10",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45327"
+    "plan_nr": "43778"
   },
   {
-    "order_nr": "2026-07-15 00:00:00",
-    "art_nr": "66000200",
-    "klant": "bof de",
-    "aantal": 8800,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-16",
-    "opmerking": "2 zakken samen met geperforeerd middenseal",
-    "opmerking_analyse": "",
-    "plan_nr": "45339"
-  },
-  {
-    "order_nr": "2026-07-16 00:00:00",
-    "art_nr": "64260300",
-    "klant": "thiriet",
-    "aantal": 5750,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-27",
-    "opmerking": "witloof 23/10",
-    "opmerking_analyse": "HAM snijden, 2000 sneedjes hesp/werkuur",
-    "plan_nr": "45342"
-  },
-  {
-    "order_nr": "2026-07-17 00:00:00",
-    "art_nr": "64402000",
-    "klant": "bof de",
-    "aantal": 13405,
-    "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-07",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45354"
-  },
-  {
-    "order_nr": "2026-07-17 00:00:00",
-    "art_nr": "64280700",
-    "klant": "bof be",
-    "aantal": 5500,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-27",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45357"
-  },
-  {
-    "order_nr": "2026-07-17 00:00:00",
-    "art_nr": "64280100",
-    "klant": "bof be",
-    "aantal": 4500,
-    "lever_datum": "2026-11-13",
-    "productie_datum": "2026-10-26",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45358"
-  },
-  {
-    "order_nr": "2026-07-17 00:00:00",
-    "art_nr": "64281000",
-    "klant": "bof be",
+    "order_nr": "2026-03-25 00:00:00",
+    "art_nr": "65706200",
+    "klant": "aldi be",
     "aantal": 8000,
-    "lever_datum": "2026-12-04",
-    "productie_datum": "2026-11-20",
-    "opmerking": "",
-    "opmerking_analyse": "HAM snijden D-1",
-    "plan_nr": "45359"
+    "lever_datum": "2026-10-23",
+    "productie_datum": "2026-10-23",
+    "opmerking": "opwerken verpakking",
+    "opmerking_analyse": "",
+    "plan_nr": "43801"
   },
   {
-    "order_nr": "2026-07-17 00:00:00",
-    "art_nr": "64400100",
-    "klant": "bof be",
-    "aantal": 3000,
+    "order_nr": "2026-09-28 00:00:00",
+    "art_nr": "63804300",
+    "klant": "iglo be",
+    "aantal": 19150,
     "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-17",
+    "productie_datum": "2026-11-18",
     "opmerking": "",
-    "opmerking_analyse": "COVIPEEL-ipeelcoio",
-    "plan_nr": "45362"
+    "opmerking_analyse": "Hamsnijm. na 4uur productie ontsmetten, D-1 3p WITLOOF",
+    "plan_nr": "43848"
   },
   {
-    "order_nr": "2026-07-27 00:00:00",
-    "art_nr": "63502600",
-    "klant": "dmc",
-    "aantal": 5000,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-20",
+    "order_nr": "2026-04-07 00:00:00",
+    "art_nr": "63808200",
+    "klant": "iglo be",
+    "aantal": 26810,
+    "lever_datum": "2026-11-13",
+    "productie_datum": "2026-11-09",
     "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45386"
+    "opmerking_analyse": "",
+    "plan_nr": "43849"
+  },
+  {
+    "order_nr": "2026-04-07 00:00:00",
+    "art_nr": "63808200",
+    "klant": "iglo be",
+    "aantal": 26810,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-14",
+    "opmerking": "CSB : ingepland op 13/11",
+    "opmerking_analyse": "",
+    "plan_nr": "43850"
   },
   {
     "order_nr": "2026-08-05 00:00:00",
@@ -9218,26 +9218,26 @@
     "plan_nr": "45456"
   },
   {
-    "order_nr": "2026-07-27 00:00:00",
-    "art_nr": "63596400",
-    "klant": "dlc",
-    "aantal": 1000,
-    "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-20",
-    "opmerking": "selder+ prei 19/10",
-    "opmerking_analyse": "idem 64000400",
-    "plan_nr": "45391"
+    "order_nr": "2026-04-07 00:00:00",
+    "art_nr": "63808200",
+    "klant": "iglo be",
+    "aantal": 26810,
+    "lever_datum": "2026-12-19",
+    "productie_datum": "2026-12-19",
+    "opmerking": "CSB : ingepland op 18/12",
+    "opmerking_analyse": "",
+    "plan_nr": "43851"
   },
   {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63909300",
-    "klant": "vat",
-    "aantal": 6000,
-    "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-23",
-    "opmerking": "speklapje op 21/10",
+    "order_nr": "2026-09-28 00:00:00",
+    "art_nr": "63808600",
+    "klant": "iglo be",
+    "aantal": 26810,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-18",
+    "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45420"
+    "plan_nr": "43855"
   },
   {
     "order_nr": "2026-08-05 00:00:00",
@@ -9262,15 +9262,15 @@
     "plan_nr": "45460"
   },
   {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63913800",
-    "klant": "vat",
-    "aantal": 5950,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-29",
-    "opmerking": "witloof gesn op 28/10",
-    "opmerking_analyse": "",
-    "plan_nr": "45423"
+    "order_nr": "2026-04-07 00:00:00",
+    "art_nr": "63809200",
+    "klant": "iglo be",
+    "aantal": 26810,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-08",
+    "opmerking": "",
+    "opmerking_analyse": "vers gehakt",
+    "plan_nr": "43857"
   },
   {
     "order_nr": "2026-08-05 00:00:00",
@@ -9295,26 +9295,26 @@
     "plan_nr": "45463"
   },
   {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63907400",
-    "klant": "vat",
-    "aantal": 8350,
+    "order_nr": "2026-04-07 00:00:00",
+    "art_nr": "63810000",
+    "klant": "iglo be",
+    "aantal": 13405,
     "lever_datum": "2026-10-30",
     "productie_datum": "2026-10-27",
-    "opmerking": "",
-    "opmerking_analyse": "idem 63515300",
-    "plan_nr": "45424"
+    "opmerking": "1/2 productie",
+    "opmerking_analyse": "",
+    "plan_nr": "43859"
   },
   {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63907000",
-    "klant": "vat",
-    "aantal": 3000,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-28",
-    "opmerking": "worst 130g op 27/10",
+    "order_nr": "2026-04-07 00:00:00",
+    "art_nr": "63810500",
+    "klant": "iglo be",
+    "aantal": 26810,
+    "lever_datum": "2026-12-04",
+    "productie_datum": "2026-11-30",
+    "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45426"
+    "plan_nr": "43861"
   },
   {
     "order_nr": "2026-08-05 00:00:00",
@@ -9328,15 +9328,15 @@
     "plan_nr": "45466"
   },
   {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63901700",
-    "klant": "vat",
-    "aantal": 9000,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-26",
-    "opmerking": "",
+    "order_nr": "2026-04-07 00:00:00",
+    "art_nr": "63811000",
+    "klant": "iglo be",
+    "aantal": 13405,
+    "lever_datum": "2026-11-13",
+    "productie_datum": "2026-11-10",
+    "opmerking": "op vraag van Iglo een 1/2 batch produceren - ten vroegste 02/11 produceren-blinde vink 9/11",
     "opmerking_analyse": "",
-    "plan_nr": "45427"
+    "plan_nr": "43862"
   },
   {
     "order_nr": "2026-08-06 00:00:00",
@@ -9449,15 +9449,15 @@
     "plan_nr": "45477"
   },
   {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63913000",
-    "klant": "vat",
-    "aantal": 3200,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-26",
+    "order_nr": "2026-09-28 00:00:00",
+    "art_nr": "63811100",
+    "klant": "iglo be",
+    "aantal": 26810,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-18",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45428"
+    "plan_nr": "43863"
   },
   {
     "order_nr": "2026-08-10 00:00:00",
@@ -9482,15 +9482,15 @@
     "plan_nr": "45483"
   },
   {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63933000",
-    "klant": "vat",
-    "aantal": 1600,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-26",
+    "order_nr": "2026-05-29 00:00:00",
+    "art_nr": "63809300",
+    "klant": "iglo be",
+    "aantal": 26810,
+    "lever_datum": "2026-12-04",
+    "productie_datum": "2026-12-07",
     "opmerking": "",
-    "opmerking_analyse": "kl v 63913000",
-    "plan_nr": "45429"
+    "opmerking_analyse": "ZALM verzagen (85g)",
+    "plan_nr": "44987"
   },
   {
     "order_nr": "2026-08-10 00:00:00",
@@ -9504,15 +9504,15 @@
     "plan_nr": "45485"
   },
   {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63960800",
-    "klant": "vat",
-    "aantal": 900,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-30",
-    "opmerking": "prei op 29/10",
-    "opmerking_analyse": "GROENTEBURGER D-1 tempereren, AARDAPPELEN steamen D-0",
-    "plan_nr": "45430"
+    "order_nr": "2026-05-29 00:00:00",
+    "art_nr": "63809400",
+    "klant": "iglo be",
+    "aantal": 26810,
+    "lever_datum": "2026-11-13",
+    "productie_datum": "2026-11-09",
+    "opmerking": "",
+    "opmerking_analyse": "KABELJAUW verzagen (90g)",
+    "plan_nr": "44988"
   },
   {
     "order_nr": "2026-08-10 00:00:00",
@@ -9548,26 +9548,26 @@
     "plan_nr": "45489"
   },
   {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63991000",
-    "klant": "vat",
-    "aantal": 550,
+    "order_nr": "2026-06-04 00:00:00",
+    "art_nr": "65704900",
+    "klant": "aldi fr",
+    "aantal": 17640,
     "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-20",
-    "opmerking": "selder 19/10",
-    "opmerking_analyse": "idem 63597000",
-    "plan_nr": "45431"
+    "productie_datum": "2026-10-28",
+    "opmerking": "verpakking opwerken",
+    "opmerking_analyse": "ZALM verzagen (100g)",
+    "plan_nr": "45003"
   },
   {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63310400",
-    "klant": "dmh",
-    "aantal": 10900,
+    "order_nr": "2026-06-04 00:00:00",
+    "art_nr": "65705000",
+    "klant": "aldi fr",
+    "aantal": 10584,
     "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-30",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45434"
+    "productie_datum": "2026-10-29",
+    "opmerking": "verpakking opwerken",
+    "opmerking_analyse": "ZALM verzagen (100g)",
+    "plan_nr": "45004"
   },
   {
     "order_nr": "2026-08-12 00:00:00",
@@ -9581,6 +9581,512 @@
     "plan_nr": "45492"
   },
   {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64282200",
+    "klant": "bof be",
+    "aantal": 6000,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-26",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45025"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64281900",
+    "klant": "bof be",
+    "aantal": 3500,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-17",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45028"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64255000",
+    "klant": "lidl DE",
+    "aantal": 20000,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-26",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45067"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64255100",
+    "klant": "lidl DE",
+    "aantal": 16000,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-27",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45068"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64255000",
+    "klant": "lidl DE",
+    "aantal": 14500,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-16",
+    "opmerking": "Deel 1 - 40000st nodig",
+    "opmerking_analyse": "",
+    "plan_nr": "45070"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64255100",
+    "klant": "lidl DE",
+    "aantal": 24500,
+    "lever_datum": "2026-11-21",
+    "productie_datum": "2026-11-21",
+    "opmerking": "CSB : ingepland op 20/11 - Deel 1:  32000st nodig",
+    "opmerking_analyse": "",
+    "plan_nr": "45071"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64255000",
+    "klant": "lidl DE",
+    "aantal": 21500,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-14",
+    "opmerking": "Deel 1 - 30000st nodig",
+    "opmerking_analyse": "",
+    "plan_nr": "45072"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64255100",
+    "klant": "lidl DE",
+    "aantal": 24000,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-15",
+    "opmerking": "KS mixer nodig",
+    "opmerking_analyse": "",
+    "plan_nr": "45073"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64255200",
+    "klant": "lidl DE",
+    "aantal": 8000,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-14",
+    "opmerking": "6000 stuks wave 5 + 2000 stuks wave 6",
+    "opmerking_analyse": "",
+    "plan_nr": "45074"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64255000",
+    "klant": "lidl DE",
+    "aantal": 10000,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-18",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45075"
+  },
+  {
+    "order_nr": "2026-06-08 00:00:00",
+    "art_nr": "64255100",
+    "klant": "lidl DE",
+    "aantal": 8000,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-18",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45076"
+  },
+  {
+    "order_nr": "2026-06-09 00:00:00",
+    "art_nr": "64255000",
+    "klant": "lidl DE",
+    "aantal": 25500,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-18",
+    "opmerking": "Deel 2 - 40000st nodig - plannr 45070",
+    "opmerking_analyse": "",
+    "plan_nr": "45077"
+  },
+  {
+    "order_nr": "2026-06-09 00:00:00",
+    "art_nr": "64255100",
+    "klant": "lidl DE",
+    "aantal": 7500,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-16",
+    "opmerking": "Deel 2 - 32000st nodig - plannr 45071",
+    "opmerking_analyse": "",
+    "plan_nr": "45078"
+  },
+  {
+    "order_nr": "2026-06-09 00:00:00",
+    "art_nr": "64255000",
+    "klant": "lidl DE",
+    "aantal": 8500,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-09",
+    "opmerking": "Deel 2 - 30000st nodig - plannr 45072",
+    "opmerking_analyse": "",
+    "plan_nr": "45079"
+  },
+  {
+    "order_nr": "2026-06-09 00:00:00",
+    "art_nr": "61642400",
+    "klant": "colr",
+    "aantal": 19150,
+    "lever_datum": "2026-12-31",
+    "productie_datum": "2026-12-17",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45080"
+  },
+  {
+    "order_nr": "2026-06-23 00:00:00",
+    "art_nr": "63516700",
+    "klant": "dmc",
+    "aantal": 2000,
+    "lever_datum": "2026-11-13",
+    "productie_datum": "2026-10-26",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45112"
+  },
+  {
+    "order_nr": "2026-08-14 00:00:00",
+    "art_nr": "64291100",
+    "klant": "apetito",
+    "aantal": 3360,
+    "lever_datum": "2026-10-02",
+    "productie_datum": "2026-09-23",
+    "opmerking": "vers ru gehakt op 21/9",
+    "opmerking_analyse": "OPGELET voor vuile - en open schalen",
+    "plan_nr": "45509"
+  },
+  {
+    "order_nr": "2026-10-02 00:00:00",
+    "art_nr": "63820200",
+    "klant": "iglo nl",
+    "aantal": 26810,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-15",
+    "opmerking": "Berief gebruiken ipv KS mixer",
+    "opmerking_analyse": "",
+    "plan_nr": "45221"
+  },
+  {
+    "order_nr": "2026-08-17 00:00:00",
+    "art_nr": "65132800",
+    "klant": "dmb",
+    "aantal": 1200,
+    "lever_datum": "2026-10-16",
+    "productie_datum": "2026-10-05",
+    "opmerking": "moet uit de spiraal",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45511"
+  },
+  {
+    "order_nr": "2026-06-29 00:00:00",
+    "art_nr": "63512200",
+    "klant": "dmc",
+    "aantal": 2200,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-26",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45234"
+  },
+  {
+    "order_nr": "2026-08-17 00:00:00",
+    "art_nr": "65151600",
+    "klant": "dmb",
+    "aantal": 768,
+    "lever_datum": "2026-10-09",
+    "productie_datum": "2026-09-29",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45513"
+  },
+  {
+    "order_nr": "2026-07-02 00:00:00",
+    "art_nr": "61659300",
+    "klant": "aldi be",
+    "aantal": 15320,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-20",
+    "opmerking": "",
+    "opmerking_analyse": "om de 4u multipond reinigen+ontsmetten",
+    "plan_nr": "45309"
+  },
+  {
+    "order_nr": "2026-07-10 00:00:00",
+    "art_nr": "67100100",
+    "klant": "picard",
+    "aantal": 15000,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-30",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45327"
+  },
+  {
+    "order_nr": "2026-07-15 00:00:00",
+    "art_nr": "66000200",
+    "klant": "bof de",
+    "aantal": 8800,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-16",
+    "opmerking": "2 zakken samen met geperforeerd middenseal",
+    "opmerking_analyse": "",
+    "plan_nr": "45339"
+  },
+  {
+    "order_nr": "2026-07-16 00:00:00",
+    "art_nr": "64260300",
+    "klant": "thiriet",
+    "aantal": 5750,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-27",
+    "opmerking": "witloof 23/10",
+    "opmerking_analyse": "HAM snijden, 2000 sneedjes hesp/werkuur",
+    "plan_nr": "45342"
+  },
+  {
+    "order_nr": "2026-07-17 00:00:00",
+    "art_nr": "64402000",
+    "klant": "bof de",
+    "aantal": 13405,
+    "lever_datum": "2026-12-04",
+    "productie_datum": "2026-12-07",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45354"
+  },
+  {
+    "order_nr": "2026-07-17 00:00:00",
+    "art_nr": "64280700",
+    "klant": "bof be",
+    "aantal": 5500,
+    "lever_datum": "2026-11-06",
+    "productie_datum": "2026-10-27",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45357"
+  },
+  {
+    "order_nr": "2026-07-17 00:00:00",
+    "art_nr": "64280100",
+    "klant": "bof be",
+    "aantal": 4500,
+    "lever_datum": "2026-11-13",
+    "productie_datum": "2026-10-26",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45358"
+  },
+  {
+    "order_nr": "2026-07-17 00:00:00",
+    "art_nr": "64281000",
+    "klant": "bof be",
+    "aantal": 8000,
+    "lever_datum": "2026-12-04",
+    "productie_datum": "2026-11-20",
+    "opmerking": "",
+    "opmerking_analyse": "HAM snijden D-1",
+    "plan_nr": "45359"
+  },
+  {
+    "order_nr": "2026-07-17 00:00:00",
+    "art_nr": "64400100",
+    "klant": "bof be",
+    "aantal": 3000,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-17",
+    "opmerking": "",
+    "opmerking_analyse": "COVIPEEL-ipeelcoio",
+    "plan_nr": "45362"
+  },
+  {
+    "order_nr": "2026-07-27 00:00:00",
+    "art_nr": "63502600",
+    "klant": "dmc",
+    "aantal": 5000,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-20",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45386"
+  },
+  {
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63909300",
+    "klant": "vat",
+    "aantal": 6000,
+    "lever_datum": "2026-10-23",
+    "productie_datum": "2026-10-23",
+    "opmerking": "speklapje op 21/10",
+    "opmerking_analyse": "",
+    "plan_nr": "45420"
+  },
+  {
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63901700",
+    "klant": "vat",
+    "aantal": 9000,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-26",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45427"
+  },
+  {
+    "order_nr": "2026-08-24 00:00:00",
+    "art_nr": "63583400",
+    "klant": "dlc",
+    "aantal": 1300,
+    "lever_datum": "2026-10-16",
+    "productie_datum": "2026-10-08",
+    "opmerking": "",
+    "opmerking_analyse": "folie perforeren",
+    "plan_nr": "45531"
+  },
+  {
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63913000",
+    "klant": "vat",
+    "aantal": 3200,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-26",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45428"
+  },
+  {
+    "order_nr": "2026-08-24 00:00:00",
+    "art_nr": "65151300",
+    "klant": "dmb",
+    "aantal": 768,
+    "lever_datum": "2026-10-16",
+    "productie_datum": "2026-10-08",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45533"
+  },
+  {
+    "order_nr": "2026-08-24 00:00:00",
+    "art_nr": "65105100",
+    "klant": "dmb",
+    "aantal": 768,
+    "lever_datum": "2026-10-09",
+    "productie_datum": "2026-09-28",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45534"
+  },
+  {
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63933000",
+    "klant": "vat",
+    "aantal": 1600,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-26",
+    "opmerking": "",
+    "opmerking_analyse": "kl v 63913000",
+    "plan_nr": "45429"
+  },
+  {
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63907400",
+    "klant": "vat",
+    "aantal": 8350,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-27",
+    "opmerking": "",
+    "opmerking_analyse": "idem 63515300",
+    "plan_nr": "45424"
+  },
+  {
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63907000",
+    "klant": "vat",
+    "aantal": 3000,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-28",
+    "opmerking": "worst 130g op 27/10",
+    "opmerking_analyse": "",
+    "plan_nr": "45426"
+  },
+  {
+    "order_nr": "2026-08-24 00:00:00",
+    "art_nr": "65131100",
+    "klant": "dmb",
+    "aantal": 768,
+    "lever_datum": "2026-10-16",
+    "productie_datum": "2026-10-07",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45538"
+  },
+  {
+    "order_nr": "2026-08-24 00:00:00",
+    "art_nr": "65131300",
+    "klant": "dmb",
+    "aantal": 768,
+    "lever_datum": "2026-10-16",
+    "productie_datum": "2026-10-07",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45539"
+  },
+  {
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63913800",
+    "klant": "vat",
+    "aantal": 5950,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-29",
+    "opmerking": "witloof gesn op 28/10",
+    "opmerking_analyse": "",
+    "plan_nr": "45423"
+  },
+  {
+    "order_nr": "2026-08-24 00:00:00",
+    "art_nr": "65125200",
+    "klant": "dmb",
+    "aantal": 768,
+    "lever_datum": "2026-10-16",
+    "productie_datum": "2026-09-28",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45541"
+  },
+  {
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63960800",
+    "klant": "vat",
+    "aantal": 900,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-30",
+    "opmerking": "prei op 29/10",
+    "opmerking_analyse": "GROENTEBURGER D-1 tempereren, AARDAPPELEN steamen D-0",
+    "plan_nr": "45430"
+  },
+  {
+    "order_nr": "2026-08-04 00:00:00",
+    "art_nr": "63310400",
+    "klant": "dmh",
+    "aantal": 10900,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-30",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45434"
+  },
+  {
     "order_nr": "2026-08-04 00:00:00",
     "art_nr": "63518900",
     "klant": "dmc",
@@ -9590,17 +10096,6 @@
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45435"
-  },
-  {
-    "order_nr": "2026-08-04 00:00:00",
-    "art_nr": "63504300",
-    "klant": "dmc",
-    "aantal": 2600,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-22",
-    "opmerking": "prei 21/10",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45436"
   },
   {
     "order_nr": "2026-08-04 00:00:00",
@@ -9702,6 +10197,28 @@
     "plan_nr": "45448"
   },
   {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63310500",
+    "klant": "dmh",
+    "aantal": 1296,
+    "lever_datum": "2026-10-09",
+    "productie_datum": "2026-10-08",
+    "opmerking": "",
+    "opmerking_analyse": "HALAL",
+    "plan_nr": "45558"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63563700",
+    "klant": "dmc",
+    "aantal": 900,
+    "lever_datum": "2026-10-09",
+    "productie_datum": "2026-10-05",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45559"
+  },
+  {
     "order_nr": "2026-08-04 00:00:00",
     "art_nr": "67110400",
     "klant": "lidl int",
@@ -9746,72 +10263,6 @@
     "plan_nr": "45452"
   },
   {
-    "order_nr": "2026-08-05 00:00:00",
-    "art_nr": "66811300",
-    "klant": "fit",
-    "aantal": 26810,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-22",
-    "opmerking": "",
-    "opmerking_analyse": "HALAL",
-    "plan_nr": "45458"
-  },
-  {
-    "order_nr": "2026-08-14 00:00:00",
-    "art_nr": "64291100",
-    "klant": "apetito",
-    "aantal": 3360,
-    "lever_datum": "2026-10-02",
-    "productie_datum": "2026-09-23",
-    "opmerking": "vers ru gehakt op 21/9",
-    "opmerking_analyse": "OPGELET voor vuile - en open schalen",
-    "plan_nr": "45509"
-  },
-  {
-    "order_nr": "2026-08-10 00:00:00",
-    "art_nr": "63597000",
-    "klant": "dmc",
-    "aantal": 1000,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-20",
-    "opmerking": "selder 19/10",
-    "opmerking_analyse": "idem 64001000",
-    "plan_nr": "45486"
-  },
-  {
-    "order_nr": "2026-08-17 00:00:00",
-    "art_nr": "65132800",
-    "klant": "dmb",
-    "aantal": 1200,
-    "lever_datum": "2026-10-16",
-    "productie_datum": "2026-10-05",
-    "opmerking": "moet uit de spiraal",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45511"
-  },
-  {
-    "order_nr": "2026-08-10 00:00:00",
-    "art_nr": "64400200",
-    "klant": "bof be",
-    "aantal": 3000,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-21",
-    "opmerking": "IN KOOIEN ??",
-    "opmerking_analyse": "COVIPEEL-ipeelcoio",
-    "plan_nr": "45490"
-  },
-  {
-    "order_nr": "2026-08-17 00:00:00",
-    "art_nr": "65151600",
-    "klant": "dmb",
-    "aantal": 768,
-    "lever_datum": "2026-10-09",
-    "productie_datum": "2026-09-29",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45513"
-  },
-  {
     "order_nr": "2026-08-10 00:00:00",
     "art_nr": "64282500",
     "klant": "bof be",
@@ -9823,12 +10274,23 @@
     "plan_nr": "45491"
   },
   {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "65132700",
+    "klant": "dmb",
+    "aantal": 830,
+    "lever_datum": "2026-10-09",
+    "productie_datum": "2026-10-05",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "45565"
+  },
+  {
     "order_nr": "2026-08-13 00:00:00",
     "art_nr": "66850000",
     "klant": "ah",
     "aantal": 10000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-12",
+    "productie_datum": "2027-01-08",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45493"
@@ -9839,7 +10301,7 @@
     "klant": "ah",
     "aantal": 10000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-12",
+    "productie_datum": "2027-01-11",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45494"
@@ -9850,7 +10312,7 @@
     "klant": "ah",
     "aantal": 9000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-12",
+    "productie_datum": "2027-01-11",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45495"
@@ -9861,7 +10323,7 @@
     "klant": "ah",
     "aantal": 24000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-12",
+    "productie_datum": "2027-01-11",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45496"
@@ -9872,7 +10334,7 @@
     "klant": "ah",
     "aantal": 24000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-13",
+    "productie_datum": "2027-01-12",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45497"
@@ -9883,7 +10345,7 @@
     "klant": "ah",
     "aantal": 10000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-13",
+    "productie_datum": "2027-01-08",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45498"
@@ -9894,7 +10356,7 @@
     "klant": "ah",
     "aantal": 24000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-13",
+    "productie_datum": "2027-01-12",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45499"
@@ -9905,7 +10367,7 @@
     "klant": "ah",
     "aantal": 16000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-13",
+    "productie_datum": "2027-01-08",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45500"
@@ -9944,17 +10406,6 @@
     "plan_nr": "45506"
   },
   {
-    "order_nr": "2026-08-24 00:00:00",
-    "art_nr": "63583400",
-    "klant": "dlc",
-    "aantal": 1300,
-    "lever_datum": "2026-10-16",
-    "productie_datum": "2026-10-08",
-    "opmerking": "",
-    "opmerking_analyse": "folie perforeren",
-    "plan_nr": "45531"
-  },
-  {
     "order_nr": "2026-08-17 00:00:00",
     "art_nr": "63311600",
     "klant": "dmh",
@@ -9964,28 +10415,6 @@
     "opmerking": "",
     "opmerking_analyse": "ZALMSNIPPERS D-1 ontdooien",
     "plan_nr": "45514"
-  },
-  {
-    "order_nr": "2026-08-24 00:00:00",
-    "art_nr": "65151300",
-    "klant": "dmb",
-    "aantal": 768,
-    "lever_datum": "2026-10-16",
-    "productie_datum": "2026-10-08",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45533"
-  },
-  {
-    "order_nr": "2026-08-24 00:00:00",
-    "art_nr": "65105100",
-    "klant": "dmb",
-    "aantal": 768,
-    "lever_datum": "2026-10-09",
-    "productie_datum": "2026-09-28",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45534"
   },
   {
     "order_nr": "2026-08-17 00:00:00",
@@ -10022,28 +10451,6 @@
   },
   {
     "order_nr": "2026-08-24 00:00:00",
-    "art_nr": "65131100",
-    "klant": "dmb",
-    "aantal": 768,
-    "lever_datum": "2026-10-16",
-    "productie_datum": "2026-10-07",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45538"
-  },
-  {
-    "order_nr": "2026-08-24 00:00:00",
-    "art_nr": "65131300",
-    "klant": "dmb",
-    "aantal": 768,
-    "lever_datum": "2026-10-16",
-    "productie_datum": "2026-10-07",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45539"
-  },
-  {
-    "order_nr": "2026-08-24 00:00:00",
     "art_nr": "67110100",
     "klant": "lidl int",
     "aantal": 22500,
@@ -10052,17 +10459,6 @@
     "opmerking": "Deel 3 order 45442 - 73472st nodig",
     "opmerking_analyse": "",
     "plan_nr": "45518"
-  },
-  {
-    "order_nr": "2026-08-24 00:00:00",
-    "art_nr": "65125200",
-    "klant": "dmb",
-    "aantal": 768,
-    "lever_datum": "2026-10-16",
-    "productie_datum": "2026-09-28",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45541"
   },
   {
     "order_nr": "2026-08-24 00:00:00",
@@ -10148,7 +10544,7 @@
     "aantal": 15000,
     "lever_datum": "2026-11-20",
     "productie_datum": "2026-11-19",
-    "opmerking": "",
+    "opmerking": "vers r/v gehakt op 18/11",
     "opmerking_analyse": "",
     "plan_nr": "45526"
   },
@@ -10170,7 +10566,7 @@
     "aantal": 4300,
     "lever_datum": "2026-11-20",
     "productie_datum": "2026-11-17",
-    "opmerking": "",
+    "opmerking": "vers ru gehakt op 16/11",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45528"
   },
@@ -10192,53 +10588,9 @@
     "aantal": 4700,
     "lever_datum": "2026-11-13",
     "productie_datum": "2026-11-13",
-    "opmerking": "",
+    "opmerking": "blinde vink 12/11",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45530"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63310500",
-    "klant": "dmh",
-    "aantal": 1296,
-    "lever_datum": "2026-10-09",
-    "productie_datum": "2026-10-08",
-    "opmerking": "",
-    "opmerking_analyse": "HALAL",
-    "plan_nr": "45558"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63563700",
-    "klant": "dmc",
-    "aantal": 900,
-    "lever_datum": "2026-10-09",
-    "productie_datum": "2026-10-05",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45559"
-  },
-  {
-    "order_nr": "2026-08-24 00:00:00",
-    "art_nr": "63574000",
-    "klant": "dlc",
-    "aantal": 750,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-20",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren,alaska pollak verzagen (227g)",
-    "plan_nr": "45532"
-  },
-  {
-    "order_nr": "2026-08-24 00:00:00",
-    "art_nr": "65105200",
-    "klant": "dmb",
-    "aantal": 576,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-21",
-    "opmerking": "sneetjes kalkoen rollade op 21/10",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45536"
   },
   {
     "order_nr": "2026-08-25 00:00:00",
@@ -10274,17 +10626,6 @@
     "plan_nr": "45551"
   },
   {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "65132700",
-    "klant": "dmb",
-    "aantal": 830,
-    "lever_datum": "2026-10-09",
-    "productie_datum": "2026-10-05",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45565"
-  },
-  {
     "order_nr": "2026-08-25 00:00:00",
     "art_nr": "66811800",
     "klant": "fit",
@@ -10294,17 +10635,6 @@
     "opmerking": "",
     "opmerking_analyse": "HALAL",
     "plan_nr": "45552"
-  },
-  {
-    "order_nr": "2026-08-25 00:00:00",
-    "art_nr": "66812600",
-    "klant": "fit",
-    "aantal": 25000,
-    "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-22",
-    "opmerking": "Extra stalen QA : 2 begin - 2 midden - 2 einde / actie product, in totaal 35 000st (+2000st)",
-    "opmerking_analyse": "",
-    "plan_nr": "45553"
   },
   {
     "order_nr": "2026-08-25 00:00:00",
@@ -10384,114 +10714,15 @@
     "plan_nr": "45562"
   },
   {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63588200",
-    "klant": "dlc",
-    "aantal": 650,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-21",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren - D-1 kalkoen filet",
-    "plan_nr": "45563"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "65134000",
-    "klant": "dmb",
-    "aantal": 1000,
-    "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-21",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren, RIJST D-1",
-    "plan_nr": "45564"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "65151200",
-    "klant": "dmb",
-    "aantal": 384,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-22",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45566"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "65131300",
-    "klant": "dmb",
-    "aantal": 960,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-19",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45568"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "65140200",
-    "klant": "dmb",
-    "aantal": 768,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-19",
-    "opmerking": "",
-    "opmerking_analyse": "shnitzel 3 weken levertermijn, Folie perforeren",
-    "plan_nr": "45569"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "65140600",
-    "klant": "dmb",
-    "aantal": 800,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-19",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45570"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63900900",
-    "klant": "vat",
-    "aantal": 5900,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-20",
+    "order_nr": "2026-09-02 00:00:00",
+    "art_nr": "64270000",
+    "klant": "froster",
+    "aantal": 13400,
+    "lever_datum": "2026-10-16",
+    "productie_datum": "2026-10-06",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45576"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63991100",
-    "klant": "vat",
-    "aantal": 1500,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-20",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45578"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63906400",
-    "klant": "vat",
-    "aantal": 6250,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-21",
-    "opmerking": "",
-    "opmerking_analyse": "RIJST D-1",
-    "plan_nr": "45579"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63936400",
-    "klant": "vat",
-    "aantal": 1300,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-21",
-    "opmerking": "",
-    "opmerking_analyse": "RIJST D-1, kl v 63906400",
-    "plan_nr": "45580"
+    "plan_nr": "45607"
   },
   {
     "order_nr": "2026-08-31 00:00:00",
@@ -10503,6 +10734,28 @@
     "opmerking": "",
     "opmerking_analyse": "AARDAPPELEN steamen D-0",
     "plan_nr": "45585"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63903700",
+    "klant": "vat",
+    "aantal": 9000,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-10",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45784"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63933700",
+    "klant": "vat",
+    "aantal": 1000,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-10",
+    "opmerking": "",
+    "opmerking_analyse": "kl v 63903700",
+    "plan_nr": "45785"
   },
   {
     "order_nr": "2026-08-31 00:00:00",
@@ -10539,17 +10792,6 @@
   },
   {
     "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63963600",
-    "klant": "vat",
-    "aantal": 900,
-    "lever_datum": "2026-11-13",
-    "productie_datum": "2026-11-13",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45589"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
     "art_nr": "63901500",
     "klant": "vat",
     "aantal": 1250,
@@ -10571,70 +10813,37 @@
     "plan_nr": "45591"
   },
   {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63902100",
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63913200",
     "klant": "vat",
-    "aantal": 3650,
+    "aantal": 4200,
     "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-18",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45592"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63913100",
-    "klant": "vat",
-    "aantal": 3700,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-18",
-    "opmerking": "",
-    "opmerking_analyse": "AARDAPPELEN steamen D-0",
-    "plan_nr": "45593"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63900200",
-    "klant": "vat",
-    "aantal": 6950,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-20",
+    "productie_datum": "2026-11-12",
     "opmerking": "",
     "opmerking_analyse": "Pulled beef tussen D-4 en D-2",
-    "plan_nr": "45594"
+    "plan_nr": "45786"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63900800",
+    "klant": "vat",
+    "aantal": 6000,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-12",
+    "opmerking": "Vers r//v gehakt op 10/11",
+    "opmerking_analyse": "",
+    "plan_nr": "45790"
   },
   {
     "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63906100",
+    "art_nr": "63963600",
     "klant": "vat",
-    "aantal": 4300,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-18",
-    "opmerking": "",
-    "opmerking_analyse": "ZALMSNIPPERS D-1 ontdooien",
-    "plan_nr": "45595"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63902800",
-    "klant": "vat",
-    "aantal": 4800,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-17",
+    "aantal": 900,
+    "lever_datum": "2026-11-13",
+    "productie_datum": "2026-11-13",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45596"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63914000",
-    "klant": "vat",
-    "aantal": 7100,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-18",
-    "opmerking": "",
-    "opmerking_analyse": "augurken snijden (0,5cm)",
-    "plan_nr": "45597"
+    "plan_nr": "45589"
   },
   {
     "order_nr": "2026-08-31 00:00:00",
@@ -10648,81 +10857,81 @@
     "plan_nr": "45598"
   },
   {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63901300",
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63904100",
     "klant": "vat",
-    "aantal": 15000,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-23",
+    "aantal": 8000,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-16",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45599"
+    "plan_nr": "45788"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63930800",
+    "klant": "vat",
+    "aantal": 7000,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-16",
+    "opmerking": "vers r//v gehakt op 13/11",
+    "opmerking_analyse": "kl v 63900800",
+    "plan_nr": "45791"
   },
   {
     "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63963200",
+    "art_nr": "63902800",
     "klant": "vat",
-    "aantal": 1100,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-27",
-    "opmerking": "",
-    "opmerking_analyse": "ZWARTE RIJST D-1, klachten mbt onvoldoende naperen (GSN 14/7)",
-    "plan_nr": "45600"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63910700",
-    "klant": "vat",
-    "aantal": 3250,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-19",
-    "opmerking": "",
-    "opmerking_analyse": "idem 63930700",
-    "plan_nr": "45601"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63930700",
-    "klant": "vat",
-    "aantal": 1450,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-19",
-    "opmerking": "",
-    "opmerking_analyse": "kl v 63910700",
-    "plan_nr": "45602"
-  },
-  {
-    "order_nr": "2026-08-31 00:00:00",
-    "art_nr": "63910300",
-    "klant": "vat",
-    "aantal": 4500,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-27",
+    "aantal": 4800,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-17",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45603"
+    "plan_nr": "45596"
   },
   {
-    "order_nr": "2026-09-01 00:00:00",
-    "art_nr": "65126600",
-    "klant": "dmb",
-    "aantal": 576,
-    "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-19",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45605"
+    "order_nr": "2026-09-10 00:00:00",
+    "art_nr": "63953100",
+    "klant": "vat",
+    "aantal": 720,
+    "lever_datum": "2026-11-17",
+    "productie_datum": "2026-11-17",
+    "opmerking": "zwarte rijst D-1 met 2de gernal ??",
+    "opmerking_analyse": "zwarte rijst D-1",
+    "plan_nr": "45655"
   },
   {
-    "order_nr": "2026-09-02 00:00:00",
-    "art_nr": "64270000",
-    "klant": "froster",
-    "aantal": 13400,
-    "lever_datum": "2026-10-16",
-    "productie_datum": "2026-10-06",
+    "order_nr": "2026-09-10 00:00:00",
+    "art_nr": "63953400",
+    "klant": "vat",
+    "aantal": 2300,
+    "lever_datum": "2026-11-17",
+    "productie_datum": "2026-11-17",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45607"
+    "plan_nr": "45656"
+  },
+  {
+    "order_nr": "2026-09-10 00:00:00",
+    "art_nr": "63953700",
+    "klant": "vat",
+    "aantal": 2300,
+    "lever_datum": "2026-11-17",
+    "productie_datum": "2026-11-17",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45657"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63905100",
+    "klant": "vat",
+    "aantal": 8500,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-17",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45789"
   },
   {
     "order_nr": "2026-09-01 00:00:00",
@@ -10734,17 +10943,6 @@
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45606"
-  },
-  {
-    "order_nr": "2026-09-03 00:00:00",
-    "art_nr": "64226800",
-    "klant": "bof fr",
-    "aantal": 3000,
-    "lever_datum": "2026-10-23",
-    "productie_datum": "2026-10-20",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45608"
   },
   {
     "order_nr": "2026-10-13 00:00:00",
@@ -10839,17 +11037,6 @@
     "art_nr": "66000100",
     "klant": "bof de",
     "aantal": 8800,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-19",
-    "opmerking": "CFS - enkel op spiraal L2 - vers r/v gehakt op 16/10",
-    "opmerking_analyse": "",
-    "plan_nr": "45620"
-  },
-  {
-    "order_nr": "2026-09-04 00:00:00",
-    "art_nr": "66000100",
-    "klant": "bof de",
-    "aantal": 8800,
     "lever_datum": "2026-11-13",
     "productie_datum": "2026-11-09",
     "opmerking": "2 zakken samen met geperforeerd middenseal- vers r/v gehakt op 6/11",
@@ -10862,7 +11049,7 @@
     "klant": "bof de",
     "aantal": 8800,
     "lever_datum": "2027-01-10",
-    "productie_datum": "2027-01-08",
+    "productie_datum": "2027-01-07",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45622"
@@ -10873,7 +11060,7 @@
     "klant": "bof de",
     "aantal": 8800,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-19",
+    "productie_datum": "2026-12-21",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45623"
@@ -10888,17 +11075,6 @@
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45626"
-  },
-  {
-    "order_nr": "2026-09-08 00:00:00",
-    "art_nr": "65150000",
-    "klant": "dmb",
-    "aantal": 800,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-22",
-    "opmerking": "r/v gehakt op 21/10",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45627"
   },
   {
     "order_nr": "2026-09-08 00:00:00",
@@ -10921,17 +11097,6 @@
     "opmerking": "hamburger 27/10",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45629"
-  },
-  {
-    "order_nr": "2026-09-08 00:00:00",
-    "art_nr": "65108300",
-    "klant": "dmb",
-    "aantal": 192,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-21",
-    "opmerking": "hamburger gesn 20/10",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45630"
   },
   {
     "order_nr": "2026-09-08 00:00:00",
@@ -11060,7 +11225,7 @@
     "klant": "bof be",
     "aantal": 6000,
     "lever_datum": "2027-01-08",
-    "productie_datum": "2026-12-15",
+    "productie_datum": "2026-12-14",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45642"
@@ -11072,7 +11237,7 @@
     "aantal": 3000,
     "lever_datum": "2026-12-18",
     "productie_datum": "2026-12-16",
-    "opmerking": "IN KOOIEN ??",
+    "opmerking": "",
     "opmerking_analyse": "COVIPEEL-ipeelcoio",
     "plan_nr": "45643"
   },
@@ -11082,7 +11247,7 @@
     "klant": "ah",
     "aantal": 9000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-14",
+    "productie_datum": "2027-01-13",
     "opmerking": "",
     "opmerking_analyse": "Rode rijst D-1",
     "plan_nr": "45644"
@@ -11116,7 +11281,7 @@
     "aantal": 18300,
     "lever_datum": "2026-11-13",
     "productie_datum": "2026-11-12",
-    "opmerking": "",
+    "opmerking": "sojascheuten 12/11",
     "opmerking_analyse": "",
     "plan_nr": "45648"
   },
@@ -11165,37 +11330,37 @@
     "plan_nr": "45654"
   },
   {
-    "order_nr": "2026-09-10 00:00:00",
-    "art_nr": "63953100",
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63902100",
     "klant": "vat",
-    "aantal": 720,
-    "lever_datum": "2026-11-17",
-    "productie_datum": "2026-11-17",
-    "opmerking": "zwarte rijst D-1 met 2de gernal ??",
-    "opmerking_analyse": "zwarte rijst D-1",
-    "plan_nr": "45655"
-  },
-  {
-    "order_nr": "2026-09-10 00:00:00",
-    "art_nr": "63953400",
-    "klant": "vat",
-    "aantal": 2300,
-    "lever_datum": "2026-11-17",
-    "productie_datum": "2026-11-17",
+    "aantal": 3650,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-18",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45656"
+    "plan_nr": "45592"
   },
   {
-    "order_nr": "2026-09-10 00:00:00",
-    "art_nr": "63953700",
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63913100",
     "klant": "vat",
-    "aantal": 2300,
-    "lever_datum": "2026-11-17",
-    "productie_datum": "2026-11-17",
+    "aantal": 3700,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-18",
     "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45657"
+    "opmerking_analyse": "AARDAPPELEN steamen D-0",
+    "plan_nr": "45593"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63906100",
+    "klant": "vat",
+    "aantal": 4300,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-18",
+    "opmerking": "",
+    "opmerking_analyse": "ZALMSNIPPERS D-1 ontdooien",
+    "plan_nr": "45595"
   },
   {
     "order_nr": "2026-09-10 00:00:00",
@@ -11364,17 +11529,6 @@
   },
   {
     "order_nr": "2026-09-14 00:00:00",
-    "art_nr": "65130700",
-    "klant": "dmb",
-    "aantal": 384,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-19",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren, max 1000st/order",
-    "plan_nr": "45673"
-  },
-  {
-    "order_nr": "2026-09-14 00:00:00",
     "art_nr": "65150200",
     "klant": "dmb",
     "aantal": 576,
@@ -11386,61 +11540,6 @@
   },
   {
     "order_nr": "2026-09-14 00:00:00",
-    "art_nr": "65106000",
-    "klant": "dmb",
-    "aantal": 768,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-20",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45675"
-  },
-  {
-    "order_nr": "2026-09-14 00:00:00",
-    "art_nr": "65106400",
-    "klant": "dmb",
-    "aantal": 768,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-20",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45676"
-  },
-  {
-    "order_nr": "2026-09-14 00:00:00",
-    "art_nr": "65107200",
-    "klant": "dmb",
-    "aantal": 576,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-19",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45677"
-  },
-  {
-    "order_nr": "2026-09-14 00:00:00",
-    "art_nr": "65120200",
-    "klant": "dmb",
-    "aantal": 768,
-    "lever_datum": "2026-11-06",
-    "productie_datum": "2026-10-20",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45678"
-  },
-  {
-    "order_nr": "2026-09-14 00:00:00",
-    "art_nr": "65125000",
-    "klant": "dmb",
-    "aantal": 576,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-20",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45679"
-  },
-  {
-    "order_nr": "2026-09-14 00:00:00",
     "art_nr": "65125400",
     "klant": "dmb",
     "aantal": 960,
@@ -11449,83 +11548,6 @@
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45680"
-  },
-  {
-    "order_nr": "2026-09-15 00:00:00",
-    "art_nr": "64226000",
-    "klant": "bof fr",
-    "aantal": 5000,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-20",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45681"
-  },
-  {
-    "order_nr": "2026-09-15 00:00:00",
-    "art_nr": "64224600",
-    "klant": "bof fr",
-    "aantal": 5000,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-20",
-    "opmerking": "prei 19/10",
-    "opmerking_analyse": "KALFSBLANKET (vacuumzakken) + RIJST D-1",
-    "plan_nr": "45682"
-  },
-  {
-    "order_nr": "2026-09-15 00:00:00",
-    "art_nr": "64225900",
-    "klant": "bof fr",
-    "aantal": 3000,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-19",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45683"
-  },
-  {
-    "order_nr": "2026-09-15 00:00:00",
-    "art_nr": "64225400",
-    "klant": "bof fr",
-    "aantal": 3000,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-21",
-    "opmerking": "",
-    "opmerking_analyse": "LINZEN D-1",
-    "plan_nr": "45684"
-  },
-  {
-    "order_nr": "2026-09-15 00:00:00",
-    "art_nr": "64224300",
-    "klant": "bof fr",
-    "aantal": 5000,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-21",
-    "opmerking": "+/- 1000st in KOOIEN - saldo Etui's 3600st - ru gehakt op 19/10",
-    "opmerking_analyse": "",
-    "plan_nr": "45685"
-  },
-  {
-    "order_nr": "2026-09-15 00:00:00",
-    "art_nr": "64225600",
-    "klant": "bof fr",
-    "aantal": 3000,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-21",
-    "opmerking": "",
-    "opmerking_analyse": "Opvolgen pasta",
-    "plan_nr": "45686"
-  },
-  {
-    "order_nr": "2026-09-15 00:00:00",
-    "art_nr": "64225000",
-    "klant": "bof fr",
-    "aantal": 4000,
-    "lever_datum": "2026-10-30",
-    "productie_datum": "2026-10-19",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45687"
   },
   {
     "order_nr": "2026-09-15 00:00:00",
@@ -11544,7 +11566,7 @@
     "klant": "aldi be",
     "aantal": 15320,
     "lever_datum": "2027-01-08",
-    "productie_datum": "2027-01-08",
+    "productie_datum": "2027-01-07",
     "opmerking": "",
     "opmerking_analyse": "om de 4u multipond reinigen+ontsmetten",
     "plan_nr": "45689"
@@ -11606,28 +11628,6 @@
   },
   {
     "order_nr": "2026-09-18 00:00:00",
-    "art_nr": "64255600",
-    "klant": "lidl int",
-    "aantal": 25000,
-    "lever_datum": "2027-01-29",
-    "productie_datum": "2027-01-22",
-    "opmerking": "mag in week 3,4",
-    "opmerking_analyse": "",
-    "plan_nr": "45695"
-  },
-  {
-    "order_nr": "2026-09-18 00:00:00",
-    "art_nr": "64226900",
-    "klant": "bof fr",
-    "aantal": 3000,
-    "lever_datum": "2027-01-22",
-    "productie_datum": "2027-01-22",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45696"
-  },
-  {
-    "order_nr": "2026-09-18 00:00:00",
     "art_nr": "65060000",
     "klant": "aldi be",
     "aantal": 4000,
@@ -11647,6 +11647,28 @@
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45698"
+  },
+  {
+    "order_nr": "2026-09-18 00:00:00",
+    "art_nr": "64255600",
+    "klant": "lidl int",
+    "aantal": 25000,
+    "lever_datum": "2027-01-29",
+    "productie_datum": "2027-01-22",
+    "opmerking": "mag in week 3,4",
+    "opmerking_analyse": "",
+    "plan_nr": "45695"
+  },
+  {
+    "order_nr": "2026-09-18 00:00:00",
+    "art_nr": "64226900",
+    "klant": "bof fr",
+    "aantal": 3000,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-22",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45696"
   },
   {
     "order_nr": "2026-09-18 00:00:00",
@@ -11676,7 +11698,7 @@
     "klant": "dmc",
     "aantal": 3300,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-04",
+    "productie_datum": "2026-12-02",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45703"
@@ -11687,7 +11709,7 @@
     "klant": "dmc",
     "aantal": 4500,
     "lever_datum": "2027-01-01",
-    "productie_datum": "2026-12-22",
+    "productie_datum": "2026-12-18",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren, TONG D-5 uithalen en openleggen / D-1 snijden",
     "plan_nr": "45704"
@@ -11720,32 +11742,10 @@
     "klant": "dmb",
     "aantal": 1200,
     "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-09",
+    "productie_datum": "2026-12-17",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45707"
-  },
-  {
-    "order_nr": "2026-09-19 00:00:00",
-    "art_nr": "63573000",
-    "klant": "dlc",
-    "aantal": 750,
-    "lever_datum": "2026-11-13",
-    "productie_datum": "2026-10-20",
-    "opmerking": "ru gehakt op 19/10",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45708"
-  },
-  {
-    "order_nr": "2026-09-19 00:00:00",
-    "art_nr": "63573400",
-    "klant": "dlc",
-    "aantal": 750,
-    "lever_datum": "2026-11-13",
-    "productie_datum": "2026-10-20",
-    "opmerking": "ru gehakt op 19/10",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45709"
   },
   {
     "order_nr": "2026-09-19 00:00:00",
@@ -11969,22 +11969,11 @@
   },
   {
     "order_nr": "2026-09-28 00:00:00",
-    "art_nr": "65133200",
-    "klant": "dmb",
-    "aantal": 710,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-26",
-    "opmerking": "",
-    "opmerking_analyse": "Folie perforeren",
-    "plan_nr": "45730"
-  },
-  {
-    "order_nr": "2026-09-28 00:00:00",
     "art_nr": "65107800",
     "klant": "dmb",
     "aantal": 576,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-04",
+    "productie_datum": "2026-12-02",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45731"
@@ -11995,7 +11984,7 @@
     "klant": "dmb",
     "aantal": 192,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-04",
+    "productie_datum": "2026-12-02",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45732"
@@ -12006,7 +11995,7 @@
     "klant": "iglo be",
     "aantal": 19150,
     "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-16",
+    "productie_datum": "2026-12-15",
     "opmerking": "",
     "opmerking_analyse": "Hamsnijm. na 4uur productie ontsmetten, D-1 3p WITLOOF",
     "plan_nr": "45733"
@@ -12083,7 +12072,7 @@
     "klant": "iglo be",
     "aantal": 26810,
     "lever_datum": "2027-02-05",
-    "productie_datum": "2027-02-02",
+    "productie_datum": "2027-02-01",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45740"
@@ -12104,8 +12093,8 @@
     "art_nr": "63808200",
     "klant": "iglo be",
     "aantal": 26810,
-    "lever_datum": "2027-01-08",
-    "productie_datum": "2027-01-07",
+    "lever_datum": "2027-01-09",
+    "productie_datum": "2027-01-09",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45742"
@@ -12116,7 +12105,7 @@
     "klant": "iglo be",
     "aantal": 26810,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-14",
+    "productie_datum": "2027-01-15",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45743"
@@ -12236,9 +12225,9 @@
     "art_nr": "63809000",
     "klant": "iglo be",
     "aantal": 19200,
-    "lever_datum": "2027-01-08",
-    "productie_datum": "2027-01-07",
-    "opmerking": "",
+    "lever_datum": "2027-01-09",
+    "productie_datum": "2027-01-09",
+    "opmerking": "Shrink op L2 ?",
     "opmerking_analyse": "",
     "plan_nr": "45754"
   },
@@ -12346,7 +12335,7 @@
     "art_nr": "66811700",
     "klant": "fit",
     "aantal": 26810,
-    "lever_datum": "2026-12-04",
+    "lever_datum": "2026-12-05",
     "productie_datum": "2026-12-05",
     "opmerking": "CSB : ingepland op 04/12",
     "opmerking_analyse": "HALAL",
@@ -12446,7 +12435,7 @@
     "klant": "aldi be",
     "aantal": 9450,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-02",
+    "productie_datum": "2026-12-04",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45775"
@@ -12457,7 +12446,7 @@
     "klant": "aldi be",
     "aantal": 9450,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-02",
+    "productie_datum": "2026-12-04",
     "opmerking": "",
     "opmerking_analyse": "Blinde vink D-1",
     "plan_nr": "45776"
@@ -12512,7 +12501,7 @@
     "klant": "car",
     "aantal": 5000,
     "lever_datum": "2026-12-31",
-    "productie_datum": "2026-12-10",
+    "productie_datum": "2026-12-22",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45781"
@@ -12529,6 +12518,61 @@
     "plan_nr": "45782"
   },
   {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63914000",
+    "klant": "vat",
+    "aantal": 7100,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-18",
+    "opmerking": "",
+    "opmerking_analyse": "augurken snijden (0,5cm)",
+    "plan_nr": "45597"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63906600",
+    "klant": "vat",
+    "aantal": 2600,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-18",
+    "opmerking": "vers ru gehakt op 16/11",
+    "opmerking_analyse": "",
+    "plan_nr": "45787"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63910700",
+    "klant": "vat",
+    "aantal": 3250,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-19",
+    "opmerking": "",
+    "opmerking_analyse": "idem 63930700",
+    "plan_nr": "45601"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63930700",
+    "klant": "vat",
+    "aantal": 1450,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-19",
+    "opmerking": "",
+    "opmerking_analyse": "kl v 63910700",
+    "plan_nr": "45602"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63900200",
+    "klant": "vat",
+    "aantal": 6950,
+    "lever_datum": "2026-11-20",
+    "productie_datum": "2026-11-20",
+    "opmerking": "",
+    "opmerking_analyse": "Pulled beef tussen D-4 en D-2",
+    "plan_nr": "45594"
+  },
+  {
     "order_nr": "2026-10-05 00:00:00",
     "art_nr": "63914500",
     "klant": "vat",
@@ -12540,92 +12584,15 @@
     "plan_nr": "45783"
   },
   {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63903700",
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63901300",
     "klant": "vat",
-    "aantal": 9000,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-10",
+    "aantal": 15000,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-23",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45784"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63933700",
-    "klant": "vat",
-    "aantal": 1000,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-10",
-    "opmerking": "",
-    "opmerking_analyse": "kl v 63903700",
-    "plan_nr": "45785"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63913200",
-    "klant": "vat",
-    "aantal": 4200,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-12",
-    "opmerking": "",
-    "opmerking_analyse": "Pulled beef tussen D-4 en D-2",
-    "plan_nr": "45786"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63906600",
-    "klant": "vat",
-    "aantal": 2600,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-18",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45787"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63904100",
-    "klant": "vat",
-    "aantal": 8000,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-16",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45788"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63905100",
-    "klant": "vat",
-    "aantal": 8500,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-17",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45789"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63900800",
-    "klant": "vat",
-    "aantal": 6000,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-12",
-    "opmerking": "Vers r//v gehakt op 10/11",
-    "opmerking_analyse": "",
-    "plan_nr": "45790"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63930800",
-    "klant": "vat",
-    "aantal": 7000,
-    "lever_datum": "2026-11-20",
-    "productie_datum": "2026-11-16",
-    "opmerking": "vers r//v gehakt op 13/11",
-    "opmerking_analyse": "kl v 63900800",
-    "plan_nr": "45791"
+    "plan_nr": "45599"
   },
   {
     "order_nr": "2026-10-05 00:00:00",
@@ -12651,6 +12618,39 @@
   },
   {
     "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63912800",
+    "klant": "vat",
+    "aantal": 2700,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-24",
+    "opmerking": "procureur rollade 23/11",
+    "opmerking_analyse": "AARDAPPELEN steamen D-0",
+    "plan_nr": "45796"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63932600",
+    "klant": "vat",
+    "aantal": 1000,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-24",
+    "opmerking": "procureur rollade 23/11",
+    "opmerking_analyse": "kl v 63912800 AARDAPPELEN steamen D-0",
+    "plan_nr": "45797"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63912600",
+    "klant": "vat",
+    "aantal": 3000,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-24",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45798"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
     "art_nr": "63912400",
     "klant": "vat",
     "aantal": 5000,
@@ -12673,36 +12673,36 @@
   },
   {
     "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63912800",
+    "art_nr": "63904900",
     "klant": "vat",
-    "aantal": 2700,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-24",
-    "opmerking": "",
-    "opmerking_analyse": "AARDAPPELEN steamen D-0",
-    "plan_nr": "45796"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63932600",
-    "klant": "vat",
-    "aantal": 1000,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-24",
-    "opmerking": "",
-    "opmerking_analyse": "kl v 63912800 AARDAPPELEN steamen D-0",
-    "plan_nr": "45797"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63912600",
-    "klant": "vat",
-    "aantal": 3000,
-    "lever_datum": "2026-11-27",
-    "productie_datum": "2026-11-24",
+    "aantal": 3700,
+    "lever_datum": "2026-12-04",
+    "productie_datum": "2026-11-26",
     "opmerking": "",
     "opmerking_analyse": "",
-    "plan_nr": "45798"
+    "plan_nr": "45800"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63963200",
+    "klant": "vat",
+    "aantal": 1100,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-27",
+    "opmerking": "",
+    "opmerking_analyse": "ZWARTE RIJST D-1, klachten mbt onvoldoende naperen (GSN 14/7)",
+    "plan_nr": "45600"
+  },
+  {
+    "order_nr": "2026-08-31 00:00:00",
+    "art_nr": "63910300",
+    "klant": "vat",
+    "aantal": 4500,
+    "lever_datum": "2026-11-27",
+    "productie_datum": "2026-11-27",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45603"
   },
   {
     "order_nr": "2026-10-05 00:00:00",
@@ -12714,28 +12714,6 @@
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45799"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63904900",
-    "klant": "vat",
-    "aantal": 3700,
-    "lever_datum": "2026-12-04",
-    "productie_datum": "2026-11-26",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45800"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63914300",
-    "klant": "vat",
-    "aantal": 5250,
-    "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-04",
-    "opmerking": "",
-    "opmerking_analyse": "",
-    "plan_nr": "45801"
   },
   {
     "order_nr": "2026-10-05 00:00:00",
@@ -12794,17 +12772,6 @@
   },
   {
     "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63902000",
-    "klant": "vat",
-    "aantal": 8200,
-    "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-05",
-    "opmerking": "CSB : ingepland op 04/12",
-    "opmerking_analyse": "RIJST D-1, D-1 voorbereiden mengeling rijst (sambal, soja, look etc) (samen met iglo (1p))",
-    "plan_nr": "45807"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
     "art_nr": "63904600",
     "klant": "vat",
     "aantal": 2600,
@@ -12838,10 +12805,32 @@
   },
   {
     "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63914300",
+    "klant": "vat",
+    "aantal": 5250,
+    "lever_datum": "2026-12-04",
+    "productie_datum": "2026-12-02",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "45801"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63902000",
+    "klant": "vat",
+    "aantal": 8200,
+    "lever_datum": "2026-12-05",
+    "productie_datum": "2026-12-05",
+    "opmerking": "CSB : ingepland op 04/12",
+    "opmerking_analyse": "RIJST D-1, D-1 voorbereiden mengeling rijst (sambal, soja, look etc) (samen met iglo (1p))",
+    "plan_nr": "45807"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
     "art_nr": "63904400",
     "klant": "vat",
     "aantal": 7200,
-    "lever_datum": "2026-12-04",
+    "lever_datum": "2026-12-05",
     "productie_datum": "2026-12-05",
     "opmerking": "CSB : ingepland op 04/12",
     "opmerking_analyse": "",
@@ -12868,17 +12857,6 @@
     "opmerking": "",
     "opmerking_analyse": "kl v 63905500",
     "plan_nr": "45813"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63903400",
-    "klant": "vat",
-    "aantal": 3950,
-    "lever_datum": "2026-12-11",
-    "productie_datum": "2026-12-10",
-    "opmerking": "",
-    "opmerking_analyse": "TUTTI FRUTTI D-1",
-    "plan_nr": "45814"
   },
   {
     "order_nr": "2026-10-05 00:00:00",
@@ -12915,17 +12893,6 @@
   },
   {
     "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63963500",
-    "klant": "vat",
-    "aantal": 2200,
-    "lever_datum": "2026-12-11",
-    "productie_datum": "2026-12-09",
-    "opmerking": "",
-    "opmerking_analyse": "idem 63562800",
-    "plan_nr": "45818"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
     "art_nr": "63911400",
     "klant": "vat",
     "aantal": 3550,
@@ -12937,36 +12904,47 @@
   },
   {
     "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63913900",
+    "art_nr": "63963500",
     "klant": "vat",
-    "aantal": 5300,
-    "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-17",
+    "aantal": 2200,
+    "lever_datum": "2026-12-11",
+    "productie_datum": "2026-12-09",
     "opmerking": "",
-    "opmerking_analyse": "ALASKA POLLAK verzagen (100g)",
-    "plan_nr": "45820"
+    "opmerking_analyse": "idem 63562800",
+    "plan_nr": "45818"
   },
   {
     "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63903000",
+    "art_nr": "63910500",
     "klant": "vat",
-    "aantal": 2700,
+    "aantal": 2650,
     "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-16",
+    "productie_datum": "2026-12-09",
     "opmerking": "",
-    "opmerking_analyse": "Pulled Beef tussen D-4 en D-2",
-    "plan_nr": "45821"
+    "opmerking_analyse": "AARDAPPELEN steamen D-0",
+    "plan_nr": "45827"
   },
   {
     "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63963400",
+    "art_nr": "63900700",
     "klant": "vat",
-    "aantal": 1400,
+    "aantal": 9850,
     "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-17",
+    "productie_datum": "2026-12-09",
     "opmerking": "",
-    "opmerking_analyse": "idem 63563400",
-    "plan_nr": "45822"
+    "opmerking_analyse": "idem 63502900",
+    "plan_nr": "45830"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63903400",
+    "klant": "vat",
+    "aantal": 3950,
+    "lever_datum": "2026-12-11",
+    "productie_datum": "2026-12-10",
+    "opmerking": "",
+    "opmerking_analyse": "TUTTI FRUTTI D-1",
+    "plan_nr": "45814"
   },
   {
     "order_nr": "2026-10-05 00:00:00",
@@ -13014,17 +12992,6 @@
   },
   {
     "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63910500",
-    "klant": "vat",
-    "aantal": 2650,
-    "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-09",
-    "opmerking": "",
-    "opmerking_analyse": "AARDAPPELEN steamen D-0",
-    "plan_nr": "45827"
-  },
-  {
-    "order_nr": "2026-10-05 00:00:00",
     "art_nr": "63910900",
     "klant": "vat",
     "aantal": 7650,
@@ -13047,14 +13014,14 @@
   },
   {
     "order_nr": "2026-10-05 00:00:00",
-    "art_nr": "63900700",
+    "art_nr": "63903000",
     "klant": "vat",
-    "aantal": 9850,
+    "aantal": 2700,
     "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-09",
+    "productie_datum": "2026-12-16",
     "opmerking": "",
-    "opmerking_analyse": "idem 63502900",
-    "plan_nr": "45830"
+    "opmerking_analyse": "Pulled Beef tussen D-4 en D-2",
+    "plan_nr": "45821"
   },
   {
     "order_nr": "2026-10-05 00:00:00",
@@ -13066,6 +13033,28 @@
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45831"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63913900",
+    "klant": "vat",
+    "aantal": 5300,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-17",
+    "opmerking": "",
+    "opmerking_analyse": "ALASKA POLLAK verzagen (100g)",
+    "plan_nr": "45820"
+  },
+  {
+    "order_nr": "2026-10-05 00:00:00",
+    "art_nr": "63963400",
+    "klant": "vat",
+    "aantal": 1400,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-17",
+    "opmerking": "",
+    "opmerking_analyse": "idem 63563400",
+    "plan_nr": "45822"
   },
   {
     "order_nr": "2026-10-05 00:00:00",
@@ -13150,7 +13139,7 @@
     "klant": "dmh",
     "aantal": 4000,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-18",
+    "productie_datum": "2026-12-15",
     "opmerking": "",
     "opmerking_analyse": "HAM snijden, 2000 sneedjes hesp/werkuur",
     "plan_nr": "45839"
@@ -13161,7 +13150,7 @@
     "klant": "dmh",
     "aantal": 1900,
     "lever_datum": "2027-01-08",
-    "productie_datum": "2027-01-07",
+    "productie_datum": "2026-12-18",
     "opmerking": "",
     "opmerking_analyse": "verse zalm",
     "plan_nr": "45840"
@@ -13172,7 +13161,7 @@
     "klant": "dmh",
     "aantal": 1200,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-18",
+    "productie_datum": "2026-12-21",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45841"
@@ -13183,7 +13172,7 @@
     "klant": "dmc",
     "aantal": 2900,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-22",
+    "productie_datum": "2026-12-23",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren, KALKOEN D-1, KALKOEN snijden (0,5cm)",
     "plan_nr": "45842"
@@ -13194,7 +13183,7 @@
     "klant": "dmc",
     "aantal": 4900,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-22",
+    "productie_datum": "2026-12-23",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren, HAM snijden, 2000 sneedjes hesp/werkuur",
     "plan_nr": "45843"
@@ -13205,7 +13194,7 @@
     "klant": "dmc",
     "aantal": 2300,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-17",
+    "productie_datum": "2026-12-22",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren, D-2 ontpakken, D-1 VA WANG (vacuumzakken)",
     "plan_nr": "45844"
@@ -13228,7 +13217,7 @@
     "aantal": 1300,
     "lever_datum": "2026-11-20",
     "productie_datum": "2026-11-12",
-    "opmerking": "",
+    "opmerking": "verse kipfilet 10/11",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45846"
   },
@@ -13249,7 +13238,7 @@
     "klant": "dlc",
     "aantal": 1300,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-01",
+    "productie_datum": "2026-11-26",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren, Balletjes D-1, AARDAPPELEN steamen D-0",
     "plan_nr": "45848"
@@ -13261,7 +13250,7 @@
     "aantal": 1300,
     "lever_datum": "2026-11-20",
     "productie_datum": "2026-11-18",
-    "opmerking": "",
+    "opmerking": "vers ru stoofvlees op 16/11",
     "opmerking_analyse": "Folie perforeren, STOOFVLEES (vacuumzakken)",
     "plan_nr": "45849"
   },
@@ -13304,7 +13293,7 @@
     "klant": "dlc",
     "aantal": 750,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-17",
+    "productie_datum": "2026-12-15",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45853"
@@ -13315,7 +13304,7 @@
     "klant": "dlc",
     "aantal": 750,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-17",
+    "productie_datum": "2026-12-23",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45854"
@@ -13337,7 +13326,7 @@
     "klant": "dmc",
     "aantal": 1200,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-17",
+    "productie_datum": "2026-12-23",
     "opmerking": "",
     "opmerking_analyse": "idem 64000500",
     "plan_nr": "45856"
@@ -13447,7 +13436,7 @@
     "klant": "thiriet",
     "aantal": 5750,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-14",
+    "productie_datum": "2027-01-15",
     "opmerking": "",
     "opmerking_analyse": "HAM snijden, 2000 sneedjes hesp/werkuur",
     "plan_nr": "45866"
@@ -13590,7 +13579,7 @@
     "klant": "car",
     "aantal": 5000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-08",
+    "productie_datum": "2027-01-07",
     "opmerking": "",
     "opmerking_analyse": "Alaska 227gr verzagen",
     "plan_nr": "45881"
@@ -13601,7 +13590,7 @@
     "klant": "car",
     "aantal": 6000,
     "lever_datum": "2027-01-08",
-    "productie_datum": "2027-01-08",
+    "productie_datum": "2027-01-07",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45882"
@@ -13623,8 +13612,8 @@
     "klant": "bof be",
     "aantal": 5500,
     "lever_datum": "2027-12-04",
-    "productie_datum": "2026-12-02",
-    "opmerking": "",
+    "productie_datum": "2026-12-04",
+    "opmerking": "levering etui's 03/12",
     "opmerking_analyse": "",
     "plan_nr": "45884"
   },
@@ -13634,8 +13623,8 @@
     "klant": "bof be",
     "aantal": 6000,
     "lever_datum": "2027-12-04",
-    "productie_datum": "2026-12-02",
-    "opmerking": "",
+    "productie_datum": "2026-12-04",
+    "opmerking": "levering etui's 03/12",
     "opmerking_analyse": "Stoof vlees vacuum D-1",
     "plan_nr": "45885"
   },
@@ -13645,7 +13634,7 @@
     "klant": "bof be",
     "aantal": 3500,
     "lever_datum": "2027-01-08",
-    "productie_datum": "2027-01-08",
+    "productie_datum": "2027-01-07",
     "opmerking": "",
     "opmerking_analyse": "Opvolgen spinazie (nav klacht)",
     "plan_nr": "45886"
@@ -13777,7 +13766,7 @@
     "klant": "dmc",
     "aantal": 1700,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-23",
+    "productie_datum": "2026-12-14",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45898"
@@ -13788,7 +13777,7 @@
     "klant": "dmc",
     "aantal": 1800,
     "lever_datum": "2027-01-01",
-    "productie_datum": "2026-12-21",
+    "productie_datum": "2026-12-14",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45899"
@@ -13799,7 +13788,7 @@
     "klant": "dmc",
     "aantal": 1800,
     "lever_datum": "2027-01-01",
-    "productie_datum": "2026-12-21",
+    "productie_datum": "2026-12-22",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren, ALASKA POLLAK verzagen (90g)",
     "plan_nr": "45900"
@@ -13821,7 +13810,7 @@
     "klant": "dmc",
     "aantal": 2900,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-21",
+    "productie_datum": "2026-12-18",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45902"
@@ -13832,7 +13821,7 @@
     "klant": "dmc",
     "aantal": 3600,
     "lever_datum": "2027-01-01",
-    "productie_datum": "2026-12-17",
+    "productie_datum": "2026-12-15",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45903"
@@ -13876,7 +13865,7 @@
     "klant": "dmc",
     "aantal": 1300,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-21",
+    "productie_datum": "2026-12-14",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45908"
@@ -13909,7 +13898,7 @@
     "klant": "dmc",
     "aantal": 1000,
     "lever_datum": "2027-01-01",
-    "productie_datum": "2026-12-23",
+    "productie_datum": "2026-12-22",
     "opmerking": "",
     "opmerking_analyse": "idem 64000700",
     "plan_nr": "45911"
@@ -13953,7 +13942,7 @@
     "klant": "dmb",
     "aantal": 960,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-04",
+    "productie_datum": "2026-12-02",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren, RIJST D-1",
     "plan_nr": "45915"
@@ -13986,7 +13975,7 @@
     "klant": "dmb",
     "aantal": 768,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-02",
+    "productie_datum": "2026-12-01",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45918"
@@ -14008,7 +13997,7 @@
     "klant": "dmb",
     "aantal": 576,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-04",
+    "productie_datum": "2026-12-02",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45920"
@@ -14019,7 +14008,7 @@
     "klant": "dmb",
     "aantal": 576,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-04",
+    "productie_datum": "2026-12-02",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45921"
@@ -14030,7 +14019,7 @@
     "klant": "dmb",
     "aantal": 576,
     "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-18",
+    "productie_datum": "2026-12-15",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren, saus in Terlet bereiden",
     "plan_nr": "45922"
@@ -14107,7 +14096,7 @@
     "klant": "geia",
     "aantal": 5000,
     "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-15",
+    "productie_datum": "2026-12-16",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45929"
@@ -14140,7 +14129,7 @@
     "klant": "bof fr",
     "aantal": 6000,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-15",
+    "productie_datum": "2027-01-14",
     "opmerking": "",
     "opmerking_analyse": "HAM snijden",
     "plan_nr": "45932"
@@ -14173,7 +14162,7 @@
     "klant": "bof fr",
     "aantal": 4000,
     "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-15",
+    "productie_datum": "2026-12-16",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45935"
@@ -14184,8 +14173,8 @@
     "klant": "bof fr",
     "aantal": 5000,
     "lever_datum": "2026-12-04",
-    "productie_datum": "2026-12-04",
-    "opmerking": "",
+    "productie_datum": "2026-12-02",
+    "opmerking": "Shrink op L2 !",
     "opmerking_analyse": "",
     "plan_nr": "45936"
   },
@@ -14228,7 +14217,7 @@
     "klant": "fit",
     "aantal": 26810,
     "lever_datum": "2026-12-24",
-    "productie_datum": "2026-12-23",
+    "productie_datum": "2026-12-21",
     "opmerking": "",
     "opmerking_analyse": "HALAL",
     "plan_nr": "45940"
@@ -14239,7 +14228,7 @@
     "klant": "fit",
     "aantal": 26810,
     "lever_datum": "2026-12-24",
-    "productie_datum": "2026-12-18",
+    "productie_datum": "2026-12-22",
     "opmerking": "",
     "opmerking_analyse": "PULLED CHICKEN D-2 ontdooien / HALAL",
     "plan_nr": "45941"
@@ -14272,7 +14261,7 @@
     "klant": "fit",
     "aantal": 26810,
     "lever_datum": "2026-12-24",
-    "productie_datum": "2026-12-23",
+    "productie_datum": "2026-12-21",
     "opmerking": "",
     "opmerking_analyse": "HALAL",
     "plan_nr": "45944"
@@ -14337,9 +14326,9 @@
     "art_nr": "66811700",
     "klant": "fit",
     "aantal": 26810,
-    "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-05",
-    "opmerking": "kip manueel ?- Isihda kan niet op 2 banen doseren",
+    "lever_datum": "2027-01-16",
+    "productie_datum": "2027-01-16",
+    "opmerking": "CSB : ingepland op 15/01",
     "opmerking_analyse": "HALAL",
     "plan_nr": "45950"
   },
@@ -14520,46 +14509,13 @@
     "plan_nr": "45966"
   },
   {
-    "order_nr": "2026-10-14 00:00:00",
-    "art_nr": "65701500",
-    "klant": "aldi be",
-    "aantal": 15000,
-    "lever_datum": "2027-02-12",
-    "productie_datum": "2027-02-09",
-    "opmerking": "",
-    "opmerking_analyse": "KABELJAUW verzagen (110g), ZALMSNIPPERS D-1 ontdooien",
-    "plan_nr": "45967"
-  },
-  {
-    "order_nr": "2026-10-14 00:00:00",
-    "art_nr": "65701600",
-    "klant": "aldi be",
-    "aantal": 15000,
-    "lever_datum": "2027-02-12",
-    "productie_datum": "2027-02-08",
-    "opmerking": "",
-    "opmerking_analyse": "KABELJAUW verzagen (110g)",
-    "plan_nr": "45968"
-  },
-  {
-    "order_nr": "2026-10-14 00:00:00",
-    "art_nr": "65701700",
-    "klant": "aldi be",
-    "aantal": 15000,
-    "lever_datum": "2027-02-12",
-    "productie_datum": "2027-02-10",
-    "opmerking": "",
-    "opmerking_analyse": "KABELJAUW verzagen (110g)",
-    "plan_nr": "45969"
-  },
-  {
     "order_nr": "2026-10-15 00:00:00",
     "art_nr": "65705500",
     "klant": "aldi fr",
     "aantal": 12600,
     "lever_datum": "2026-12-11",
-    "productie_datum": "2026-12-23",
-    "opmerking": "ingepland op 23/12 ivm levering  verpakking ??",
+    "productie_datum": "2026-12-16",
+    "opmerking": "",
     "opmerking_analyse": "ZALM verzagen (100g)",
     "plan_nr": "45970"
   },
@@ -14569,8 +14525,8 @@
     "klant": "aldi fr",
     "aantal": 17600,
     "lever_datum": "2026-12-11",
-    "productie_datum": "2026-12-23",
-    "opmerking": "ingepland op 23/12 ivm levering verpakking ??",
+    "productie_datum": "2026-12-16",
+    "opmerking": "",
     "opmerking_analyse": "ZALM verzagen (100g)",
     "plan_nr": "45971"
   },
@@ -14580,8 +14536,8 @@
     "klant": "aldi fr",
     "aantal": 10100,
     "lever_datum": "2026-12-11",
-    "productie_datum": "2026-12-23",
-    "opmerking": "ingepland op 23/12 ivm levering verpakking ??",
+    "productie_datum": "2026-12-17",
+    "opmerking": "",
     "opmerking_analyse": "ZALM verzagen (100g)",
     "plan_nr": "45972"
   },
@@ -14657,7 +14613,7 @@
     "klant": "dmh",
     "aantal": 1400,
     "lever_datum": "2027-01-15",
-    "productie_datum": "2027-01-12",
+    "productie_datum": "2027-01-07",
     "opmerking": "",
     "opmerking_analyse": "",
     "plan_nr": "45979"
@@ -14778,7 +14734,7 @@
     "klant": "dmb",
     "aantal": 576,
     "lever_datum": "2027-01-01",
-    "productie_datum": "2026-12-23",
+    "productie_datum": "2026-12-22",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren, max 1000st/order",
     "plan_nr": "45990"
@@ -14789,7 +14745,7 @@
     "klant": "dmb",
     "aantal": 768,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-14",
+    "productie_datum": "2026-12-21",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45991"
@@ -14800,8 +14756,8 @@
     "klant": "dmb",
     "aantal": 384,
     "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-14",
-    "opmerking": "",
+    "productie_datum": "2026-12-10",
+    "opmerking": "moet uit de spiraal",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45992"
   },
@@ -14811,7 +14767,7 @@
     "klant": "dmb",
     "aantal": 1150,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-25",
+    "productie_datum": "2026-12-17",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45993"
@@ -14822,7 +14778,7 @@
     "klant": "dmb",
     "aantal": 1150,
     "lever_datum": "2027-01-01",
-    "productie_datum": "2027-01-01",
+    "productie_datum": "2026-12-23",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45994"
@@ -14855,7 +14811,7 @@
     "klant": "dmb",
     "aantal": 960,
     "lever_datum": "2027-01-01",
-    "productie_datum": "2027-01-01",
+    "productie_datum": "2026-12-21",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45997"
@@ -14877,7 +14833,7 @@
     "klant": "dmb",
     "aantal": 768,
     "lever_datum": "2026-12-18",
-    "productie_datum": "2026-12-17",
+    "productie_datum": "2026-12-16",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "45999"
@@ -14888,7 +14844,7 @@
     "klant": "dmb",
     "aantal": 384,
     "lever_datum": "2027-01-01",
-    "productie_datum": "2026-12-23",
+    "productie_datum": "2026-12-22",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren, Pulled beef tussen D-4 en D-2",
     "plan_nr": "46000"
@@ -14910,7 +14866,7 @@
     "klant": "dmb",
     "aantal": 768,
     "lever_datum": "2027-01-01",
-    "productie_datum": "2026-12-14",
+    "productie_datum": "2026-12-21",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "46002"
@@ -14954,7 +14910,7 @@
     "klant": "dmb",
     "aantal": 576,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-14",
+    "productie_datum": "2026-12-21",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "46006"
@@ -14965,7 +14921,7 @@
     "klant": "dmb",
     "aantal": 576,
     "lever_datum": "2026-12-25",
-    "productie_datum": "2026-12-14",
+    "productie_datum": "2026-12-18",
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "46007"
@@ -14980,5 +14936,566 @@
     "opmerking": "",
     "opmerking_analyse": "Folie perforeren",
     "plan_nr": "46008"
+  },
+  {
+    "order_nr": "2026-10-22 00:00:00",
+    "art_nr": "64282700",
+    "klant": "bof be",
+    "aantal": 3000,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-14",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46009"
+  },
+  {
+    "order_nr": "2026-10-22 00:00:00",
+    "art_nr": "64282800",
+    "klant": "bof be",
+    "aantal": 3000,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-14",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46010"
+  },
+  {
+    "order_nr": "2026-10-22 00:00:00",
+    "art_nr": "64282900",
+    "klant": "bof be",
+    "aantal": 3000,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-14",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46011"
+  },
+  {
+    "order_nr": "2026-10-23 00:00:00",
+    "art_nr": "65705500",
+    "klant": "aldi fr",
+    "aantal": 12600,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-19",
+    "opmerking": "",
+    "opmerking_analyse": "ZALM verzagen (100g)",
+    "plan_nr": "46012"
+  },
+  {
+    "order_nr": "2026-10-23 00:00:00",
+    "art_nr": "65705600",
+    "klant": "aldi fr",
+    "aantal": 17600,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-18",
+    "opmerking": "",
+    "opmerking_analyse": "ZALM verzagen (100g)",
+    "plan_nr": "46013"
+  },
+  {
+    "order_nr": "2026-10-23 00:00:00",
+    "art_nr": "65705700",
+    "klant": "aldi fr",
+    "aantal": 10100,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-19",
+    "opmerking": "",
+    "opmerking_analyse": "ZALM verzagen (100g)",
+    "plan_nr": "46014"
+  },
+  {
+    "order_nr": "2026-10-23 00:00:00",
+    "art_nr": "66812600",
+    "klant": "fit",
+    "aantal": 8000,
+    "lever_datum": "2026-10-30",
+    "productie_datum": "2026-10-29",
+    "opmerking": "Extra order : minder productie op 22/10 & 23/10",
+    "opmerking_analyse": "",
+    "plan_nr": "46015"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "63310400",
+    "klant": "dmh",
+    "aantal": 11500,
+    "lever_datum": "2027-02-05",
+    "productie_datum": "2027-02-04",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46016"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "65130200",
+    "klant": "dmb",
+    "aantal": 1000,
+    "lever_datum": "2027-01-15",
+    "productie_datum": "2027-01-14",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren, max 1000st/order",
+    "plan_nr": "46017"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "65130200",
+    "klant": "dmb",
+    "aantal": 1000,
+    "lever_datum": "2027-02-12",
+    "productie_datum": "2027-02-09",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren, max 1000st/order",
+    "plan_nr": "46018"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "65150700",
+    "klant": "dmb",
+    "aantal": 576,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-17",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "46019"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "65141100",
+    "klant": "dmb",
+    "aantal": 576,
+    "lever_datum": "2027-01-08",
+    "productie_datum": "2027-01-06",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "46020"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "65120100",
+    "klant": "dmb",
+    "aantal": 798,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-16",
+    "opmerking": "",
+    "opmerking_analyse": "Folie perforeren",
+    "plan_nr": "46021"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "66811300",
+    "klant": "fit",
+    "aantal": 26810,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-13",
+    "opmerking": "",
+    "opmerking_analyse": "HALAL",
+    "plan_nr": "46022"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "66811700",
+    "klant": "fit",
+    "aantal": 26810,
+    "lever_datum": "2027-01-23",
+    "productie_datum": "2027-01-23",
+    "opmerking": "CSB: ingepland op 22/01",
+    "opmerking_analyse": "HALAL",
+    "plan_nr": "46023"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "66811800",
+    "klant": "fit",
+    "aantal": 26810,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-13",
+    "opmerking": "",
+    "opmerking_analyse": "HALAL",
+    "plan_nr": "46024"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "66812300",
+    "klant": "fit",
+    "aantal": 7500,
+    "lever_datum": "2027-02-12",
+    "productie_datum": "2027-02-10",
+    "opmerking": "Extra stalen QA : 2 begin - 2 midden - 2 einde",
+    "opmerking_analyse": "",
+    "plan_nr": "46025"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "66812600",
+    "klant": "fit",
+    "aantal": 7500,
+    "lever_datum": "2027-02-12",
+    "productie_datum": "2027-02-10",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46026"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "66811900",
+    "klant": "fit",
+    "aantal": 7500,
+    "lever_datum": "2027-02-12",
+    "productie_datum": "2027-02-10",
+    "opmerking": "26/10 : Recept nog niet in CSB",
+    "opmerking_analyse": "",
+    "plan_nr": "46027"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "66812700",
+    "klant": "fit",
+    "aantal": 7500,
+    "lever_datum": "2027-02-12",
+    "productie_datum": "2027-02-10",
+    "opmerking": "26/10 : Recept nog niet in CSB",
+    "opmerking_analyse": "",
+    "plan_nr": "46028"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "66812800",
+    "klant": "fit",
+    "aantal": 7500,
+    "lever_datum": "2027-02-12",
+    "productie_datum": "2027-02-10",
+    "opmerking": "26/10 : Recept nog niet in CSB",
+    "opmerking_analyse": "",
+    "plan_nr": "46029"
+  },
+  {
+    "order_nr": "2026-10-26 00:00:00",
+    "art_nr": "66812900",
+    "klant": "fit",
+    "aantal": 7500,
+    "lever_datum": "2027-02-12",
+    "productie_datum": "2027-02-10",
+    "opmerking": "26/10 : Recept nog niet in CSB",
+    "opmerking_analyse": "",
+    "plan_nr": "46030"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63909800",
+    "klant": "vat",
+    "aantal": 3150,
+    "lever_datum": "2026-12-11",
+    "productie_datum": "2026-12-09",
+    "opmerking": "",
+    "opmerking_analyse": "ERWTEN wellen D-1, SPEK snijden/ opvolging soep (opm klant)",
+    "plan_nr": "46031"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63901400",
+    "klant": "vat",
+    "aantal": 13550,
+    "lever_datum": "2026-12-18",
+    "productie_datum": "2026-12-14",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46032"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63912900",
+    "klant": "vat",
+    "aantal": 15400,
+    "lever_datum": "2026-12-19",
+    "productie_datum": "2026-12-19",
+    "opmerking": "CSB : ingepalnd op 18/12",
+    "opmerking_analyse": "",
+    "plan_nr": "46033"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63991200",
+    "klant": "vat",
+    "aantal": 750,
+    "lever_datum": "2027-01-08",
+    "productie_datum": "2027-01-05",
+    "opmerking": "",
+    "opmerking_analyse": "idem 63597200",
+    "plan_nr": "46034"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63913700",
+    "klant": "vat",
+    "aantal": 4550,
+    "lever_datum": "2027-01-08",
+    "productie_datum": "2027-01-08",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46035"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63902300",
+    "klant": "vat",
+    "aantal": 8050,
+    "lever_datum": "2027-01-08",
+    "productie_datum": "2027-01-08",
+    "opmerking": "",
+    "opmerking_analyse": "AARDAPPELEN steamen D-0",
+    "plan_nr": "46036"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63932300",
+    "klant": "vat",
+    "aantal": 750,
+    "lever_datum": "2027-01-08",
+    "productie_datum": "2027-01-08",
+    "opmerking": "",
+    "opmerking_analyse": "AARDAPPELEN steamen D-0, kl v 63902300",
+    "plan_nr": "46037"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63912300",
+    "klant": "vat",
+    "aantal": 2350,
+    "lever_datum": "2027-01-08",
+    "productie_datum": "2027-01-08",
+    "opmerking": "",
+    "opmerking_analyse": "AARDAPPELEN steamen D-0",
+    "plan_nr": "46038"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63990500",
+    "klant": "vat",
+    "aantal": 2100,
+    "lever_datum": "2027-01-08",
+    "productie_datum": "2027-01-05",
+    "opmerking": "",
+    "opmerking_analyse": "idem 63596500",
+    "plan_nr": "46039"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63906700",
+    "klant": "vat",
+    "aantal": 5350,
+    "lever_datum": "2027-01-08",
+    "productie_datum": "2027-01-04",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46040"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63900300",
+    "klant": "vat",
+    "aantal": 6000,
+    "lever_datum": "2027-01-08",
+    "productie_datum": "2027-01-04",
+    "opmerking": "",
+    "opmerking_analyse": "idem 66400100, Pulled Beef tussen D-4 en D-2 ,AARDAPPELEN steamen D-0",
+    "plan_nr": "46041"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63930100",
+    "klant": "vat",
+    "aantal": 2600,
+    "lever_datum": "2027-01-08",
+    "productie_datum": "2027-01-04",
+    "opmerking": "",
+    "opmerking_analyse": "Pulled Beef tussen D-4 en D-2, AARDAPPELEN steamen D-0, kl v 63900100",
+    "plan_nr": "46042"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63904800",
+    "klant": "vat",
+    "aantal": 5350,
+    "lever_datum": "2027-01-15",
+    "productie_datum": "2027-01-11",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46043"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63934800",
+    "klant": "vat",
+    "aantal": 1550,
+    "lever_datum": "2027-01-15",
+    "productie_datum": "2027-01-11",
+    "opmerking": "",
+    "opmerking_analyse": "kl v 63904800",
+    "plan_nr": "46044"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63990600",
+    "klant": "vat",
+    "aantal": 1300,
+    "lever_datum": "2027-01-15",
+    "productie_datum": "2027-01-15",
+    "opmerking": "",
+    "opmerking_analyse": "idem 63596600",
+    "plan_nr": "46045"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63901900",
+    "klant": "vat",
+    "aantal": 13150,
+    "lever_datum": "2027-01-16",
+    "productie_datum": "2027-01-16",
+    "opmerking": "CSB : ingepland op 15/01",
+    "opmerking_analyse": "D-1 voorbereiden mengeling bami (sambal, soja, look etc) (samen met iglo (1p))",
+    "plan_nr": "46046"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63931900",
+    "klant": "vat",
+    "aantal": 3600,
+    "lever_datum": "2027-01-16",
+    "productie_datum": "2027-01-16",
+    "opmerking": "CSB : ingepland op 15/01",
+    "opmerking_analyse": "D-1 voorbereiden mengeling bami (sambal, soja, look etc) (samen met iglo (1p)) kl v 63901900",
+    "plan_nr": "46047"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63911900",
+    "klant": "vat",
+    "aantal": 3800,
+    "lever_datum": "2027-01-15",
+    "productie_datum": "2027-01-12",
+    "opmerking": "",
+    "opmerking_analyse": "HERT D-1 (vacuumzakken)",
+    "plan_nr": "46048"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63962300",
+    "klant": "vat",
+    "aantal": 1300,
+    "lever_datum": "2027-01-15",
+    "productie_datum": "2027-01-15",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46049"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63905300",
+    "klant": "vat",
+    "aantal": 13250,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-21",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46050"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63901200",
+    "klant": "vat",
+    "aantal": 4500,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-22",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46051"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63907500",
+    "klant": "vat",
+    "aantal": 5250,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-21",
+    "opmerking": "",
+    "opmerking_analyse": "idem 63515400",
+    "plan_nr": "46052"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63961500",
+    "klant": "vat",
+    "aantal": 2050,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-21",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46053"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63990700",
+    "klant": "vat",
+    "aantal": 1550,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-21",
+    "opmerking": "",
+    "opmerking_analyse": "idem 63596700",
+    "plan_nr": "46054"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63901800",
+    "klant": "vat",
+    "aantal": 5350,
+    "lever_datum": "2027-01-22",
+    "productie_datum": "2027-01-22",
+    "opmerking": "",
+    "opmerking_analyse": "RIJST D-1",
+    "plan_nr": "46055"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63913600",
+    "klant": "vat",
+    "aantal": 4550,
+    "lever_datum": "2027-01-29",
+    "productie_datum": "2027-01-25",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46056"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63912700",
+    "klant": "vat",
+    "aantal": 6550,
+    "lever_datum": "2027-01-29",
+    "productie_datum": "2027-01-25",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46057"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63900500",
+    "klant": "vat",
+    "aantal": 17550,
+    "lever_datum": "2027-01-29",
+    "productie_datum": "2027-01-29",
+    "opmerking": "",
+    "opmerking_analyse": "",
+    "plan_nr": "46058"
+  },
+  {
+    "order_nr": "2026-10-27 00:00:00",
+    "art_nr": "63930500",
+    "klant": "vat",
+    "aantal": 2350,
+    "lever_datum": "2027-01-29",
+    "productie_datum": "2027-01-29",
+    "opmerking": "reinigen",
+    "opmerking_analyse": "kl v 63900500, D-1 varkenshaasje gegaard",
+    "plan_nr": "46059"
   }
 ]

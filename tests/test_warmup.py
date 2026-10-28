@@ -12,8 +12,7 @@ from __future__ import annotations
 
 from datetime import date, timedelta
 
-from src.plan_state import iso_weeks_before
-from src.plan_state import COMMIT_WEEKS
+from frigilunch.domain.state import COMMIT_WEEKS, iso_weeks_before
 
 
 def test_the_three_weeks_before_a_normal_week():
