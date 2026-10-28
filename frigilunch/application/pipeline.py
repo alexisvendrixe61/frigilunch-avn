@@ -18,8 +18,10 @@ from datetime import date, timedelta
 from pathlib import Path
 from typing import Callable
 
+from frigilunch.adapters.dashboard import build_dashboard_payload, render_dashboard_html
+from frigilunch.adapters.excel_export import export_multi_to_excel
 from frigilunch.adapters.json_state import load_plan_state, save_plan_state, STATE_SCHEMA_VERSION
-from frigilunch.adapters.master_data import read_products, validate_master
+from frigilunch.adapters.master_data import load_setup_times, load_src_products, read_products, validate_master
 from frigilunch.domain.benders import Solvers, run_benders
 from frigilunch.domain.models import DaySchedule, Order, Product, SolveOutcome
 from frigilunch.domain.oracle import schedule_day
@@ -106,8 +108,8 @@ def _validate_master(ctx: PipelineContext) -> PipelineContext:
 
 
 def _load_orders(ctx: PipelineContext) -> PipelineContext:
-    """Stage 3: Refresh orders.json from Excel, then load from JSON (src bridge)."""
-    from src.order_filter import load_excel_orders, save_orders_to_json
+    """Stage 3: Refresh orders.json from Excel."""
+    from frigilunch.adapters.excel_orders import load_excel_orders, save_orders_to_json
     _repo = Path(__file__).parent.parent.parent
     orders_json = _repo / "data" / "generated" / "orders.json"
     fresh = load_excel_orders(ctx.orders_path, sheet_name="orderverwerking")
@@ -118,8 +120,8 @@ def _load_orders(ctx: PipelineContext) -> PipelineContext:
 
 
 def _filter_orders(ctx: PipelineContext) -> PipelineContext:
-    """Stage 4: Filter to known-by-as-of and delivery window (src bridge)."""
-    from src.order_filter import filter_by_delivery_range, filter_by_known_date
+    """Stage 4: Filter to known-by-as-of and delivery window."""
+    from frigilunch.adapters.excel_orders import filter_by_delivery_range, filter_by_known_date
     plan_start = _plan_start(ctx)
     as_of = plan_start
     known, warns = filter_by_known_date(ctx.orders, as_of)
@@ -197,10 +199,9 @@ def _run_solver(ctx: PipelineContext) -> PipelineContext:
         sys.path.insert(0, str(_repo_root))
 
     try:
-        from src.loader import load_products as _load_src, load_setup_times
         from src.scheduler_ortools_v3 import assign_production_dates_feedback
 
-        src_products, _ = _load_src(_repo_root / "data" / "generated" / "products.json")
+        src_products, _ = load_src_products(_repo_root / "data" / "generated" / "products.json")
         setup_matrix = load_setup_times(_repo_root / "data" / "setup_times.json")
         toestellen = _load_toestellen()
         plan_start = _plan_start(ctx)
@@ -281,11 +282,10 @@ def _build_schedules(ctx: PipelineContext) -> PipelineContext:
     """Stage 7b: Replay frozen days + build new timelines, merge into full schedule."""
     if ctx.outcome is None:
         return ctx
-    from src.loader import load_products, load_setup_times
     from src.multi_day_scheduler import schedule_all_days
     from src.scheduler import replay_locked_days
     _repo = Path(__file__).parent.parent.parent
-    src_products, _ = load_products(_repo / "data" / "generated" / "products.json")
+    src_products, _ = load_src_products(_repo / "data" / "generated" / "products.json")
     setup_matrix = load_setup_times(_repo / "data" / "setup_times.json")
     toestellen = _load_toestellen()
 
@@ -334,40 +334,31 @@ def _export_outputs(ctx: PipelineContext) -> PipelineContext:
 
 
 def _export_excel(ctx: PipelineContext, label: str) -> None:
-    """Write planning Excel via the original src exporter."""
-    from src.exporter import export_multi_to_excel
+    """Write planning Excel."""
     days = ctx.outcome.stats.get("days", [])
     path = ctx.output_dir / f"planning_{label}.xlsx"
-    rejection_reasons = ctx.outcome.stats.get("rejection_reasons", {})
-    rejected = list(ctx.outcome.rejected) or None
     export_multi_to_excel(
         days,
         str(path),
-        assignment_warnings=[],
         product_warnings=[w for w in ctx.warnings if "speed" in w.lower() or "product" in w.lower()],
-        rejected_orders=rejected,
-        rejection_reasons=rejection_reasons,
+        rejected_orders=list(ctx.outcome.rejected) or None,
+        rejection_reasons=ctx.outcome.stats.get("rejection_reasons", {}),
     )
     print(f"[OK] Excel geschreven: {path}")
 
 
 def _export_dashboard(ctx: PipelineContext, label: str) -> None:
-    """Write HTML capacity dashboard via the original src dashboard."""
+    """Write HTML capacity dashboard."""
     import json
-    from src.dashboard import build_dashboard_payload, render_dashboard_html
-    from src.loader import load_products as _load_src_products
     _repo = Path(__file__).parent.parent.parent
-    src_products, _ = _load_src_products(_repo / "data" / "generated" / "products.json")
+    src_products, _ = load_src_products(_repo / "data" / "generated" / "products.json")
     days = ctx.outcome.stats.get("days", [])
     all_orders = ctx.locked_orders + ctx.free_orders
-    committed_start = ctx.plan_state.get("committed_start")
-    committed_end = ctx.plan_state.get("committed_end")
     completed_records = ctx.plan_state.get("completed_orders", {})
     completed_source_orders = [
         o for o in all_orders
         if f"{o.order_nr}|{o.art_nr}" in completed_records
     ]
-    # locked_orders + newly scheduled = full planned set (mirrors create_plan.py)
     all_scheduled = ctx.locked_orders + list(ctx.outcome.scheduled)
     payload = build_dashboard_payload(
         all_orders,
@@ -378,8 +369,8 @@ def _export_dashboard(ctx: PipelineContext, label: str) -> None:
         src_products,
         _plan_start(ctx),
         _plan_end(ctx),
-        committed_start=committed_start,
-        committed_end=committed_end,
+        committed_start=ctx.plan_state.get("committed_start"),
+        committed_end=ctx.plan_state.get("committed_end"),
         completed_records=completed_records if completed_records else None,
         completed_source_orders=completed_source_orders if completed_source_orders else None,
     )

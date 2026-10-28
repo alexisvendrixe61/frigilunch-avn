@@ -96,3 +96,26 @@ def write_action_csv(
                 str(order.lever_datum), "rejected",
             ])
     print(f"[OK] Actie CSV geschreven: {path}")
+
+
+# ── src bridge (consolidated here, not in pipeline) ───────────────────────────
+
+def export_multi_to_excel(
+    days: list,
+    path: str,
+    *,
+    assignment_warnings: list | None = None,
+    product_warnings: list | None = None,
+    rejected_orders: list | None = None,
+    rejection_reasons: dict | None = None,
+) -> None:
+    """Write planning Excel via src.exporter. Bridge lives here, not in pipeline."""
+    from src.exporter import export_multi_to_excel as _src_export
+    _src_export(
+        days,
+        path,
+        assignment_warnings=assignment_warnings or [],
+        product_warnings=product_warnings or [],
+        rejected_orders=rejected_orders,
+        rejection_reasons=rejection_reasons or {},
+    )

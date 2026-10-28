@@ -101,7 +101,7 @@ def main() -> None:
     # ── --render-only: re-render dashboard from last run's JSON, no solve ──
     if args.render_only:
         import json
-        from src.dashboard import render_dashboard_html
+        from frigilunch.adapters.dashboard import render_dashboard_html
         label = f"wk{args.week:02d}"
         if args.suffix:
             label = f"{label}_{args.suffix}"

@@ -94,3 +94,30 @@ def write_html(
     path = output_dir / f"capacity_dashboard_wk{week:02d}.html"
     path.write_text(html, encoding="utf-8")
     print(f"[OK] Dashboard geschreven: {path}")
+
+
+# ── src bridge (consolidated here, not in pipeline/cli) ──────────────────────
+
+def build_dashboard_payload(
+    all_orders: list,
+    all_scheduled: list,
+    rejected: list,
+    stats: dict,
+    days: list,
+    src_products: dict,
+    plan_start: object,
+    plan_end: object,
+    **kwargs,
+) -> dict:
+    """Build the chart-data payload via src.dashboard. Bridge lives here."""
+    from src.dashboard import build_dashboard_payload as _src_build
+    return _src_build(
+        all_orders, all_scheduled, rejected, stats, days,
+        src_products, plan_start, plan_end, **kwargs,
+    )
+
+
+def render_dashboard_html(payload: dict, template_path: object, output_path: object) -> None:
+    """Render HTML dashboard from payload via src.dashboard. Bridge lives here."""
+    from src.dashboard import render_dashboard_html as _src_render
+    _src_render(payload, template_path, output_path)

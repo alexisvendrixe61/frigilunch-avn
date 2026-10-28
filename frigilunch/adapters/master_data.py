@@ -55,21 +55,39 @@ def _to_domain(p: object) -> Product:
     )
 
 
-def read_products(path: Path) -> dict[str, Product]:
-    """Read products from products.json (generated from Planning info.xlsx).
-
-    Bridges to src.loader.load_products for format parsing, then converts to
-    the frigilunch domain Product.  The path must point to the generated JSON.
-    """
+def _ensure_src_on_path() -> None:
     import sys
     from pathlib import Path as _Path
     repo_root = _Path(__file__).parent.parent.parent
     if str(repo_root) not in sys.path:
         sys.path.insert(0, str(repo_root))
-    from src.loader import load_products as _load
 
+
+def read_products(path: Path) -> dict[str, Product]:
+    """Read products from products.json; returns frigilunch domain Products."""
+    _ensure_src_on_path()
+    from src.loader import load_products as _load
     src_products, _ = _load(path)
     return {art_nr: _to_domain(p) for art_nr, p in src_products.items()}
+
+
+def load_src_products(path: Path) -> tuple[dict, dict]:
+    """Return (src_products, toestellen) in the src-native format.
+
+    Used by stages that call src-native functions (solver, scheduler, dashboard)
+    which expect src.models.Product objects. Bridge lives here, not in pipeline.
+    """
+    _ensure_src_on_path()
+    from src.loader import load_products as _load
+    return _load(path)
+
+
+def load_setup_times(path: Path) -> dict:
+    """Read setup_times.json and return the setup_times sub-dict."""
+    import json
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    return data["setup_times"]
 
 
 def _warn_unknown(orders: list[Order], products: dict[str, Product]) -> list[str]:
