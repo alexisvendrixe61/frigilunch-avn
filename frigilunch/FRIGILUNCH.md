@@ -66,8 +66,7 @@ py -m frigilunch.cli --week 36 --year 2026 [--reset]
 | `--data-dir` | Path to the `data/` folder (default: `data/`) |
 | `--output-dir` | Where to write results (default: `output/`) |
 
-Advanced flags (`--dry-run`, `--warmup`, `--render-only`, `--suffix`) are
-not yet wired here — use `create_plan.py` for those.
+All flags are available in both `py -m frigilunch.cli` and `py create_plan.py`.
 
 ---
 
@@ -336,21 +335,24 @@ the real export logic still lives in `src/exporter.py`, `src/dashboard.py`.
 | `domain/oracle.py` | Complete — pure day builder, no `src/` dependency |
 | `domain/benders.py` | Complete — pure feedback loop, solver injected |
 | `domain/cuts.py` | Complete — no `src/` dependency |
-| `domain/state.py` | Complete — pure freeze logic |
-| `domain/constraints/` | Mostly complete — changeover, sequencing, allergen, device |
+| `domain/state.py` | Complete — freeze logic + `order_identity`, `iso_weeks_before` |
+| `domain/plan_score.py` | Complete — pure scoring, no `src/` dependency |
+| `domain/constraints/` | Complete — changeover (+ `calculate_duration`), sequencing, allergen, device |
 | `adapters/json_state.py` | Complete — atomic read/write, schema versioning |
+| `adapters/config.py` | Complete — pure copy of `src/config.py`, reads `capacity.json` |
+| `adapters/exceptions_report.py` | Complete — exception CSV builder, no `src/` dependency |
 | `adapters/master_data.py` | Bridges `src.loader` — conversion complete, loading not yet |
 | `adapters/excel_orders.py` | Stub — bridges `src.order_filter` |
 | `adapters/excel_export.py` | Stub — bridges `src.exporter` |
 | `adapters/dashboard.py` | Stub — bridges `src.dashboard` |
+| `application/totals.py` | Complete — order/unit reconciliation, no `src/` dependency |
 | `application/pipeline.py` | Structure complete — all stages bridge `src/` |
 | `application/run_week.py` | Complete |
-| `cli.py` | Complete — missing advanced flags (`--dry-run`, etc.) |
+| `cli.py` | Complete — `COMMIT_WEEKS` and `iso_weeks_before` from `domain.state` |
 
-**Next steps** (in rough order):
-1. Wire `adapters/excel_orders.py` to use `src.order_filter` fully, then
-   replace with a pure adapter
-2. Replace the `_run_solver` bridge with `run_benders` + the real OR-Tools
-   CP solver injected as a callable
-3. Replace the export bridges one by one
-4. Delete `src/` when all bridges are gone
+**Remaining bridges to remove** (in priority order):
+1. **Phase 2** — `adapters/excel_orders.py` (src.order_filter), `adapters/master_data.py` (src.loader), export adapters (src.exporter, src.dashboard), `json_state.py` full (src.plan_state I/O functions)
+2. **Phase 3** — `domain/constraints/` registry, calendar, grouping, line, day, staffing rules; `domain/validator.py`; `application/layout_metrics.py`
+3. **Phase 4** — `domain/oracle.py` complete (src.scheduler day builder + multi_day_scheduler)
+4. **Phase 5** — `domain/solver.py` (src.scheduler_ortools_v3 — the CP-SAT solver)
+5. **Phase 6** — delete `src/`

@@ -23,6 +23,8 @@ from .models import DaySchedule, Order
 
 COMMIT_WEEKS = 4
 
+HISTORY_REASON_MARKER = "Laatste reden — "
+
 
 # ── private helpers ───────────────────────────────────────────────────────────
 
@@ -31,11 +33,23 @@ def _week_monday(week: int, year: int) -> date:
     return date.fromisocalendar(year, week, 1)
 
 
-def _order_key(order: Order) -> str:
-    """Stable identity for an order (prefers plan_nr)."""
+def order_identity(order: Order) -> str:
+    """Stable identity for an order (prefers plan_nr, falls back to composite)."""
     if order.plan_nr:
         return f"plan:{order.plan_nr}"
     return f"{order.order_nr}#{order.art_nr}#{order.klant}#{order.lever_datum.isoformat()}"
+
+
+_order_key = order_identity  # internal alias used by freeze_window / _serialize_order
+
+
+def iso_weeks_before(year: int, week: int, n: int) -> list[tuple[int, int]]:
+    """The n ISO (year, week) pairs immediately before this one, oldest first."""
+    monday = date.fromisocalendar(year, week, 1)
+    return [
+        (monday - timedelta(weeks=k)).isocalendar()[:2]
+        for k in range(n, 0, -1)
+    ]
 
 
 def _serialize_order(order: Order) -> dict[str, Any]:

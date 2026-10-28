@@ -5,8 +5,8 @@ create_plan.py — backwards-compatible entry point, identical to frigilunch.cli
     py -m frigilunch.cli --week 36 --year 2026
     py create_plan.py   --week 36 --year 2026   # same thing
 
-Note: --dry-run, --warmup, --render-only, --suffix from the old create_plan.py
-are not yet wired into frigilunch.cli and are temporarily unavailable.
+All flags (--dry-run, --warmup, --render-only, --suffix, --reset) are
+available in both commands.
 """
 from frigilunch.cli import main
 

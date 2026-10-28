@@ -92,3 +92,6 @@ def production_minutes(order: Order, product: Product) -> int:
     """V1 — production time in minutes, rounded up to the nearest 5."""
     minutes = (order.aantal / product.snelheid) * 60
     return math.ceil(minutes / 5) * 5
+
+
+calculate_duration = production_minutes
