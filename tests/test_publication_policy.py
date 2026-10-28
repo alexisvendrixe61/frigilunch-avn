@@ -1,6 +1,6 @@
 from datetime import date
 
-from create_plan import publication_blockers, publication_notes
+from src.plan_state import publication_blockers, publication_notes
 from src.models import PlanScore, RejectionDiagnostic, SolveOutcome
 
 

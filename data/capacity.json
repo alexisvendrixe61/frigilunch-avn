@@ -49,7 +49,7 @@
     }
   },
   "or_tools_solver": {
-    "feedback_timeout_seconds": 240,
+    "feedback_timeout_seconds": 360,
     "feedback_iter_timeout_seconds": 10,
     "description": "OR-Tools CP-SAT feedback-loop settings. feedback_timeout_seconds = wall-clock budget for ONE phase of the loop — the three-phase solver (line-restricted / flexible / forced-split retry) spends it up to three times, plus reconciliation. feedback_iter_timeout_seconds = per-iteration solve cap. Objective weights are env-tunable, see FRIGI_* in .env and src/scheduler_ortools_v3.py."
   }

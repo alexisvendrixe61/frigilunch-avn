@@ -10,12 +10,12 @@ and commits a 4-week rolling freeze to `plan_state.json`.
 python -m frigilunch.cli --week 40 --year 2026
 ```
 
-| Flag | Effect |
-|---|---|
-| `--week N --year Y` | Plan week N of year Y (ISO week) |
-| `--reset` | Ignore existing `plan_state.json`, replan from scratch |
-| `--dry-run` | Solve and export but do not write `plan_state.json` |
-| `--suffix LABEL` | Append label to output filenames |
+| Flag                  | Effect                                                   |
+| --------------------- | -------------------------------------------------------- |
+| `--week N --year Y` | Plan week N of year Y (ISO week)                         |
+| `--reset`           | Ignore existing `plan_state.json`, replan from scratch |
+| `--dry-run`         | Solve and export but do not write `plan_state.json`    |
+| `--suffix LABEL`    | Append label to output filenames                         |
 
 ## How to test
 

@@ -508,6 +508,52 @@ def _run_entry(po) -> dict:
     }
 
 
+def exclusive_horizon_end(last_delivery: date) -> date:
+    """First Monday strictly after the final delivery date."""
+    end = last_delivery + timedelta(days=1)
+    while end.weekday() != 0:
+        end += timedelta(days=1)
+    return end
+
+
+def iso_weeks_before(year: int, week: int, n: int) -> list[tuple[int, int]]:
+    """The n ISO (year, week) pairs immediately before this one, oldest first."""
+    monday = date.fromisocalendar(year, week, 1)
+    return [
+        (monday - timedelta(weeks=k)).isocalendar()[:2]
+        for k in range(n, 0, -1)
+    ]
+
+
+def publication_blockers(outcome, phantom_count: int = 0) -> list[str]:
+    """Reasons an optimizer result must not advance the frozen state.
+
+    Only an invalid PLAN blocks: an order the solver assigned that the final
+    render then left out of every day plan. Rejections do not block — the days
+    that ARE planned are still valid.
+    """
+    blockers: list[str] = []
+    if phantom_count:
+        blockers.append(f"{phantom_count} assigned order(s) were dropped by final rendering")
+    return blockers
+
+
+def publication_notes(outcome) -> list[str]:
+    """What would have blocked under the strict rule: printed, never blocking."""
+    notes: list[str] = []
+    if outcome.status == "unknown":
+        notes.append("optimizer did not prove a complete or infeasible result")
+    counts: dict[str, int] = {}
+    for diagnostic in outcome.diagnostics:
+        if diagnostic.category in {"invalid_master_data", "search_limit", "model_mismatch"}:
+            counts[diagnostic.category] = counts.get(diagnostic.category, 0) + 1
+    if counts:
+        notes.append("rejections not proven impossible: " + ", ".join(
+            f"{category} {n}" for category, n in sorted(counts.items())
+        ))
+    return notes
+
+
 def build_new_state(
     schedules: list,
     commit_start: date,

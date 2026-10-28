@@ -32,3 +32,5 @@ documentation/package-lock.json
 Thumbs.db
 .env
 .claude/skills/skill-code-council/
+.work-folder-info
+*/.workspace-info

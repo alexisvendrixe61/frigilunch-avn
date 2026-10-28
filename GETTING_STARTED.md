@@ -34,32 +34,22 @@ Solver tuning (`FRIGI_*` variables) can go in `.env`; it's optional.
 
 ```bash
 # Normal weekly run: plan from the Monday of week 36 and commit the next 4 weeks
-py create_plan.py --week 36 --year 2026
+py -m frigilunch.cli --week 36 --year 2026
 
-# Look without committing anything (needs saved state from earlier runs, see below)
-py create_plan.py --week 36 --year 2026 --dry-run
-
-# Quick test from a clean slate: ignore saved state, skip the warm-up, commit nothing
-py create_plan.py --week 36 --year 2026 --reset --warmup 0 --dry-run
-
-# Only re-render the dashboard from the last run of that week (no solve)
-py create_plan.py --week 36 --year 2026 --render-only
+# Start from a clean slate (ignore existing plan_state.json)
+py -m frigilunch.cli --week 36 --year 2026 --reset
 ```
 
 A run takes minutes, not seconds: the solver works against a time budget, so
 two runs on the same input can differ slightly.
 
-**Warm-up.** With no saved state (or with `--reset`), the planner first runs
-the 4 weeks before `--week`, each with a normal commit, so the target week
-starts from a realistic frozen plan. That costs 4 extra runs.
+**Watch out:** every run writes to `data/generated/plan_state.json` and the
+next run treats those weeks as frozen. Use `--reset` to start fresh when
+testing.
 
-- `--warmup 0` skips it: faster, but the target week looks fuller than it is.
-- The warm-up has to commit, so `--dry-run` refuses to run while a warm-up is
-  due. Either run the warm-up once without `--dry-run`, or add `--warmup 0`.
-
-**Watch out:** a run without `--dry-run` writes to
-`data/generated/plan_state.json`, and the next run treats those weeks as
-frozen. Use `--dry-run` whenever you are just trying something.
+The legacy entry point `create_plan.py` accepts additional flags
+(`--dry-run`, `--warmup`, `--render-only`, `--suffix`) that the new CLI does
+not yet expose — use it when you need those.
 
 ### What comes out
 
@@ -76,13 +66,13 @@ Everything in `output/` is generated. Change the code or
 ## How the code fits together
 
 ```
-spreadsheets ─▶ load orders + products          src/order_filter.py, src/product_setup_loader.py, src/loader.py
-             ─▶ bring back frozen weeks         src/plan_state.py
-             ─▶ pick a day + line per order     src/scheduler_ortools_v3.py   (OR-Tools CP-SAT)
-             ─▶ build each day minute by minute src/scheduler.py, src/day_sequencer.py
+spreadsheets ─▶ load orders + products          frigilunch/adapters/master_data.py, excel_orders.py
+             ─▶ bring back frozen weeks         frigilunch/domain/state.py
+             ─▶ pick a day + line per order     frigilunch/domain/benders.py   (OR-Tools CP-SAT)
+             ─▶ build each day minute by minute frigilunch/domain/oracle.py
                   └─ orders that don't fit go back to the solver, repeat
-             ─▶ check, count, export            src/validator.py, src/totals.py, src/exporter.py, src/dashboard.py
-             ─▶ freeze the next 4 weeks         src/plan_state.py
+             ─▶ export                          frigilunch/adapters/excel_export.py, dashboard.py
+             ─▶ freeze the next 4 weeks         frigilunch/domain/state.py
 ```
 
 The solver can't know exact changeover times, because they depend on the
@@ -92,17 +82,20 @@ next solve. That loop is the heart of the code.
 
 | Folder / file | Holds |
 |---|---|
-| `create_plan.py` | The entry point: runs the whole pipeline above |
-| `src/constraints/` | The planning rules, one module per domain (allergens, lines, days, equipment, changeover, …). `registry.py` lists every rule |
-| `src/config.py` | Shift times and per-line capacity, read from `data/capacity.json` |
+| `frigilunch/cli.py` | The entry point |
+| `frigilunch/application/pipeline.py` | `STAGES` tuple and `run_pipeline()` |
+| `frigilunch/application/run_week.py` | Assembles adapters and calls the pipeline |
+| `frigilunch/domain/` | Pure domain logic — no I/O, no OR-Tools imports |
+| `frigilunch/domain/constraints/` | The planning rules (allergens, lines, devices, changeover, sequencing) |
+| `frigilunch/adapters/` | I/O — reads spreadsheets, writes Excel and HTML |
 | `data/capacity.json` | Capacity, machine unit counts, production window, solver budget |
 | `data/setup_times.json` | Changeover and cleaning times |
 | `tests/` | The test suite |
 | `docs/` | Generated rule list and design notes |
+| `src/` | Legacy implementation (reference only) |
 
 ## Tests and generated docs
 
 ```bash
 py -m pytest                    # run the tests
-py -m src.constraints.registry  # regenerate docs/constraints.md after changing a rule
 ```

@@ -12,7 +12,7 @@ from __future__ import annotations
 
 from datetime import date, timedelta
 
-from create_plan import iso_weeks_before
+from src.plan_state import iso_weeks_before
 from src.plan_state import COMMIT_WEEKS
 
 

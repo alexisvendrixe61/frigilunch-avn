@@ -24,6 +24,7 @@ from frigilunch.domain.benders import Solvers, run_benders
 from frigilunch.domain.models import DaySchedule, Order, Product, SolveOutcome
 from frigilunch.domain.oracle import schedule_day
 from frigilunch.domain.state import freeze_window, load_frozen_orders, _order_key
+from src.plan_state import exclusive_horizon_end
 
 
 # ── context ───────────────────────────────────────────────────────────────────
@@ -39,6 +40,8 @@ class PipelineContext:
     state_path: Path
     output_dir: Path
     reset: bool = False
+    dry_run: bool = False
+    suffix: str | None = None
 
     # populated during pipeline execution
     products: dict[str, Product] = field(default_factory=dict)
@@ -67,14 +70,6 @@ def _plan_start(ctx: PipelineContext) -> date:
 def _plan_end(ctx: PipelineContext) -> date:
     """Return ctx.plan_end if set; fallback to 8 weeks from plan_start."""
     return ctx.plan_end if ctx.plan_end is not None else _plan_start(ctx) + timedelta(weeks=8)
-
-
-def _exclusive_horizon_end(last_delivery: date) -> date:
-    """First Monday strictly after the final delivery date (matches create_plan.py)."""
-    end = last_delivery + timedelta(days=1)
-    while end.weekday() != 0:
-        end += timedelta(days=1)
-    return end
 
 
 def _stub_cp_solver(
@@ -132,7 +127,7 @@ def _filter_orders(ctx: PipelineContext) -> PipelineContext:
     # Dynamic horizon: plan to the furthest known delivery (same as create_plan.py)
     future = [o.lever_datum for o in known if o.lever_datum >= plan_start]
     _, ctx.commit_end = commit_window(plan_start)
-    ctx.plan_end = _exclusive_horizon_end(max(future)) if future else ctx.commit_end
+    ctx.plan_end = exclusive_horizon_end(max(future)) if future else ctx.commit_end
     ctx.orders = filter_by_delivery_range(known, plan_start, ctx.plan_end)
     print(f"[OK] {len(ctx.orders)} orders na filtering op levervenster "
           f"(t/m {ctx.plan_end})")
@@ -251,6 +246,9 @@ def _commit_window(ctx: PipelineContext) -> PipelineContext:
     """Stage 8: Commit this week's schedule to plan_state.json (src bridge)."""
     if ctx.outcome is None:
         return ctx
+    if ctx.dry_run:
+        print("[DRY-RUN] plan_state.json niet aangepast.")
+        return ctx
     from src.plan_state import STATE_SCHEMA_VERSION, build_new_state, save_plan_state
     all_days = ctx.outcome.stats.get("days", [])
     plan_start = _plan_start(ctx)
@@ -326,6 +324,8 @@ def _export_outputs(ctx: PipelineContext) -> PipelineContext:
         return ctx
     ctx.output_dir.mkdir(parents=True, exist_ok=True)
     label = f"wk{ctx.week:02d}"
+    if ctx.suffix:
+        label = f"{label}_{ctx.suffix}"
     try:
         _export_excel(ctx, label)
         _export_dashboard(ctx, label)
