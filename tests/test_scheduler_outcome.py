@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from datetime import date
 
-from src.models import SolveOutcome
-from src.scheduler_ortools_v3 import assign_production_dates_feedback
+from frigilunch.domain.models import SolveOutcome
+from frigilunch.application.date_optimizer import assign_production_dates_feedback
 from tests.conftest import make_order, make_product
 
 

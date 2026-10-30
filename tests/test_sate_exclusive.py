@@ -14,11 +14,11 @@ from datetime import time
 
 import pytest
 
-from src import config
-from src.constraints.allergen_rules import (
+from frigilunch.adapters import config
+from frigilunch.domain.constraints.allergen import (
     SATE_EXCLUSIVE, check_sate_conflict, check_sate_sync, sate_window,
 )
-from src.scheduler import schedule_day
+from frigilunch.application.scheduler import schedule_day
 from tests.conftest import make_order, make_product
 
 
@@ -268,8 +268,8 @@ def test_sate_on_both_lines_queues_when_parallel_is_off(
     FRIGI_SATE_PARALLEL=0 — the fallback for a day without the second Gernal:
     the two blocks go one after the other, one closing the shift.
     """
-    monkeypatch.setattr("src.constraints.allergen_rules.SATE_PARALLEL", False)
-    monkeypatch.setattr("src.scheduler._SATE_PARALLEL", False)
+    monkeypatch.setattr("frigilunch.domain.constraints.allergen.SATE_PARALLEL", False)
+    monkeypatch.setattr("frigilunch.application.scheduler._SATE_PARALLEL", False)
     products = {
         "S1": make_product("S1", allergie_niveau=6, snelheid=200, alleen_l1=True),
         "S2": make_product("S2", allergie_niveau=6, snelheid=200, alleen_l2=True),
@@ -344,7 +344,7 @@ def test_the_validator_catches_an_overlap_the_builder_would_never_make(
     """
     from dataclasses import replace
 
-    from src.models import PlannedOrder
+    from frigilunch.domain.models import PlannedOrder
 
     sate = PlannedOrder(
         order=make_order("SATE", 400, monday),
@@ -452,7 +452,7 @@ def test_the_walker_reorders_a_sate_first_sequence_it_is_handed(setup_matrix, mo
     any source — the fixed sort, the CP-SAT sequencer, a position repair —
     lands the same way round.
     """
-    from src.scheduler import _schedule_lijn
+    from frigilunch.application.scheduler import _schedule_lijn
 
     sate = make_product("SATE", allergie_niveau=6, snelheid=400)
     low = make_product("LOW", allergie_niveau=1, snelheid=400)
@@ -476,7 +476,7 @@ def test_the_model_never_puts_sate_beside_a_product_that_must_close(setup_matrix
     """
     from datetime import date, timedelta
 
-    from src.scheduler_ortools_v3 import assign_production_dates_feedback
+    from frigilunch.application.date_optimizer import assign_production_dates_feedback
 
     start = date(2026, 7, 27)
     lever = start + timedelta(days=9)
@@ -507,7 +507,7 @@ def test_sate_on_both_lines_may_share_a_day_in_the_model(setup_matrix):
     """
     from datetime import date, timedelta
 
-    from src.scheduler_ortools_v3 import assign_production_dates_feedback
+    from frigilunch.application.date_optimizer import assign_production_dates_feedback
 
     start = date(2026, 7, 27)
     products = {
@@ -542,7 +542,7 @@ def test_a_reserved_sate_block_never_makes_the_model_infeasible(setup_matrix):
     """
     from datetime import date, timedelta
 
-    from src.scheduler_ortools_v3 import assign_production_dates_feedback
+    from frigilunch.application.date_optimizer import assign_production_dates_feedback
 
     start = date(2026, 7, 27)                 # a Monday
     lever = start + timedelta(days=9)

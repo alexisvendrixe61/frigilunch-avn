@@ -9,9 +9,9 @@ from __future__ import annotations
 
 from datetime import time
 
-from src.day_quality import adjacency_counts, idle_minutes, line_score
-from src.day_sequencer import solve_optimal_sequence
-from src.models import PlannedOrder
+from frigilunch.application.day_quality import adjacency_counts, idle_minutes, line_score
+from frigilunch.application.day_sequencer import solve_optimal_sequence
+from frigilunch.domain.models import PlannedOrder
 from tests.conftest import make_order, make_product
 
 
@@ -114,8 +114,8 @@ def test_the_day_opens_on_the_kapvorm_the_line_closed_on_yesterday(setup_matrix,
 
 def test_the_day_closes_on_a_kapvorm_the_line_runs_tomorrow(setup_matrix, monday):
     """G2 look-ahead: two otherwise identical orders, tomorrow runs H44."""
-    from src.constraints.grouping_rules import volgende_van
-    from src.constraints.sequence_rules import sort_orders_for_lijn
+    from frigilunch.domain.constraints.grouping_rules import volgende_van
+    from frigilunch.domain.constraints.sequencing import sort_orders_for_lijn
 
     h44 = make_product("H44P", kapvorm="H44")
     h22 = make_product("H22P", kapvorm="H22")

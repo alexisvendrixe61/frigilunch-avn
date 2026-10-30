@@ -25,8 +25,8 @@ from __future__ import annotations
 from dataclasses import replace
 from datetime import date, timedelta
 
-from src.constraints.line_rules import preferred_line
-from src.scheduler_ortools_v3 import assign_production_dates_feedback
+from frigilunch.domain.constraints.line_rules import preferred_line
+from frigilunch.application.date_optimizer import assign_production_dates_feedback
 from tests.conftest import make_order, make_product
 
 START = date(2026, 7, 27)          # a Monday

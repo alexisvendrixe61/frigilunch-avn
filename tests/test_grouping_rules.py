@@ -6,7 +6,7 @@ does not always state a link from both sides. These tests pin how it is read.
 """
 from __future__ import annotations
 
-from src.constraints.grouping_rules import (
+from frigilunch.domain.constraints.grouping_rules import (
     identiek_groepen,
     kapvorm_sleutel,
     parse_identiek_refs,
@@ -52,7 +52,7 @@ def test_kapvorm_without_a_real_value_has_no_key():
 
 from datetime import date  # noqa: E402
 
-from src.constraints.sequence_rules import sort_orders_for_lijn  # noqa: E402
+from frigilunch.domain.constraints.sequencing import sort_orders_for_lijn  # noqa: E402
 
 from conftest import make_order  # noqa: E402
 
@@ -148,7 +148,7 @@ def test_without_kapvorm_or_groups_the_order_is_allergen_ascending():
 
 from ortools.sat.python import cp_model  # noqa: E402
 
-from src.scheduler_ortools_v3 import _regroup_identical  # noqa: E402
+from frigilunch.application.date_optimizer import _regroup_identical  # noqa: E402
 
 
 class _Incumbent:

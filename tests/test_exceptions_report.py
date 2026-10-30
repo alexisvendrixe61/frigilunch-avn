@@ -8,7 +8,7 @@ from __future__ import annotations
 import csv
 from datetime import date
 
-from src import exceptions_report
+from frigilunch.adapters import exceptions_report
 from frigilunch.domain.state import order_identity
 from tests.conftest import make_order, make_product
 

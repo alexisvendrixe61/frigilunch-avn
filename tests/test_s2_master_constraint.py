@@ -21,7 +21,7 @@ from datetime import date, timedelta
 import pytest
 
 from frigilunch.domain.state import order_identity
-from src.scheduler_ortools_v3 import assign_production_dates_feedback
+from frigilunch.application.date_optimizer import assign_production_dates_feedback
 from tests.conftest import make_order, make_product
 
 START = date(2026, 7, 27)          # a Monday
@@ -164,8 +164,8 @@ def _phase1_and_phase2():
 
 
 def test_reserved_ends_reports_what_a_built_day_can_take(setup_matrix):
-    from src.multi_day_scheduler import schedule_all_days
-    from src.scheduler_ortools_v3 import _reserved_ends_from
+    from frigilunch.application.multi_day_scheduler import schedule_all_days
+    from frigilunch.application.date_optimizer import _reserved_ends_from
 
     products = _phase1_and_phase2()
     orders = [
@@ -203,7 +203,7 @@ def test_phase_two_counts_the_earlier_phase_s_orders_toward_the_ends(setup_matri
     placed = _days(scheduled)
     assert placed["SOLO"] == placed["MATE"], "SOLO always needs a flexible mate"
 
-    from src.multi_day_scheduler import schedule_all_days
+    from frigilunch.application.multi_day_scheduler import schedule_all_days
     for ds in schedule_all_days(scheduled, products, setup_matrix, {}):
         assert not ds.positie_dropped, ds.warnings
 

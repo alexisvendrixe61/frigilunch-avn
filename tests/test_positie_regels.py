@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from datetime import date
 
-from src.constraints.sequence_rules import apply_positie_regels
+from frigilunch.domain.constraints.sequencing import apply_positie_regels
 
 from conftest import make_order, make_product
 
@@ -126,7 +126,7 @@ def test_no_legal_closer_at_all_is_left_for_the_validator():
 # wk36 plan shipped 13 line-days the floor cannot run as written.
 
 def _day(setup_matrix, *products, aantal=1000):
-    from src.scheduler import schedule_day
+    from frigilunch.application.scheduler import schedule_day
     orders = [make_order(p.art_nr, aantal, DAG) for p in products]
     return schedule_day(orders, {p.art_nr: p for p in products}, setup_matrix, DAG)
 
@@ -159,7 +159,7 @@ def test_a_legal_closer_is_moved_to_the_end_rather_than_dropped(setup_matrix):
 
 def test_every_emitted_line_day_has_legal_ends(setup_matrix):
     """The invariant itself, over a mix the sequencer cannot fully satisfy."""
-    from src.constraints.sequence_rules import mag_eerst, mag_laatst
+    from frigilunch.domain.constraints.sequencing import mag_eerst, mag_laatst
     products = [
         make_product("A", afsluit_kan_niet=True),
         make_product("B", afsluit_kan_niet=True),
@@ -204,7 +204,7 @@ def test_a_capacity_drop_is_not_a_position_drop(setup_matrix):
 
 
 def test_the_reason_names_the_end_the_product_is_barred_from():
-    from src.scheduler_ortools_v3 import _positie_reason
+    from frigilunch.application.date_optimizer import _positie_reason
 
     order = make_order("A", 1000, DAG)
     cannot_close = _positie_reason(order, make_product("A", afsluit_kan_niet=True))
@@ -222,7 +222,7 @@ def test_the_reason_names_the_end_the_product_is_barred_from():
 
 def test_the_reason_does_not_blame_capacity_or_devices():
     """The whole point: stop sending planners after capacity that was fine."""
-    from src.scheduler_ortools_v3 import _positie_reason
+    from frigilunch.application.date_optimizer import _positie_reason
 
     reason = _positie_reason(
         make_order("A", 1000, DAG),
@@ -238,7 +238,7 @@ def test_the_reason_does_not_claim_the_order_is_impossible():
     Checked against a real case: other days in the window DID have a legal
     arrangement. The reason may only speak for the day actually assigned.
     """
-    from src.scheduler_ortools_v3 import _positie_reason
+    from frigilunch.application.date_optimizer import _positie_reason
 
     reason = _positie_reason(
         make_order("A", 1000, DAG), make_product("A", afsluit_kan_niet=True)
@@ -252,7 +252,7 @@ def test_a_position_rejection_reaches_the_planner_action_list():
     Unlike the capacity causes, this one never resolves by itself — every
     future run hits the identical dead end. It has to be on the list.
     """
-    from src import exceptions_report
+    from frigilunch.adapters import exceptions_report
     from frigilunch.domain.state import order_identity
 
     order = make_order("A", 1000, DAG, order_nr="positie")
@@ -289,7 +289,7 @@ def test_a_small_sole_closer_outranks_a_large_burden(setup_matrix):
         make_order("BURDEN", 20_000, DAG),
         make_order("ANCHOR", 500, DAG),      # by far the smallest
     ]
-    from src.scheduler import schedule_day
+    from frigilunch.application.scheduler import schedule_day
     ds = schedule_day(
         orders, {"BURDEN": burden, "ANCHOR": anchor}, setup_matrix, DAG,
     )
@@ -307,8 +307,8 @@ def test_a_small_sole_closer_outranks_a_large_burden(setup_matrix):
 # product open the day together, as one run, and that is honoured.
 
 def test_two_must_open_products_never_share_a_line_day(setup_matrix):
-    from src.scheduler import schedule_day
-    from src.validator import validate_schedule
+    from frigilunch.application.scheduler import schedule_day
+    from frigilunch.domain.validator import validate_schedule
 
     products = {
         "FIRST": make_product("FIRST", snelheid=1000, opstart_moet=True, alleen_l1=True),
@@ -329,8 +329,8 @@ def test_two_must_open_products_never_share_a_line_day(setup_matrix):
 
 
 def test_two_orders_of_one_must_open_product_open_the_day_together(setup_matrix):
-    from src.scheduler import schedule_day
-    from src.validator import validate_schedule
+    from frigilunch.application.scheduler import schedule_day
+    from frigilunch.domain.validator import validate_schedule
 
     products = {
         "M": make_product("M", snelheid=1000, opstart_moet=True, alleen_l1=True),
@@ -349,8 +349,8 @@ def test_two_orders_of_one_must_open_product_open_the_day_together(setup_matrix)
 
 
 def test_an_honoured_moet_is_not_reported(setup_matrix):
-    from src.scheduler import schedule_day
-    from src.validator import validate_schedule
+    from frigilunch.application.scheduler import schedule_day
+    from frigilunch.domain.validator import validate_schedule
 
     products = {
         "FIRST": make_product("FIRST", snelheid=1000, opstart_moet=True, alleen_l1=True),
@@ -375,7 +375,7 @@ def test_the_solver_keeps_two_must_open_products_off_one_line_day(setup_matrix):
     """
     from datetime import timedelta
 
-    from src.scheduler_ortools_v3 import assign_production_dates_feedback
+    from frigilunch.application.date_optimizer import assign_production_dates_feedback
 
     start = date(2026, 7, 27)  # a Monday
     products = {
@@ -397,7 +397,7 @@ def test_the_solver_keeps_two_must_open_products_off_one_line_day(setup_matrix):
 
 
 def test_positie_ok_reads_a_run_of_one_article_as_the_opener():
-    from src.constraints.sequence_rules import positie_ok
+    from frigilunch.domain.constraints.sequencing import positie_ok
 
     m = make_product("M", opstart_moet=True)
     n = make_product("N", opstart_moet=True)

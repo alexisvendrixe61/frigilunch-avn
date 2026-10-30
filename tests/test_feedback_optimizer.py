@@ -1,6 +1,6 @@
 """Regression contracts for the normal open-horizon feedback mode."""
 
-from src import scheduler_ortools_v3 as optimizer
+from frigilunch.application import date_optimizer as optimizer
 
 
 def test_normal_run_uses_joint_solver_not_one_way_hard_first_phases():

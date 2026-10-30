@@ -14,7 +14,7 @@ from ..models import Order, Product
 
 # ── scale format families (O2) ────────────────────────────────────────────────
 
-def _schaal_formaat(schaal: str) -> str | None:
+def schaal_formaat(schaal: str) -> str | None:
     """Group a scale into a format family for changeover purposes.
 
     Unknown or blank values return None — never "the same format" as anything.
@@ -35,6 +35,9 @@ def _schaal_formaat(schaal: str) -> str | None:
     if s.startswith("KRAFT"):
         return "KRAFT ROND"
     return None
+
+
+_schaal_formaat = schaal_formaat  # private alias kept for tests
 
 
 # ── allergen-related helpers (A1, A2) ────────────────────────────────────────
@@ -65,8 +68,8 @@ def changeover_minutes(prev: Product, curr: Product, setup_matrix: dict) -> int:
             return combo.get("tijd", 20)
 
     standaard = setup_matrix.get("ombouw_standaard", {})
-    fmt_prev = _schaal_formaat(prev.schaal)
-    fmt_curr = _schaal_formaat(curr.schaal)
+    fmt_prev = schaal_formaat(prev.schaal)
+    fmt_curr = schaal_formaat(curr.schaal)
     same_format = fmt_prev is not None and fmt_prev == fmt_curr
 
     cost = standaard.get("zelfde_formaat", 20) if same_format else standaard.get("ander_formaat", 30)
@@ -95,3 +98,4 @@ def production_minutes(order: Order, product: Product) -> int:
 
 
 calculate_duration = production_minutes
+transition_cost = changeover_minutes

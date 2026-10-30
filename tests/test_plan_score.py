@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from datetime import date, time, timedelta
 
-from src.models import DaySchedule, PlannedOrder
-from src.plan_score import calculate_plan_score
+from frigilunch.domain.models import DaySchedule, PlannedOrder
+from frigilunch.application.plan_score import calculate_plan_score
 from frigilunch.domain.state import order_identity
 from tests.conftest import make_order, make_product
 

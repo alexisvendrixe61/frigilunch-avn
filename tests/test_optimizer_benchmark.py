@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from src.scheduler_ortools_v3 import assign_production_dates_feedback
+from frigilunch.application.date_optimizer import assign_production_dates_feedback
 from tests.conftest import make_order, make_product
 
 

@@ -54,7 +54,16 @@ class Product:
     maximum_per_dag: int = 0
     restricted_days: str = ""
 
+    # Packaging — used by the Excel exporter
+    stuks_per_karton: int = 0
+    type_karton: str = ""
+    # Raw assembly device counts, straight from the product database's
+    # "Toestellen Assemblage" block — used by the "hulp mat." export column.
+    assemblage_toestellen: dict = field(default_factory=dict)
+
     opmerking: str = ""
+    # Provenance tags set by the loader (e.g. {"speed": "inferred"}).
+    constraint_provenance: dict = field(default_factory=dict)
 
 
 @dataclass
@@ -118,6 +127,30 @@ class PlanScore:
     moved_forecast_orders: int
 
 
+@dataclass
+class ValidationError:
+    severity: str   # "ERROR" | "WARNING" | "INFO"
+    code: str
+    message: str
+    order_nr: str = ""
+    lijn: int = 0
+
+
+@dataclass(frozen=True, slots=True)
+class RejectionDiagnostic:
+    order_key: str
+    category: Literal[
+        "late_after_freeze",
+        "invalid_master_data",
+        "proven_infeasible",
+        "search_limit",
+        "model_mismatch",
+    ]
+    attempted_slots: tuple[str, ...] = ()
+    blocking_constraints: tuple[str, ...] = ()
+    detail: str = ""
+
+
 @dataclass(frozen=True, slots=True)
 class SolveOutcome:
     """Result of one full solve (Benders loop to convergence)."""
@@ -126,4 +159,11 @@ class SolveOutcome:
     scheduled: tuple[Order, ...]
     rejected: tuple[Order, ...]
     score: PlanScore
+    diagnostics: tuple[RejectionDiagnostic, ...]
     stats: dict
+
+    def __iter__(self):
+        """Backward-compatible unpacking: scheduled, rejected, stats."""
+        yield list(self.scheduled)
+        yield list(self.rejected)
+        yield self.stats

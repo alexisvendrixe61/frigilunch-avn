@@ -10,9 +10,9 @@ from datetime import time
 
 import pytest
 
-from src import config
-from src.constraints import transition_cost
-from src.scheduler import schedule_day, span_minuten, werk_minuten
+from frigilunch.adapters import config
+from frigilunch.domain.constraints import transition_cost
+from frigilunch.application.scheduler import schedule_day, span_minuten, werk_minuten
 from tests.conftest import make_order, make_product
 
 
@@ -275,7 +275,7 @@ def test_fresh_and_replayed_days_are_measured_identically(setup_matrix, monday):
     same workbook.
     """
     from frigilunch.domain.state import build_new_state, commit_window, partition_locked_days
-    from src.scheduler import replay_locked_days
+    from frigilunch.application.scheduler import replay_locked_days
 
     products = {"A": make_product("A"), "B": make_product("B")}
     orders = [make_order("A", 300, monday, lijn=1, order_nr="a"),
@@ -308,9 +308,9 @@ def test_sequencer_knows_about_the_other_line_s_device_block(setup_matrix, monda
     the gap BEFORE L1 takes the Leonard. A device-blind solver picks the
     cheap-changeover order first and loses the other.
     """
-    from src.day_sequencer import solve_optimal_sequence
-    from src.constraints.device_rules import busy_intervals
-    from src.scheduler import _schedule_lijn, _time_to_minutes
+    from frigilunch.application.day_sequencer import solve_optimal_sequence
+    from frigilunch.domain.constraints.device import busy_intervals
+    from frigilunch.application.scheduler import _schedule_lijn, _time_to_minutes
 
     products = {
         "L1BIG": make_product("L1BIG", devices=["leonard"], alleen_l1=True),
@@ -399,7 +399,7 @@ def test_the_line_built_first_carries_no_blocking(setup_matrix, monday):
     line that fits perfectly well then looks impossible and gives up orders to
     a conflict with itself.
     """
-    from src.scheduler import _build_line_pair
+    from frigilunch.application.scheduler import _build_line_pair
 
     products = {
         "A": make_product("A", devices=["leonard"], alleen_l1=True, snelheid=100),
@@ -486,7 +486,7 @@ def test_the_oracle_turns_a_device_drop_into_a_pair(setup_matrix, monday):
     to it can essentially never fire — M1's staggering is what removes the
     overlap — so this is where the solver's evidence about machines comes from.
     """
-    from src.scheduler_ortools_v3 import _run_oracle_day
+    from frigilunch.application.date_optimizer import _run_oracle_day
 
     products = {
         "BIG": make_product("BIG", devices=["leonard"], alleen_l1=True, snelheid=100),

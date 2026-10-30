@@ -15,8 +15,8 @@ from datetime import date, time
 
 import pytest
 
-from src.models import DaySchedule, PlannedOrder
-from src.validator import validate_schedule
+from frigilunch.domain.models import DaySchedule, PlannedOrder
+from frigilunch.domain.validator import validate_schedule
 from tests.conftest import make_order, make_product
 
 MONDAY = date(2026, 7, 27)
@@ -77,7 +77,7 @@ def test_the_validator_agrees_with_the_builder_on_every_flag_combination():
     inline and flagged a product excluded from BOTH lines on either line,
     while permitted_lines allows it on L1.
     """
-    from src.constraints import permitted_lines
+    from frigilunch.domain.constraints import permitted_lines
 
     flag_names = ("alleen_l1", "alleen_l2", "l1_uitgesloten", "l2_uitgesloten")
     for bits in range(16):

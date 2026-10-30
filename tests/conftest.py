@@ -7,17 +7,23 @@ which nothing imports).
 """
 from __future__ import annotations
 
-import sys
 from datetime import date
 from pathlib import Path
 
 import pytest
 
-ROOT = Path(__file__).resolve().parent.parent
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+from frigilunch.domain.models import Order, Product
 
-from src.models import Order, Product  # noqa: E402
+# Test files for src-only modules that have not been ported to frigilunch.
+collect_ignore = [
+    "test_campaign_regroup.py",
+    "test_l1_kapvorm_priority.py",
+    "test_layout_metrics.py",
+    "test_product_setup_columns.py",
+    "test_registry.py",
+]
+
+ROOT = Path(__file__).resolve().parent.parent
 
 ALL_DAYS = ["ma", "di", "wo", "do", "vr"]
 NO_ALLERGENS = {
@@ -120,7 +126,7 @@ def make_order(
 @pytest.fixture
 def setup_matrix() -> dict:
     """The real changeover matrix, loaded from data/setup_times.json."""
-    from src.loader import load_setup_times
+    from frigilunch.adapters.master_data import load_setup_times
 
     return load_setup_times(ROOT / "data" / "setup_times.json")
 

@@ -11,7 +11,7 @@ from __future__ import annotations
 
 from datetime import date, timedelta
 
-from src import totals
+from frigilunch.application import totals
 from tests.conftest import make_order
 
 D1 = date(2026, 7, 27)

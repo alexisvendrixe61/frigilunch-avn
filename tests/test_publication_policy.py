@@ -1,7 +1,7 @@
 from datetime import date
 
 from frigilunch.domain.state import publication_blockers, publication_notes
-from src.models import PlanScore, RejectionDiagnostic, SolveOutcome
+from frigilunch.domain.models import PlanScore, RejectionDiagnostic, SolveOutcome
 
 
 ZERO = PlanScore(0, 0, 0, 0, 0, 0)

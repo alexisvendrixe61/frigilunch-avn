@@ -8,7 +8,7 @@ cross-contamination marker count and land the peanut products mid-scale.
 """
 from __future__ import annotations
 
-from src.constraints.allergen_rules import allergie_niveau_from_allergenen
+from frigilunch.domain.constraints.allergen import allergie_niveau_from_allergenen
 from src.product_setup_loader import (
     _allergy_level_from_label,
     _allergy_level_from_x_count,

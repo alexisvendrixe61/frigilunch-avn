@@ -93,6 +93,7 @@ def _outcome(
     return SolveOutcome(
         status=status, scheduled=tuple(scheduled), rejected=tuple(rejected),
         score=_compute_score(scheduled, rejected, days),
+        diagnostics=(),
         stats=stats,
     )
 

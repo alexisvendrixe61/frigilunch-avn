@@ -15,8 +15,8 @@ from datetime import date, time
 import openpyxl
 import pytest
 
-from src.exporter import export_multi_to_excel
-from src.models import DaySchedule, PlannedOrder
+from frigilunch.adapters.excel_export import export_multi_to_excel
+from frigilunch.domain.models import DaySchedule, PlannedOrder
 from tests.conftest import make_order, make_product
 
 DAG1 = date(2026, 8, 31)   # a Monday

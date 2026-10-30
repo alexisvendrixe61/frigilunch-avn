@@ -21,7 +21,7 @@ from typing import Callable
 from frigilunch.adapters.dashboard import build_dashboard_payload, render_dashboard_html
 from frigilunch.adapters.excel_export import export_multi_to_excel
 from frigilunch.adapters.json_state import load_plan_state, save_plan_state, STATE_SCHEMA_VERSION
-from frigilunch.adapters.master_data import load_setup_times, load_src_products, read_products, validate_master
+from frigilunch.adapters.master_data import load_setup_times, read_products, validate_master
 from frigilunch.domain.benders import Solvers, run_benders
 from frigilunch.domain.models import DaySchedule, Order, Product, SolveOutcome
 from frigilunch.domain.oracle import schedule_day
@@ -163,45 +163,12 @@ def _apply_freeze(ctx: PipelineContext) -> PipelineContext:
     return ctx
 
 
-def _adapt_src_outcome(src_outcome: object) -> SolveOutcome:
-    """Convert src.models.SolveOutcome to frigilunch.domain.models.SolveOutcome."""
-    from frigilunch.domain.models import Order as DOrder, PlanScore as DScore
-
-    def adapt_order(o: object) -> DOrder:
-        return DOrder(
-            order_nr=o.order_nr, art_nr=o.art_nr, klant=o.klant,
-            aantal=o.aantal, lever_datum=o.lever_datum,
-            productie_datum=o.productie_datum, lijn=o.lijn,
-            plan_nr=getattr(o, "plan_nr", ""),
-            opmerking=getattr(o, "opmerking", ""),
-            opmerking_analyse=getattr(o, "opmerking_analyse", ""),
-        )
-
-    sc = src_outcome.score
-    score = DScore(
-        rejected_orders=sc.rejected_orders, rejected_units=sc.rejected_units,
-        transition_minutes=sc.transition_minutes, scale_changes=sc.scale_changes,
-        early_days=sc.early_days, moved_forecast_orders=sc.moved_forecast_orders,
-    )
-    return SolveOutcome(
-        status=src_outcome.status,
-        scheduled=tuple(adapt_order(o) for o in src_outcome.scheduled),
-        rejected=tuple(adapt_order(o) for o in src_outcome.rejected),
-        score=score,
-        stats=src_outcome.stats,
-    )
-
-
 def _run_solver(ctx: PipelineContext) -> PipelineContext:
     """Stage 6: Run the real CP-SAT solver (falls back to stub if unavailable)."""
-    _repo_root = Path(__file__).parent.parent.parent
-    if str(_repo_root) not in sys.path:
-        sys.path.insert(0, str(_repo_root))
-
     try:
-        from src.scheduler_ortools_v3 import assign_production_dates_feedback
+        from frigilunch.application.date_optimizer import assign_production_dates_feedback
 
-        src_products, _ = load_src_products(_repo_root / "data" / "generated" / "products.json")
+        _repo_root = Path(__file__).parent.parent.parent
         setup_matrix = load_setup_times(_repo_root / "data" / "setup_times.json")
         toestellen = _load_toestellen()
         plan_start = _plan_start(ctx)
@@ -213,9 +180,9 @@ def _run_solver(ctx: PipelineContext) -> PipelineContext:
         solver_weeks = max(1, -(-(plan_end - solver_start).days // 7))
         frozen_until_date = solver_start if solver_start > plan_start else None
 
-        src_outcome = assign_production_dates_feedback(
+        ctx.outcome = assign_production_dates_feedback(
             orders=ctx.free_orders,
-            products=src_products,
+            products=ctx.products,
             start_date=solver_start,
             weeks=solver_weeks,
             setup_matrix=setup_matrix,
@@ -224,10 +191,6 @@ def _run_solver(ctx: PipelineContext) -> PipelineContext:
             commit_end=commit_end,
             _mandatory_orders=False,
         )
-        # Stash src-native scheduled list before adapting so _build_schedules
-        # can pass them directly to schedule_all_days (same types it expects).
-        src_outcome.stats["_src_scheduled"] = list(src_outcome.scheduled)
-        ctx.outcome = _adapt_src_outcome(src_outcome)
     except Exception as exc:
         ctx.warnings.append(f"Real solver unavailable ({exc}); using stub")
         solvers = Solvers(cp=_stub_cp_solver, oracle=schedule_day)
@@ -282,29 +245,26 @@ def _build_schedules(ctx: PipelineContext) -> PipelineContext:
     """Stage 7b: Replay frozen days + build new timelines, merge into full schedule."""
     if ctx.outcome is None:
         return ctx
-    from src.multi_day_scheduler import schedule_all_days
-    from src.scheduler import replay_locked_days
+    from frigilunch.application.multi_day_scheduler import schedule_all_days
+    from frigilunch.application.scheduler import replay_locked_days
     _repo = Path(__file__).parent.parent.parent
-    src_products, _ = load_src_products(_repo / "data" / "generated" / "products.json")
     setup_matrix = load_setup_times(_repo / "data" / "setup_times.json")
     toestellen = _load_toestellen()
 
     # Replay committed days from plan_state (byte-for-byte, not re-derived)
-    replayed, replay_warns = replay_locked_days(ctx.locked_days, src_products)
+    replayed, replay_warns = replay_locked_days(ctx.locked_days, ctx.products)
     ctx.replayed_schedules = replayed
     for w in replay_warns:
         print(f"[WARN] {w}")
 
     # Build timelines for newly solved orders, with frozen days as prior context
-    scheduled = ctx.outcome.stats.get("_src_scheduled", list(ctx.outcome.scheduled))
     derived = schedule_all_days(
-        scheduled, src_products, setup_matrix, toestellen,
+        list(ctx.outcome.scheduled), ctx.products, setup_matrix, toestellen,
         force_optimal_sequence=True,
         voorgaand=replayed,
     )
     all_days = sorted(replayed + derived, key=lambda s: s.datum)
     ctx.outcome.stats["days"] = all_days
-    ctx.outcome.stats.pop("_src_scheduled", None)
     print(f"[OK] {len(all_days)} dagschema's ({len(replayed)} replay + {len(derived)} nieuw)")
     return ctx
 
@@ -351,7 +311,6 @@ def _export_dashboard(ctx: PipelineContext, label: str) -> None:
     """Write HTML capacity dashboard."""
     import json
     _repo = Path(__file__).parent.parent.parent
-    src_products, _ = load_src_products(_repo / "data" / "generated" / "products.json")
     days = ctx.outcome.stats.get("days", [])
     all_orders = ctx.locked_orders + ctx.free_orders
     completed_records = ctx.plan_state.get("completed_orders", {})
@@ -366,7 +325,7 @@ def _export_dashboard(ctx: PipelineContext, label: str) -> None:
         list(ctx.outcome.rejected),
         ctx.outcome.stats,
         days,
-        src_products,
+        ctx.products,
         _plan_start(ctx),
         _plan_end(ctx),
         committed_start=ctx.plan_state.get("committed_start"),

@@ -6,7 +6,7 @@ from __future__ import annotations
 
 from datetime import date, time
 
-from src import config
+from frigilunch.adapters import config
 
 
 def test_line_start_times():

@@ -10,15 +10,14 @@ from pathlib import Path
 
 import pytest
 
-from src.loader import load_products
+from frigilunch.adapters.master_data import read_products
 
 ROOT = Path(__file__).resolve().parent.parent
 
 
 @pytest.fixture(scope="module")
 def products():
-    prods, _ = load_products(ROOT / "data" / "generated" / "products.json")
-    return prods
+    return read_products(ROOT / "data" / "generated" / "products.json")
 
 
 def test_the_two_exclusion_flags_are_never_both_set(products):
@@ -38,7 +37,7 @@ def test_alleen_and_uitgesloten_never_contradict(products):
 
 
 def test_every_product_can_run_somewhere(products):
-    from src.constraints import permitted_lines
+    from frigilunch.domain.constraints import permitted_lines
 
     for p in products.values():
         assert permitted_lines(p), f"{p.art_nr} has no permitted line"

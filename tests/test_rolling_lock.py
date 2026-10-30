@@ -23,7 +23,7 @@ from datetime import date, time, timedelta
 
 import pytest
 
-from src.models import DaySchedule, PlannedOrder
+from frigilunch.domain.models import DaySchedule, PlannedOrder
 from frigilunch.adapters.json_state import load_plan_state, save_plan_state
 from frigilunch.domain.state import (
     COMMIT_WEEKS,
